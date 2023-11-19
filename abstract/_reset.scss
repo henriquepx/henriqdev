@@ -1,3 +1,5 @@
+@import '../abstract/variables';
+
 * {
   margin: 0;
   padding: 0;
@@ -16,4 +18,25 @@
 
 html, body {
   background-color: rgb(243, 243, 243);
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: $color-dark;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  display: block;
 }

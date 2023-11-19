@@ -18,6 +18,27 @@ html, body {
   background-color: rgb(243, 243, 243);
 }
 
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  display: block;
+}
+
 header {
   border-bottom: 1px solid rgb(219, 219, 219);
 }
@@ -71,6 +92,27 @@ header .headersize .menuhamburger span {
 
 html, body {
   background-color: rgb(243, 243, 243);
+}
+
+.back-to-top {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2b2b2b;
+  color: #fff;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.back-to-top.show {
+  display: block;
 }
 
 main .mainsize {
@@ -225,7 +267,7 @@ main .mainsize .imgmain .textcircle {
   height: auto;
   -o-object-fit: cover;
      object-fit: cover;
-  transition: transform 0.7s ease-in-out, opacity 0.2s ease;
+  transition: transform 0.45s ease-in-out, opacity 0.2s ease;
 }
 #projetos .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
   position: absolute;
@@ -245,4 +287,60 @@ main .mainsize .imgmain .textcircle {
 }
 #projetos .containerprojects .projeto .textprojeto a {
   font-size: 1.5rem;
+}
+
+#skills {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 10rem 1rem;
+}
+#skills h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+#skills .containerskills {
+  display: flex;
+  gap: 100px;
+}
+#skills .containerskills .containercontentlanguage {
+  width: 50%;
+}
+#skills .containerskills .containercontentlanguage .contentlanguage {
+  display: none;
+}
+#skills .containerskills .containercontentlanguage .contentlanguage.ativo {
+  display: block;
+  animation: animationText 0.9s forwards;
+}
+#skills .containerskills .imagelanguages {
+  width: 50%;
+  display: flex;
+  gap: 50px;
+  flex-wrap: wrap;
+}
+#skills .containerskills .imagelanguages .menulanguage {
+  border: 1px solid #2b2b2b;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+#skills .containerskills .imagelanguages .menulanguage img {
+  height: 50px;
+}
+#skills .containerskills .imagelanguages .menulanguage.ativo {
+  background-color: #2b2b2b;
+}
+
+@keyframes animationText {
+  from {
+    transform: translate3d(-15%, 0, 0);
+    opacity: 0;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }/*# sourceMappingURL=styles.css.map */

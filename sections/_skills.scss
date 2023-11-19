@@ -1,0 +1,55 @@
+@import '../abstract/variables';
+
+#skills {
+    @include widthSize;
+    padding: 10rem 1rem;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    .containerskills {
+        display: flex;
+        gap: 100px;
+        .containercontentlanguage {
+            width: 50%;
+            .contentlanguage {
+                display: none;
+            }
+            .contentlanguage.ativo {
+                display: block;
+                animation: animationText .9s forwards;
+            }
+        }
+        .imagelanguages {
+            width: 50%;
+            display: flex;
+            gap: 50px;
+            flex-wrap: wrap;
+            .menulanguage {
+                border: 1px solid $color-dark;
+                padding: 1.5rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 5px;
+                img {
+                    height: 50px;
+                }
+            }
+            .menulanguage.ativo {
+                background-color: $color-dark;
+            }
+        }
+    }
+}
+
+@keyframes animationText {
+    from {
+      transform: translate3d(-15%, 0, 0);
+      opacity: 0;
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+      opacity: 1;
+    }
+  }
