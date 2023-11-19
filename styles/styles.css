@@ -10,12 +10,16 @@
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: #000;
+  color: #2b2b2b;
   font-weight: 500;
 }
 
+html, body {
+  background-color: rgb(243, 243, 243);
+}
+
 header {
-  border-bottom: 1px solid rgb(236, 236, 236);
+  border-bottom: 1px solid rgb(219, 219, 219);
 }
 header .headersize {
   max-width: 1100px;
@@ -24,15 +28,92 @@ header .headersize {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem 1rem;
+  padding: 1rem 0.5rem;
 }
 header .headersize #title {
   cursor: pointer;
 }
 header .headersize #title span {
-  color: #0aec0a;
+  color: #000000;
 }
 header .headersize nav ul {
   display: flex;
   gap: 50px;
+}
+header .headersize .menuhamburger {
+  cursor: pointer;
+  display: none;
+}
+header .headersize .menuhamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3 ease-in-out;
+  background-color: #2b2b2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #2b2b2b;
+  font-weight: 500;
+}
+
+html, body {
+  background-color: rgb(243, 243, 243);
+}
+
+main .mainsize {
+  max-width: 1500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 13rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+main .mainsize .textmain h1 {
+  font-size: 3rem;
+}
+main .mainsize .textmain p {
+  margin: 0.8rem 0rem 3rem 0rem;
+  max-width: 60ch;
+  font-size: 1.2rem;
+}
+main .mainsize .textmain .seeportfolio {
+  background-color: #2b2b2b;
+  padding: 1rem 2rem;
+  color: #fff;
+}
+main .mainsize .imgmain {
+  position: relative;
+}
+main .mainsize .imgmain .myphoto {
+  height: 400px;
+}
+main .mainsize .imgmain .textcircle {
+  height: 150px;
+  position: absolute;
+  bottom: -17%;
+  left: -13%;
+  animation: rotateAnimation infinite 7s linear;
+}
+
+@keyframes rotateAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }/*# sourceMappingURL=styles.css.map */

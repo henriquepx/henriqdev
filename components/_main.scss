@@ -1,0 +1,49 @@
+@import '../abstract/reset';
+
+main {
+    .mainsize {
+        @include widthSize(1500px);
+        padding: 13rem 1rem;
+
+        display: flex;
+        align-items: center;
+        gap: 100px;
+        .textmain {
+            h1 {
+                font-size: 3rem;
+            }
+            p {
+                margin: .8rem 0rem 3rem 0rem;
+                max-width: 60ch;
+                font-size: 1.2rem;
+            }
+            .seeportfolio {
+                background-color: $color-dark;
+                padding: 1rem 2rem;
+                color: #fff;
+            }
+        }
+        .imgmain {
+            position: relative;
+            .myphoto {
+                height: 400px;
+            }
+            .textcircle {
+                height: 150px;
+                position: absolute;
+                bottom: -17%;
+                left: -13%;
+                animation: rotateAnimation infinite 7s linear;
+            }
+        }
+    }
+}
+
+@keyframes rotateAnimation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }

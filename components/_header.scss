@@ -1,24 +1,37 @@
 @import '../abstract/variables';
 
 header {
-    border-bottom: 1px solid rgb(236, 236, 236);
+    border-bottom: 1px solid rgb(219, 219, 219);
     .headersize {
-        @include widthSize;
+        @include widthSize(1100px);
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding: 1.5rem 1rem;
+        padding: 1rem .5rem;
         #title {
             cursor: pointer;
             span {
-                color: #0aec0a;
+                color: #000000;
             }
         }
         nav {
             ul {
                 display: flex;
                 gap: 50px;
+            }
+        }
+        .menuhamburger {
+            cursor: pointer;
+            display: none;
+            span {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                -webkit-transition: all 0.3 ease-in-out;
+                transition: all 0.3 ease-in-out;
+                background-color: $color-dark;
             }
         }
     }
