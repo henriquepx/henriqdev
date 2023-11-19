@@ -2,22 +2,22 @@
 
 main {
     .mainsize {
-        @include widthSize(1500px);
-        padding: 13rem 1rem;
+        @include widthSize(1300px);
+        padding: 11rem 1rem;
 
         display: flex;
         align-items: center;
-        gap: 100px;
         .textmain {
+            margin-right: 5rem;
             h1 {
                 font-size: 3rem;
             }
             p {
                 margin: .8rem 0rem 3rem 0rem;
                 max-width: 60ch;
-                font-size: 1.2rem;
+                font-size: 1.5rem;
             }
-            .seeportfolio {
+            .seeprojetos {
                 background-color: $color-dark;
                 padding: 1rem 2rem;
                 color: #fff;
@@ -32,7 +32,7 @@ main {
                 height: 150px;
                 position: absolute;
                 bottom: -17%;
-                left: -13%;
+                right: -13%;
                 animation: rotateAnimation infinite 7s linear;
             }
         }

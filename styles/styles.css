@@ -74,13 +74,15 @@ html, body {
 }
 
 main .mainsize {
-  max-width: 1500px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 13rem 1rem;
+  padding: 11rem 1rem;
   display: flex;
   align-items: center;
-  gap: 100px;
+}
+main .mainsize .textmain {
+  margin-right: 5rem;
 }
 main .mainsize .textmain h1 {
   font-size: 3rem;
@@ -88,9 +90,9 @@ main .mainsize .textmain h1 {
 main .mainsize .textmain p {
   margin: 0.8rem 0rem 3rem 0rem;
   max-width: 60ch;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
-main .mainsize .textmain .seeportfolio {
+main .mainsize .textmain .seeprojetos {
   background-color: #2b2b2b;
   padding: 1rem 2rem;
   color: #fff;
@@ -105,7 +107,7 @@ main .mainsize .imgmain .textcircle {
   height: 150px;
   position: absolute;
   bottom: -17%;
-  left: -13%;
+  right: -13%;
   animation: rotateAnimation infinite 7s linear;
 }
 
@@ -115,5 +117,81 @@ main .mainsize .imgmain .textcircle {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+#contato {
+  height: 60vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+}
+#contato .container-form {
+  width: 100%;
+}
+#contato .container-form h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 3rem;
+}
+#contato .container-form .form-style {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+}
+#contato .container-form .form-style .label-form {
+  margin-bottom: 7px;
+}
+#contato .container-form .form-style .input-style,
+#contato .container-form .form-style .textarea-style, #contato .container-form .form-style .textarea {
+  width: 100%;
+  border: 0;
+  padding: 0.6em;
+  padding-left: 0;
+  position: relative;
+  color: currentColor;
+  background: transparent;
+  border-bottom: 1px solid currentColor;
+}
+#contato .container-form .form-style .name-email {
+  display: flex;
+  gap: 50px;
+  justify-content: space-between;
+}
+#contato .container-form .form-style .name-email .every-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+#contato .container-form .form-style .name-email .every-input .input-style {
+  height: 40px;
+  width: 100%;
+  padding: 15px 8px;
+}
+#contato .container-form .form-style .message {
+  margin-top: 3rem;
+}
+#contato .container-form .form-style .message .textarea {
+  padding: 0.6rem;
+  height: 100px;
+  padding-bottom: 3.5rem;
+}
+#contato .container-form .form-style .button-submit-form {
+  height: 34px;
+  border-radius: 4px;
+  border: 0;
+  cursor: pointer;
+  background-color: #3f3f3f;
+  font-size: 1rem;
+  margin: 0 auto;
+  width: 30%;
+  color: #fff;
+}
+@media (max-width: 600px) {
+  #contato .container-form .form-style .name-email {
+    flex-direction: column;
+    gap: 0px;
   }
 }/*# sourceMappingURL=styles.css.map */

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Henrique —————</title>
+    <link rel="icon" href="/assets/icon.png">
     <!--CSS -->
     <link rel="stylesheet" href="./styles/styles.css">
     <!--FONT AWESOME-->
@@ -20,7 +21,7 @@
             <nav>
                 <ul>
                     <li><a href="#sobre">< Sobre/></Sobre></a></li>
-                    <li><a href="#portfolio">< Portfólio/></a></li>
+                    <li><a href="#projetos">< Projetos/></a></li>
                     <li><a href="#contato">< Contato/></a></li>
                     <li><a href="#skills">< Skills/></a></li>
                 </ul>
@@ -39,7 +40,7 @@
                 <h1>Construa o Futuro Digital.</h1>
                 <h1>Tenha um site profissional.</h1>
                 <p>Auxilio empresas a desenvolverem produtos digitais modernos e de alta qualidade. Design, Desenvolvimento Front-end e habilidade profissional para destacar seu produto no mercado.</p>
-                <a class="seeportfolio" href="#portfolio">Ver trabalhos</a>
+                <a class="seeprojetos" href="#projetos">Ver trabalhos</a>
             </div>
             <div class="imgmain">
                 <img class="myphoto" src="./assets/photomine.jpg" alt="">
@@ -52,11 +53,42 @@
         <div id="sobre">
 
         </div>
-        <div id="portfolio">
+        <div id="projetos">
             
         </div>
         <div id="contato">
-            
+            <div class="container-form">
+                <h1>Mande uma mensagem!</h1>
+                <form class="form-style" id="form">
+                    <div class="name-email">
+                        <div class="every-input">
+                            <label class="label-form" for="user_name">Nome</label>
+                            <input 
+                                class="input-style" 
+                                type="text" 
+                                placeholder="Digite seu nome:" 
+                                name="from_name" 
+                                id="user_name"
+                            />
+                        </div>
+                        <div class="every-input">
+                            <label class="label-form" for="user_email">E-mail:</label>
+                            <input 
+                                class="input-style" 
+                                type="text" 
+                                placeholder="Digite seu e-mail:" 
+                                name="reply_to" 
+                                id="user_email"
+                            />
+                        </div>
+                  </div>
+                  <div class="message">
+                    <label class="label-form" for="message">Message</label>
+                    <textarea class="textarea" placeholder="Tem um projeto interessante? Envie-me uma mensagem! Minha caixa de entrada está sempre aberta. Seja uma pergunta ou um simples olá, ficarei feliz em responder. Precisa de um site profissional? Fale comigo. Estou aqui para ajudar na sua jornada" name="message" id="message"></textarea>
+                  </div>
+                  <button class="button-submit-form" type="submit">Send</button>
+                </form>
+              </div>
         </div>
         <div id="skills">
             
