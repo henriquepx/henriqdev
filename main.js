@@ -62,3 +62,20 @@ menuLanguage.forEach((itemMenu, index) => {
     activeTab(index);
   })
 })
+
+// MENU HAMBURGER
+const menuHamburger = document.querySelector(".menuhamburger");
+const mobileMenuContent = document.querySelector(".mobileMenuContent");
+
+menuHamburger.addEventListener("click", () => {
+  menuHamburger.classList.toggle("ativo");
+  mobileMenuContent.classList.toggle("ativo");
+});
+
+// Fechar o menu ao clicar em um link
+document.querySelectorAll(".linkheader").forEach((link) => {
+  link.addEventListener("click", () => {
+    menuHamburger.classList.remove("ativo");
+    mobileMenuContent.classList.remove("ativo");
+  });
+});

@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+@media (max-width: 700px) {
+    .mobileMenuContent {
+    display: none;
+}
+
+.mobileMenuContent.ativo {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background-color: #f3f3f3;
+    position: fixed;
+    top: 0;
+    z-index: 777;
+    animation: animationMenu .5s ease-in-out;
+}
+}
+
+
+
+@keyframes animationMenu {
+    from {
+      transform: translate3d(0, -100%, 0);
+    }
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  }
