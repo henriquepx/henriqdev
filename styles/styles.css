@@ -1,1 +1,38 @@
-/*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  font-size: 100%;
+  font: inherit;
+  scroll-behavior: smooth;
+  vertical-align: baseline;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  color: #000;
+  font-weight: 500;
+}
+
+header {
+  border-bottom: 1px solid rgb(236, 236, 236);
+}
+header .headersize {
+  max-width: 1100px;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.5rem 1rem;
+}
+header .headersize #title {
+  cursor: pointer;
+}
+header .headersize #title span {
+  color: #0aec0a;
+}
+header .headersize nav ul {
+  display: flex;
+  gap: 50px;
+}/*# sourceMappingURL=styles.css.map */
