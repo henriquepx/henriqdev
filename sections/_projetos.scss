@@ -1,0 +1,57 @@
+@import '../abstract/variables';
+
+#projetos {
+    @include widthSize;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+
+    .containerprojects {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        width: 100%;
+
+        .projeto {
+            width: 44%;
+            margin-bottom: 5rem;
+            .photoprojeto {
+                position: relative;
+                overflow: hidden;
+
+                .imgprincipalprojeto,
+                .imgprincipalprojetohover {
+                    width: 100%;
+                    height: auto;
+                    object-fit: cover;
+                    transition: transform 0.7s ease-in-out, opacity 0.2s ease;
+                }
+
+                .imgprincipalprojetohover {
+                    position: absolute;
+                    top: 0;
+                    left: 100%; 
+                }
+
+                &:hover {
+                    .imgprincipalprojetohover {
+                        transform: translateX(-100%);
+                    }
+                }
+            }
+
+            .textprojeto {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 1rem;
+                h3 {
+                    font-size: 1.5rem;
+                }
+                a {
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

@@ -2,7 +2,7 @@
 
 main {
     .mainsize {
-        @include widthSize(1300px);
+        @include widthSize;
         padding: 11rem 1rem;
 
         display: flex;

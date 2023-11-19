@@ -5,7 +5,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    @include widthSize(1100px);
+    @include widthSize;
     .container-form {
         width: 100%;
         h1 {
