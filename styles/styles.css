@@ -41,7 +41,7 @@ html, body {
 }
 
 header {
-  padding: 1.2rem 2rem;
+  padding: 2rem 5rem;
 }
 header .headersize {
   display: flex;
@@ -167,8 +167,11 @@ html, body {
   display: block;
 }
 
+main {
+  padding: 3rem 5rem;
+}
 main .mainsize {
-  padding: 13rem 1rem;
+  padding: 9rem 0rem;
   display: flex;
   align-items: center;
 }
@@ -342,6 +345,9 @@ header .headersize .menuhamburger.ativo .bar:nth-child(3) {
   }
 }
 
+#projetos {
+  padding: 0 2rem;
+}
 #projetos h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
