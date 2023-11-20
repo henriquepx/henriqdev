@@ -40,19 +40,67 @@ html, body {
   display: block;
 }
 
+header {
+  padding: 1.2rem 2rem;
+}
 header .headersize {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1.5rem;
 }
 header .headersize #title {
-  font-size: 2rem;
   cursor: pointer;
 }
-header .headersize #title span {
-  color: #7c7c7c;
-  font-size: 1.5rem;
+header .headersize #title h1 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  color: #070707;
+}
+header .headersize #title .profile h3 {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #e2e2e2;
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+}
+header .headersize #title .profile h3::before, header .headersize #title .profile h3::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+header .headersize #title .profile h3::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 50% 100%;
+  transform: translate3d(0, 100%, 0);
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #a1a1a1;
+}
+header .headersize #title .profile h3:hover::before {
+  transform-origin: 50% 50%;
+  transform: scaleY(0);
+}
+header .headersize #title .profile h3:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+header .headersize #title .profile h3 span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+header .headersize #title .profile h3:hover span {
+  transform: translate3d(0, 100%, 0);
+}
+header .headersize nav {
+  background-color: #dfdfdf;
+  border-radius: 100vw;
+  padding: 1.2rem 1.7rem;
+}
+header .headersize nav ul {
+  display: flex;
+  gap: 15px;
 }
 header .headersize .menuhamburger {
   display: flex;

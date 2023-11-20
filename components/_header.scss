@@ -1,18 +1,65 @@
 @import '../abstract/variables';
 
 header {
+    padding: 1.2rem 2rem;
     .headersize {
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-        padding: 1.5rem;
         #title {
-            font-size: 2rem;
             cursor: pointer;
-            span {
-                color: #7c7c7c;
-                font-size: 1.5rem;
+            h1 {
+                font-family: 'Montserrat', sans-serif;
+                font-size: 1rem;
+                color: #070707;
+            }
+            .profile {
+                h3 {
+                    font-family: 'Montserrat', sans-serif;
+                    font-size: .9rem;
+                    color: #e2e2e2;
+                    overflow: hidden;
+                    position: relative;
+                    display: inline-block;
+                    &::before, &::after {
+                        content: '';
+                        position: absolute;
+                        width: 100%;
+                        left: 0;
+                    }
+                    &::after {
+                        content: attr(data-replace);
+                        height: 100%;
+                        top: 0;
+                        transform-origin: 50% 100%;
+                        transform: translate3d(0, 100%, 0);
+                        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                        color: #a1a1a1;
+                    }
+                    &:hover::before {
+                        transform-origin: 50% 50%;
+                        transform: scaleY(0);
+                    }
+                    &:hover::after {
+                        transform: translate3d(0, 0, 0);
+                    }
+                    span {
+                        display: inline-block;
+                        transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                    }
+                    &:hover span {
+                        transform: translate3d(0, 100%, 0);
+                    }
+                }
+            }
+        }
+        nav {
+            background-color: #dfdfdf;
+            border-radius: 100vw;
+            padding: 1.2rem 1.7rem;
+            ul {
+                display: flex;
+                gap: 15px;
             }
         }
         .menuhamburger {
