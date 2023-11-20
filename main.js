@@ -25,14 +25,11 @@ document.addEventListener('DOMContentLoaded', function () {
 // BACK TO TOP
 document.addEventListener('DOMContentLoaded', function () {
     const backToTopButton = document.getElementById('backToTop');
-  
-    // Adiciona um evento de clique à seta
+
     backToTopButton.addEventListener('click', function () {
-      // Scroll suave até o topo da página
       window.scrollTo({ top: 0, behavior: 'smooth' });
     });
   
-    // Adiciona um observador de rolagem para mostrar ou ocultar a seta conforme necessário
     window.addEventListener('scroll', function () {
       if (window.scrollY > 300) {
         backToTopButton.classList.add('show');
@@ -70,12 +67,4 @@ const mobileMenuContent = document.querySelector(".mobileMenuContent");
 menuHamburger.addEventListener("click", () => {
   menuHamburger.classList.toggle("ativo");
   mobileMenuContent.classList.toggle("ativo");
-});
-
-// Fechar o menu ao clicar em um link
-document.querySelectorAll(".linkheader").forEach((link) => {
-  link.addEventListener("click", () => {
-    menuHamburger.classList.remove("ativo");
-    mobileMenuContent.classList.remove("ativo");
-  });
 });

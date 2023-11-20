@@ -1,7 +1,7 @@
 @import '../abstract/variables';
 
-@media (max-width: 700px) {
-    .mobileMenuContent {
+
+  .mobileMenuContent {
     display: none;
 }
 
@@ -14,7 +14,6 @@
     top: 0;
     z-index: 777;
     animation: animationMenu .5s ease-in-out;
-}
 }
 
 

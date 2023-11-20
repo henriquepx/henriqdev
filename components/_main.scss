@@ -2,37 +2,40 @@
 
 main {
     .mainsize {
-        @include widthSize;
-        padding: 11rem 1rem;
+        padding: 13rem 1rem;
 
         display: flex;
         align-items: center;
         .textmain {
+            position: relative;
+            width: 100%;
             margin-right: 5rem;
             h1 {
-                font-size: 3rem;
+                font-size: 5rem;
+                font-weight: 600;
+                span {
+                    font-size: 3rem;
+                }
+            }
+            h2 {
+                margin: 1rem 0rem;
+                font-size: 2rem;
             }
             p {
-                margin: .8rem 0rem 3rem 0rem;
-                max-width: 60ch;
-                font-size: 1.5rem;
+                margin: 1.5rem 0rem;
+                max-width: 70ch;
+                font-size: 1.2rem;
             }
             .seeprojetos {
                 background-color: $color-dark;
                 padding: 1rem 2rem;
                 color: #fff;
             }
-        }
-        .imgmain {
-            position: relative;
-            .myphoto {
-                height: 400px;
-            }
             .textcircle {
                 height: 150px;
                 position: absolute;
-                bottom: -17%;
-                right: -13%;
+                top: 0%;
+                right: 0%;
                 animation: rotateAnimation infinite 7s linear;
             }
         }

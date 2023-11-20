@@ -1,37 +1,40 @@
 @import '../abstract/variables';
 
 header {
-    border-bottom: 1px solid rgb(219, 219, 219);
     .headersize {
-        @include widthSize;
         display: flex;
         justify-content: space-between;
         align-items: center;
 
-        padding: 1rem .5rem;
+        padding: 1.5rem;
         #title {
+            font-size: 2rem;
             cursor: pointer;
             span {
-                color: #000000;
-            }
-        }
-        nav {
-            ul {
-                display: flex;
-                gap: 50px;
+                color: #7c7c7c;
+                font-size: 1.5rem;
             }
         }
         .menuhamburger {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
             cursor: pointer;
-            display: none;
             span {
-                display: block;
-                width: 25px;
-                height: 3px;
-                margin: 5px auto;
-                -webkit-transition: all 0.3 ease-in-out;
-                transition: all 0.3 ease-in-out;
-                background-color: $color-dark;
+                width: 40px;
+                height: 4px;
+                background-color: rgb(0, 0, 0);
+                transition: all 0.3s ease;
+                margin: 3px 0px;
+            }
+            span:nth-child(1) {
+                width: 26px;
+            }
+            span:nth-child(2) {
+                width: 35px;
+            }
+            &:hover span {
+                width: 40px;
             }
         }
     }

@@ -12,6 +12,7 @@
   font-family: "Montserrat", sans-serif;
   color: #2b2b2b;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 html, body {
@@ -39,39 +40,41 @@ html, body {
   display: block;
 }
 
-header {
-  border-bottom: 1px solid rgb(219, 219, 219);
-}
 header .headersize {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 1.5rem;
 }
 header .headersize #title {
+  font-size: 2rem;
   cursor: pointer;
 }
 header .headersize #title span {
-  color: #000000;
-}
-header .headersize nav ul {
-  display: flex;
-  gap: 50px;
+  color: #7c7c7c;
+  font-size: 1.5rem;
 }
 header .headersize .menuhamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   cursor: pointer;
-  display: none;
 }
 header .headersize .menuhamburger span {
-  display: block;
-  width: 25px;
-  height: 3px;
-  margin: 5px auto;
-  transition: all 0.3 ease-in-out;
-  background-color: #2b2b2b;
+  width: 40px;
+  height: 4px;
+  background-color: rgb(0, 0, 0);
+  transition: all 0.3s ease;
+  margin: 3px 0px;
+}
+header .headersize .menuhamburger span:nth-child(1) {
+  width: 26px;
+}
+header .headersize .menuhamburger span:nth-child(2) {
+  width: 35px;
+}
+header .headersize .menuhamburger:hover span {
+  width: 40px;
 }
 
 * {
@@ -88,6 +91,7 @@ header .headersize .menuhamburger span {
   font-family: "Montserrat", sans-serif;
   color: #2b2b2b;
   font-weight: 500;
+  font-size: 1rem;
 }
 
 html, body {
@@ -116,40 +120,41 @@ html, body {
 }
 
 main .mainsize {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 11rem 1rem;
+  padding: 13rem 1rem;
   display: flex;
   align-items: center;
 }
 main .mainsize .textmain {
+  position: relative;
+  width: 100%;
   margin-right: 5rem;
 }
 main .mainsize .textmain h1 {
+  font-size: 5rem;
+  font-weight: 600;
+}
+main .mainsize .textmain h1 span {
   font-size: 3rem;
 }
+main .mainsize .textmain h2 {
+  margin: 1rem 0rem;
+  font-size: 2rem;
+}
 main .mainsize .textmain p {
-  margin: 0.8rem 0rem 3rem 0rem;
-  max-width: 60ch;
-  font-size: 1.5rem;
+  margin: 1.5rem 0rem;
+  max-width: 70ch;
+  font-size: 1.2rem;
 }
 main .mainsize .textmain .seeprojetos {
   background-color: #2b2b2b;
   padding: 1rem 2rem;
   color: #fff;
 }
-main .mainsize .imgmain {
-  position: relative;
-}
-main .mainsize .imgmain .myphoto {
-  height: 400px;
-}
-main .mainsize .imgmain .textcircle {
+main .mainsize .textmain .textcircle {
   height: 150px;
   position: absolute;
-  bottom: -17%;
-  right: -13%;
+  top: 0%;
+  right: 0%;
   animation: rotateAnimation infinite 7s linear;
 }
 
@@ -161,51 +166,52 @@ main .mainsize .imgmain .textcircle {
     transform: rotate(360deg);
   }
 }
-@media (max-width: 700px) {
-  header .headersize nav {
-    display: none;
-  }
-  header .headersize .menuhamburger {
-    display: block;
-    transition: 0.3s;
-  }
-  header .headersize .menuhamburger.ativo {
-    z-index: 888;
-    position: absolute;
-    right: 10px;
-    top: 15px;
-  }
-  header .headersize .menuhamburger.ativo .bar:nth-child(2) {
-    opacity: 0;
-    background-color: #2b2b2b;
-    transition: 0.3s ease-in-out;
-  }
-  header .headersize .menuhamburger.ativo .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-    background-color: #2b2b2b;
-    transition: 0.3s ease-in-out;
-  }
-  header .headersize .menuhamburger.ativo .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-    background-color: #2b2b2b;
-    transition: 0.3s ease-in-out;
-  }
+header .headersize .menuhamburger {
+  transition: 0.3s;
 }
-@media (max-width: 700px) {
-  .mobileMenuContent {
-    display: none;
-  }
-  .mobileMenuContent.ativo {
-    display: block;
-    height: 100%;
-    width: 100%;
-    background-color: #f3f3f3;
-    position: fixed;
-    top: 0;
-    z-index: 777;
-    animation: animationMenu 0.5s ease-in-out;
-  }
+header .headersize .menuhamburger.ativo {
+  z-index: 888;
 }
+header .headersize .menuhamburger.ativo span:nth-child(1) {
+  width: 40px;
+}
+header .headersize .menuhamburger.ativo span:nth-child(2) {
+  width: 40px;
+}
+header .headersize .menuhamburger.ativo:hover span {
+  width: 40px;
+}
+header .headersize .menuhamburger.ativo .bar:nth-child(2) {
+  opacity: 0;
+  background-color: #2b2b2b;
+  transition: 0.3s ease-in-out;
+}
+header .headersize .menuhamburger.ativo .bar:nth-child(1) {
+  transform: translateY(8px) rotate(45deg);
+  background-color: #2b2b2b;
+  transition: 0.3s ease-in-out;
+}
+header .headersize .menuhamburger.ativo .bar:nth-child(3) {
+  transform: translateY(-8px) rotate(-45deg);
+  background-color: #2b2b2b;
+  transition: 0.3s ease-in-out;
+}
+
+.mobileMenuContent {
+  display: none;
+}
+
+.mobileMenuContent.ativo {
+  display: block;
+  height: 100%;
+  width: 100%;
+  background-color: #f3f3f3;
+  position: fixed;
+  top: 0;
+  z-index: 777;
+  animation: animationMenu 0.5s ease-in-out;
+}
+
 @keyframes animationMenu {
   from {
     transform: translate3d(0, -100%, 0);
@@ -219,9 +225,6 @@ main .mainsize .imgmain .textcircle {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
 }
 #contato .container-form {
   width: 100%;
@@ -291,14 +294,15 @@ main .mainsize .imgmain .textcircle {
   }
 }
 
-#projetos {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-}
 #projetos h1 {
   font-size: 3rem;
   margin-bottom: 2rem;
+}
+#projetos .linebreak {
+  height: 2px;
+  width: 1px solid rgb(58, 58, 58);
+  width: 100%;
+  display: block;
 }
 #projetos .containerprojects {
   display: flex;
@@ -307,7 +311,7 @@ main .mainsize .imgmain .textcircle {
   width: 100%;
 }
 #projetos .containerprojects .projeto {
-  width: 44%;
+  width: 47%;
   margin-bottom: 5rem;
 }
 #projetos .containerprojects .projeto .photoprojeto {
@@ -343,9 +347,6 @@ main .mainsize .imgmain .textcircle {
 }
 
 #skills {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
   padding: 10rem 1rem;
 }
 #skills h1 {
