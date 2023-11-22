@@ -12,13 +12,13 @@
   list-style: none;
   text-decoration: none;
   font-family: 'Montserrat', sans-serif;
-  color: #2b2b2b;
+  color: $color-font-white;
   font-weight: 500;
   font-size: 1rem;
 }
 
 html, body {
-  background-color: #f3f3f3;
+  background-color: $color-bg;
 }
 
 .back-to-top {
@@ -26,8 +26,8 @@ html, body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: $color-dark;
-  color: #fff;
+  background-color: $color-font-white;
+  color: $color-bg;
   font-size: 20px;
   width: 40px;
   height: 40px;

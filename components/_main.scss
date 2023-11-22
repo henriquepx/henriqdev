@@ -10,9 +10,9 @@ main {
         .textmain {
             position: relative;
             width: 100%;
-            margin-right: 5rem;
+            margin-right: 3rem;
             h1 {
-                font-size: 5rem;
+                font-size: 3rem;
                 font-weight: 600;
                 span {
                     font-size: 3rem;
@@ -20,17 +20,22 @@ main {
             }
             h2 {
                 margin: 1rem 0rem;
-                font-size: 2rem;
-            }
-            p {
-                margin: 1.5rem 0rem;
-                max-width: 70ch;
                 font-size: 1.2rem;
             }
-            .seeprojetos {
-                background-color: $color-dark;
-                padding: 1rem 2rem;
-                color: #fff;
+            p {
+                margin: 2rem 0rem 3rem 0rem;
+                max-width: 70ch;
+                font-size: 1rem;
+            }
+            .divmain {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                .seeprojetos {
+                    background-color: #181818;
+                    padding: 1rem 2rem;
+                    color: #fff;
+                }
             }
             .textcircle {
                 height: 150px;

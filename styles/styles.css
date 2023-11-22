@@ -10,13 +10,13 @@
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: #2b2b2b;
+  color: #fffcf5;
   font-weight: 500;
   font-size: 1rem;
 }
 
 html, body {
-  background-color: #f3f3f3;
+  background-color: #0b0b0b;
 }
 
 .back-to-top {
@@ -24,8 +24,8 @@ html, body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2b2b2b;
-  color: #fff;
+  background-color: #fffcf5;
+  color: #0b0b0b;
   font-size: 20px;
   width: 40px;
   height: 40px;
@@ -48,29 +48,43 @@ header .headersize {
   justify-content: space-between;
   align-items: center;
 }
-header .headersize #title {
+header .headersize .titleprofile {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+header .headersize .titleprofile h1 {
+  font-weight: 800;
+  font-size: 3rem;
+}
+header .headersize .titleprofile #title {
+  margin-top: 5px;
   cursor: pointer;
 }
-header .headersize #title h1 {
-  font-family: "Montserrat", sans-serif;
+header .headersize .titleprofile #title h1 {
   font-size: 1rem;
-  color: #070707;
+  color: #fffcf5;
+  font-weight: 700;
 }
-header .headersize #title .profile h3 {
-  font-family: "Montserrat", sans-serif;
+header .headersize .titleprofile #title .profile h3 {
   font-size: 0.9rem;
-  color: #e2e2e2;
+  color: #7a7a7a;
   overflow: hidden;
   position: relative;
   display: inline-block;
 }
-header .headersize #title .profile h3::before, header .headersize #title .profile h3::after {
+header .headersize .titleprofile #title .profile h3 span {
+  display: inline-block;
+  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: #7a7a7a;
+}
+header .headersize .titleprofile #title .profile h3::before, header .headersize .titleprofile #title .profile h3::after {
   content: "";
   position: absolute;
   width: 100%;
   left: 0;
 }
-header .headersize #title .profile h3::after {
+header .headersize .titleprofile #title .profile h3::after {
   content: attr(data-replace);
   height: 100%;
   top: 0;
@@ -79,23 +93,17 @@ header .headersize #title .profile h3::after {
   transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
   color: #a1a1a1;
 }
-header .headersize #title .profile h3:hover::before {
+header .headersize .titleprofile #title .profile h3:hover::before {
   transform-origin: 50% 50%;
   transform: scaleY(0);
 }
-header .headersize #title .profile h3:hover::after {
+header .headersize .titleprofile #title .profile h3:hover::after {
   transform: translate3d(0, 0, 0);
 }
-header .headersize #title .profile h3 span {
-  display: inline-block;
-  transition: transform 0.3s cubic-bezier(0.76, 0, 0.24, 1);
-}
-header .headersize #title .profile h3:hover span {
+header .headersize .titleprofile #title .profile h3:hover span {
   transform: translate3d(0, 100%, 0);
 }
 header .headersize nav {
-  background-color: #dfdfdf;
-  border-radius: 100vw;
   padding: 1.2rem 1.7rem;
 }
 header .headersize nav ul {
@@ -105,24 +113,14 @@ header .headersize nav ul {
 header .headersize .menuhamburger {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+  gap: 15px;
   cursor: pointer;
 }
 header .headersize .menuhamburger span {
-  width: 40px;
-  height: 4px;
-  background-color: rgb(0, 0, 0);
+  width: 50px;
+  height: 2px;
+  background-color: rgb(212, 212, 212);
   transition: all 0.3s ease;
-  margin: 3px 0px;
-}
-header .headersize .menuhamburger span:nth-child(1) {
-  width: 26px;
-}
-header .headersize .menuhamburger span:nth-child(2) {
-  width: 35px;
-}
-header .headersize .menuhamburger:hover span {
-  width: 40px;
 }
 
 * {
@@ -137,13 +135,13 @@ header .headersize .menuhamburger:hover span {
   list-style: none;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
-  color: #2b2b2b;
+  color: #fffcf5;
   font-weight: 500;
   font-size: 1rem;
 }
 
 html, body {
-  background-color: #f3f3f3;
+  background-color: #0b0b0b;
 }
 
 .back-to-top {
@@ -151,8 +149,8 @@ html, body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  background-color: #2b2b2b;
-  color: #fff;
+  background-color: #fffcf5;
+  color: #0b0b0b;
   font-size: 20px;
   width: 40px;
   height: 40px;
@@ -178,10 +176,10 @@ main .mainsize {
 main .mainsize .textmain {
   position: relative;
   width: 100%;
-  margin-right: 5rem;
+  margin-right: 3rem;
 }
 main .mainsize .textmain h1 {
-  font-size: 5rem;
+  font-size: 3rem;
   font-weight: 600;
 }
 main .mainsize .textmain h1 span {
@@ -189,15 +187,20 @@ main .mainsize .textmain h1 span {
 }
 main .mainsize .textmain h2 {
   margin: 1rem 0rem;
-  font-size: 2rem;
-}
-main .mainsize .textmain p {
-  margin: 1.5rem 0rem;
-  max-width: 70ch;
   font-size: 1.2rem;
 }
-main .mainsize .textmain .seeprojetos {
-  background-color: #2b2b2b;
+main .mainsize .textmain p {
+  margin: 2rem 0rem 3rem 0rem;
+  max-width: 70ch;
+  font-size: 1rem;
+}
+main .mainsize .textmain .divmain {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+main .mainsize .textmain .divmain .seeprojetos {
+  background-color: #181818;
   padding: 1rem 2rem;
   color: #fff;
 }
@@ -233,17 +236,12 @@ header .headersize .menuhamburger.ativo:hover span {
   width: 40px;
 }
 header .headersize .menuhamburger.ativo .bar:nth-child(2) {
-  opacity: 0;
+  transform: translateY(-8px) rotate(-45deg);
   background-color: #2b2b2b;
   transition: 0.3s ease-in-out;
 }
 header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
-  background-color: #2b2b2b;
-  transition: 0.3s ease-in-out;
-}
-header .headersize .menuhamburger.ativo .bar:nth-child(3) {
-  transform: translateY(-8px) rotate(-45deg);
   background-color: #2b2b2b;
   transition: 0.3s ease-in-out;
 }
@@ -450,5 +448,59 @@ header .headersize .menuhamburger.ativo .bar:nth-child(3) {
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+  }
+}
+.partners {
+  padding: 3rem 0rem;
+}
+.partners .scroller {
+  max-width: 1300px;
+  width: 100%;
+  margin: 0 auto;
+}
+.partners .scroller .scroller__inner {
+  padding-block: 1rem;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+.partners .scroller .scroller__inner img {
+  height: 100px;
+  padding: 1.5rem 3rem;
+  background-color: #141414;
+  border-radius: 5px;
+}
+.partners .scroller .scroller__inner img:hover {
+  background-color: #1f1f1f;
+}
+
+.scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated=true] .scroller__inner {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
+}
+
+.scroller[data-direction=right] {
+  --_animation-direction: reverse;
+}
+
+.scroller[data-speed=fast] {
+  --_animation-duration: 20s;
+}
+
+.scroller[data-speed=slow] {
+  --_animation-duration: 60s;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.5rem));
   }
 }/*# sourceMappingURL=styles.css.map */
