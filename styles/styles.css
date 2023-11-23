@@ -1,3 +1,27 @@
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -40,6 +64,54 @@ html, body {
   display: block;
 }
 
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 header {
   padding: 2rem 5rem;
 }
@@ -52,6 +124,7 @@ header .headersize .titleprofile {
   display: flex;
   align-items: center;
   gap: 10px;
+  animation: opacityHeadeer 2s forwards;
 }
 header .headersize .titleprofile h1 {
   font-weight: 800;
@@ -104,6 +177,7 @@ header .headersize .titleprofile #title .profile h3:hover span {
   transform: translate3d(0, 100%, 0);
 }
 header .headersize nav {
+  animation: opacityHeadeer 2s forwards;
   padding: 1.2rem 1.7rem;
 }
 header .headersize nav ul {
@@ -123,6 +197,30 @@ header .headersize .menuhamburger span {
   transition: all 0.3s ease;
 }
 
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -181,18 +279,16 @@ main .mainsize .textmain {
 main .mainsize .textmain h1 {
   font-size: 3rem;
   font-weight: 600;
+  animation: animationTextShow 1.2s forwards;
 }
 main .mainsize .textmain h1 span {
   font-size: 3rem;
-}
-main .mainsize .textmain h2 {
-  margin: 1rem 0rem;
-  font-size: 1.2rem;
 }
 main .mainsize .textmain p {
   margin: 2rem 0rem 3rem 0rem;
   max-width: 70ch;
   font-size: 1rem;
+  animation: animationTextShow 1.7s forwards;
 }
 main .mainsize .textmain .divmain {
   display: flex;
@@ -220,11 +316,33 @@ main .mainsize .textmain .textcircle {
     transform: rotate(360deg);
   }
 }
-header .headersize .menuhamburger {
-  transition: 0.3s;
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
 }
 header .headersize .menuhamburger.ativo {
   z-index: 888;
+  animation: opacityHeadeer 0.2s forwards;
 }
 header .headersize .menuhamburger.ativo span:nth-child(1) {
   width: 40px;
@@ -246,13 +364,37 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   transition: 0.3s ease-in-out;
 }
 
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 .mobileMenuContent {
   display: none;
 }
 
 .mobileMenuContent.ativo {
   display: block;
-  height: 100%;
+  height: 100vh;
   width: 100%;
   background-color: #f3f3f3;
   position: fixed;
@@ -261,12 +403,44 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   animation: animationMenu 0.5s ease-in-out;
 }
 
+@keyframes animationMenuClose {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(0, -100%, 0);
+  }
+}
 @keyframes animationMenu {
   from {
     transform: translate3d(0, -100%, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
   }
 }
 #contato {
@@ -343,6 +517,30 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 #projetos {
   padding: 0 2rem;
 }
@@ -398,6 +596,30 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   font-size: 1.5rem;
 }
 
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
 #skills {
   padding: 10rem 1rem;
 }
@@ -448,6 +670,30 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
+  }
+}
+@keyframes animationTextShow {
+  from {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  from {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  to {
+    opacity: 1;
+    transition: 0.8s all;
   }
 }
 .partners {

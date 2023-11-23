@@ -14,18 +14,16 @@ main {
             h1 {
                 font-size: 3rem;
                 font-weight: 600;
+                animation: animationTextShow 1.2s forwards;
                 span {
                     font-size: 3rem;
                 }
-            }
-            h2 {
-                margin: 1rem 0rem;
-                font-size: 1.2rem;
             }
             p {
                 margin: 2rem 0rem 3rem 0rem;
                 max-width: 70ch;
                 font-size: 1rem;
+                animation: animationTextShow 1.7s forwards;
             }
             .divmain {
                 display: flex;

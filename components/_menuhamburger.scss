@@ -1,11 +1,9 @@
 @import '../abstract/variables';
     header {
         .headersize {
-            .menuhamburger {
-                transition: .3s;
-            }
             .menuhamburger.ativo {
                 z-index: 888;
+                animation: opacityHeadeer .2s forwards;
                 span:nth-child(1) {
                   width: 40px;
               }

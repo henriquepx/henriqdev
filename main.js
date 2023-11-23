@@ -64,13 +64,27 @@ menuLanguage.forEach((itemMenu, index) => {
 const menuHamburger = document.querySelector(".menuhamburger");
 const mobileMenuContent = document.querySelector(".mobileMenuContent");
 
+let menuAberto = false;
+
 menuHamburger.addEventListener("click", () => {
-  menuHamburger.classList.toggle("ativo");
-  mobileMenuContent.classList.toggle("ativo");
+    if (!menuAberto) {
+        menuHamburger.classList.add("ativo");
+        mobileMenuContent.classList.add("ativo");
+        mobileMenuContent.style.height = "100%";
+        mobileMenuContent.style.animation = "animationMenu .5s ease-in-out";
+        menuAberto = true;
+    } else {
+        mobileMenuContent.style.animation = "animationMenuClose .5s ease-in-out";
+        setTimeout(() => {
+            mobileMenuContent.style.height = "0";
+            menuHamburger.classList.remove("ativo");
+            mobileMenuContent.classList.remove("ativo");
+        }, 500);
+        menuAberto = false;
+    }
 });
 
 // ANIMATION LANGUAGES
-// ANIMATION IN PARTNERS SECTION
 const scrollers = document.querySelectorAll(".scroller");
 
 if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
