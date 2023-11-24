@@ -6,7 +6,6 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        
         .titleprofile {
             display: flex;
             align-items: center;
@@ -65,12 +64,26 @@ header {
                 }
             }
         }
-        nav {
+        .linksheader {
+            display: flex;
+            align-items: center;
+            gap: 25px;
             animation: opacityHeadeer 2s forwards;
             padding: 1.2rem 1.7rem;
-            ul {
+            .disponiveltowork {
                 display: flex;
-                gap: 15px;
+                align-items: center;
+                gap: 10px;
+                span {
+                    border-radius: 100%;
+                    width: 8px;
+                    height: 8px;
+                    background-color: rgb(0, 131, 0);
+                    animation: pulse 1s infinite alternate;
+                }
+            }
+            .block {
+                padding: 0rem 1rem;
             }
         }
         .menuhamburger {
@@ -79,11 +92,23 @@ header {
             gap: 15px;
             cursor: pointer;
             span {
-                width: 50px;
-                height: 2px;
+                width: 90px;
+                height: 1px;
                 background-color: rgb(212, 212, 212);
-                transition: all 0.3s ease;
+                transition: all 0.3s ease-in-out;
             }
         }
+    }
+}
+
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+    }
+    100% {
+        transform: scale(1.1);
+        box-shadow: 0 0 0 8px rgba(0, 255, 0, 0);
     }
 }

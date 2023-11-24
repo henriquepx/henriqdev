@@ -1,11 +1,20 @@
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -13,11 +22,11 @@
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -65,13 +74,22 @@ html, body {
 }
 
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -79,23 +97,32 @@ html, body {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
 }
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -103,11 +130,11 @@ html, body {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -176,13 +203,27 @@ header .headersize .titleprofile #title .profile h3:hover::after {
 header .headersize .titleprofile #title .profile h3:hover span {
   transform: translate3d(0, 100%, 0);
 }
-header .headersize nav {
+header .headersize .linksheader {
+  display: flex;
+  align-items: center;
+  gap: 25px;
   animation: opacityHeadeer 2s forwards;
   padding: 1.2rem 1.7rem;
 }
-header .headersize nav ul {
+header .headersize .linksheader .disponiveltowork {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 10px;
+}
+header .headersize .linksheader .disponiveltowork span {
+  border-radius: 100%;
+  width: 8px;
+  height: 8px;
+  background-color: rgb(0, 131, 0);
+  animation: pulse 1s infinite alternate;
+}
+header .headersize .linksheader .block {
+  padding: 0rem 1rem;
 }
 header .headersize .menuhamburger {
   display: flex;
@@ -191,20 +232,39 @@ header .headersize .menuhamburger {
   cursor: pointer;
 }
 header .headersize .menuhamburger span {
-  width: 50px;
-  height: 2px;
+  width: 90px;
+  height: 1px;
   background-color: rgb(212, 212, 212);
-  transition: all 0.3s ease;
+  transition: all 0.3s ease-in-out;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(0, 255, 0, 0.7);
+  }
+  100% {
+    transform: scale(1.1);
+    box-shadow: 0 0 0 8px rgba(0, 255, 0, 0);
+  }
+}
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -212,11 +272,11 @@ header .headersize .menuhamburger span {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -279,7 +339,7 @@ main .mainsize .textmain {
 main .mainsize .textmain h1 {
   font-size: 3rem;
   font-weight: 600;
-  animation: animationTextShow 1.2s forwards;
+  animation: animationTextShow 2s forwards;
 }
 main .mainsize .textmain h1 span {
   font-size: 3rem;
@@ -288,17 +348,19 @@ main .mainsize .textmain p {
   margin: 2rem 0rem 3rem 0rem;
   max-width: 70ch;
   font-size: 1rem;
-  animation: animationTextShow 1.7s forwards;
+  animation: animationTextShow 2.3s forwards;
 }
 main .mainsize .textmain .divmain {
   display: flex;
   align-items: center;
   gap: 15px;
+  animation: animationTextShow 2.3s forwards;
 }
 main .mainsize .textmain .divmain .seeprojetos {
   background-color: #181818;
   padding: 1rem 2rem;
   color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
 }
 main .mainsize .textmain .textcircle {
   height: 150px;
@@ -317,13 +379,22 @@ main .mainsize .textmain .textcircle {
   }
 }
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -331,11 +402,11 @@ main .mainsize .textmain .textcircle {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -356,22 +427,31 @@ header .headersize .menuhamburger.ativo:hover span {
 header .headersize .menuhamburger.ativo .bar:nth-child(2) {
   transform: translateY(-8px) rotate(-45deg);
   background-color: #2b2b2b;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   transform: translateY(8px) rotate(45deg);
   background-color: #2b2b2b;
-  transition: 0.3s ease-in-out;
+  transition: 0.5s ease-in-out;
 }
 
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -379,11 +459,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -420,13 +500,22 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -434,11 +523,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -518,13 +607,22 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -532,11 +630,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -597,13 +695,22 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -611,11 +718,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }
@@ -673,13 +780,22 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes animationTextShow {
-  from {
+  0% {
     transform: translate3d(0, 100%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
   }
-  to {
+  20% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.6;
+  }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
     transform: translate3d(0, 0, 0);
     transition: 0.8s all;
     height: 100%;
@@ -687,11 +803,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 @keyframes opacityHeadeer {
-  from {
+  0% {
     opacity: 0;
     transition: 0.8s all;
   }
-  to {
+  100% {
     opacity: 1;
     transition: 0.8s all;
   }

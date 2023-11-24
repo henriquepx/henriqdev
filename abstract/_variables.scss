@@ -4,13 +4,22 @@ $color-dark: #2b2b2b;
 $color-font-white: #fffcf5;
 
 @keyframes animationTextShow {
-    from {
+    0% {
         transform: translate3d(0, 100%, 0);
         height: 0;
         transition: .8s all;
         opacity: .2;
     }
-    to {
+    20% {
+        opacity: .3;
+    }
+    50% {
+        opacity: .6;
+    }
+    75% {
+        opacity: .8;
+    }
+    100% {
         transform: translate3d(0, 0, 0);
         transition: .8s all;
         height: 100%;
@@ -19,11 +28,11 @@ $color-font-white: #fffcf5;
 }
 
 @keyframes opacityHeadeer {
-    from {
+    0% {
         opacity: 0;
         transition: .8s all;
     }
-    to {
+    100% {
         opacity: 1;
         transition: .8s all;
     }
