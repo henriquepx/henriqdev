@@ -203,27 +203,17 @@ header .headersize .titleprofile #title .profile h3:hover::after {
 header .headersize .titleprofile #title .profile h3:hover span {
   transform: translate3d(0, 100%, 0);
 }
-header .headersize .linksheader {
-  display: flex;
-  align-items: center;
-  gap: 25px;
-  animation: opacityHeadeer 2s forwards;
-  padding: 1.2rem 1.7rem;
-}
-header .headersize .linksheader .disponiveltowork {
+header .headersize .disponiveltowork {
   display: flex;
   align-items: center;
   gap: 10px;
 }
-header .headersize .linksheader .disponiveltowork span {
+header .headersize .disponiveltowork span {
   border-radius: 100%;
   width: 8px;
   height: 8px;
   background-color: rgb(0, 131, 0);
   animation: pulse 1s infinite alternate;
-}
-header .headersize .linksheader .block {
-  padding: 0rem 1rem;
 }
 header .headersize .menuhamburger {
   display: flex;

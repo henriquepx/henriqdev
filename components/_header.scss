@@ -64,26 +64,16 @@ header {
                 }
             }
         }
-        .linksheader {
+        .disponiveltowork {
             display: flex;
             align-items: center;
-            gap: 25px;
-            animation: opacityHeadeer 2s forwards;
-            padding: 1.2rem 1.7rem;
-            .disponiveltowork {
-                display: flex;
-                align-items: center;
-                gap: 10px;
-                span {
-                    border-radius: 100%;
-                    width: 8px;
-                    height: 8px;
-                    background-color: rgb(0, 131, 0);
-                    animation: pulse 1s infinite alternate;
-                }
-            }
-            .block {
-                padding: 0rem 1rem;
+            gap: 10px;
+            span {
+                border-radius: 100%;
+                width: 8px;
+                height: 8px;
+                background-color: rgb(0, 131, 0);
+                animation: pulse 1s infinite alternate;
             }
         }
         .menuhamburger {
@@ -100,6 +90,7 @@ header {
         }
     }
 }
+
 
 
 @keyframes pulse {
