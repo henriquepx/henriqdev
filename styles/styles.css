@@ -314,7 +314,7 @@ html, body {
 }
 
 main {
-  padding: 3rem 5rem;
+  padding: 9rem 5rem 5rem 5rem;
 }
 main .mainsize {
   padding: 9rem 0rem;
@@ -353,9 +353,9 @@ main .mainsize .textmain .divmain .seeprojetos {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
 }
 main .mainsize .textmain .textcircle {
-  height: 150px;
+  height: 200px;
   position: absolute;
-  top: 0%;
+  bottom: -30%;
   right: 0%;
   animation: rotateAnimation infinite 7s linear;
 }
@@ -463,12 +463,13 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 .mobileMenuContent .divisorcontent {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 300px;
   align-items: center;
-  padding: 5rem 3rem;
+  padding: 13rem 3rem;
 }
 .mobileMenuContent .divisorcontent nav {
-  text-align: right;
+  text-align: left;
 }
 .mobileMenuContent .divisorcontent nav ul li {
   animation: animationTextShow 2.3s forwards;
@@ -484,6 +485,10 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 .mobileMenuContent .divisorcontent .menubg {
   color: #0b0b0b;
   animation: animationTextShow 2.3s forwards;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  justify-self: flex-end;
 }
 .mobileMenuContent .divisorcontent .menubg .contact .namecelemail {
   display: flex;
@@ -496,8 +501,6 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   color: #0b0b0b;
 }
 .mobileMenuContent .divisorcontent .menubg .contact .namecelemail .iconlink {
-  display: flex;
-  align-items: center;
   gap: 15px;
 }
 .mobileMenuContent .divisorcontent .menubg .contact .namecelemail .iconlink a {

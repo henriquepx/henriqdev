@@ -4,11 +4,12 @@
     display: none;
     .divisorcontent {
       display: flex;
-      justify-content: space-between;
+      justify-content: center;
+      gap: 300px;
       align-items: center;
-      padding: 5rem 3rem;
+      padding: 13rem 3rem;
       nav {
-        text-align: right;
+        text-align: left;
         ul {
           li {
             animation: animationTextShow 2.3s forwards;
@@ -26,6 +27,10 @@
       .menubg {
         color: $color-bg;
         animation: animationTextShow 2.3s forwards;
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-self: flex-end;
         .contact {
           .namecelemail {
             display: flex;
@@ -37,8 +42,6 @@
               color: $color-bg;
             }
             .iconlink {
-              display: flex;
-              align-items: center;
               gap: 15px;
               a {
                 color: $color-bg;
