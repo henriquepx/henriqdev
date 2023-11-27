@@ -1,7 +1,10 @@
 @import '../abstract/variables';
 
 header {
+    background-color: $color-bg;
     padding: 1rem 5rem;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
     .headersize {
         display: flex;
         justify-content: space-between;

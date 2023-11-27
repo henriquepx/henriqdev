@@ -48,8 +48,10 @@
   font-size: 1rem;
 }
 
-html, body {
-  background-color: #0b0b0b;
+body {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .back-to-top {
@@ -140,7 +142,10 @@ html, body {
   }
 }
 header {
+  background-color: #0b0b0b;
   padding: 1rem 5rem;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 header .headersize {
   display: flex;
@@ -288,8 +293,10 @@ header .headersize .menuhamburger span {
   font-size: 1rem;
 }
 
-html, body {
-  background-color: #0b0b0b;
+body {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .back-to-top {
@@ -314,7 +321,10 @@ html, body {
 }
 
 main {
-  padding: 6.5rem 5rem 5rem 5rem;
+  background-color: #0b0b0b;
+  padding: 7rem 5rem 5rem 5rem;
+  height: 90vh;
+  position: relative;
 }
 main .mainsize {
   padding: 9rem 0rem;
@@ -322,12 +332,11 @@ main .mainsize {
   align-items: center;
 }
 main .mainsize .textmain {
-  position: relative;
   width: 100%;
   margin-right: 3rem;
 }
 main .mainsize .textmain h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   font-weight: 600;
   animation: animationTextShow 2s forwards;
 }
@@ -355,10 +364,10 @@ main .mainsize .textmain .divmain .seeprojetos {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
 }
 main .mainsize .textmain .textcircle {
-  height: 200px;
+  height: 130px;
   position: absolute;
-  bottom: -30%;
-  right: 0%;
+  bottom: 3%;
+  right: 3%;
   animation: rotateAnimation infinite 7s linear;
 }
 
@@ -368,6 +377,20 @@ main .mainsize .textmain .textcircle {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes arrow {
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
   }
 }
 @keyframes animationTextShow {
@@ -724,7 +747,8 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 #projetos {
-  padding: 0 2rem;
+  background-color: #0b0b0b;
+  padding: 5rem 2rem 0rem 2rem;
 }
 #projetos h1 {
   font-size: 3rem;

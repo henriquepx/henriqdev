@@ -17,8 +17,10 @@
   font-size: 1rem;
 }
 
-html, body {
-  background-color: $color-bg;
+body {
+  padding: 10px;
+  border-radius: 15px;
+  background-color: #fff;
 }
 
 .back-to-top {
