@@ -1,7 +1,7 @@
 @import '../abstract/reset';
 
 main {
-    padding: 9rem 5rem 5rem 5rem;
+    padding: 6.5rem 5rem 5rem 5rem;
     .mainsize {
         padding: 9rem 0rem;
 
@@ -22,13 +22,15 @@ main {
             p {
                 margin: 2rem 0rem 3rem 0rem;
                 max-width: 70ch;
+                line-height: 1.4;
                 font-size: 1.2rem;
                 animation: animationTextShow 2.3s forwards;
+                color: #969696;
             }
             .divmain {
                 display: flex;
                 align-items: center;
-                gap: 15px;
+                gap: 45px;
                 animation: animationTextShow 2.3s forwards;
                 .seeprojetos {
                     background-color: #181818;
