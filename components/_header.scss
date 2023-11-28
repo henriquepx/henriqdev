@@ -7,7 +7,7 @@ header {
     border-top-right-radius: 15px;
     .headersize {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-between; /* Divide o header em três colunas */
         align-items: center;
         .titleprofile {
             display: flex;
@@ -67,6 +67,21 @@ header {
                 }
             }
         }
+        .menuhamburger {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            cursor: pointer;
+            justify-content: center;
+            align-items: center;
+            padding-right: 7.5rem;
+            span {
+                width: 90px;
+                height: 1px;
+                background-color: rgb(212, 212, 212);
+                transition: all 0.3s ease-in-out;
+            }
+        }
         .disponiveltowork {
             display: flex;
             align-items: center;
@@ -77,18 +92,6 @@ header {
                 height: 8px;
                 background-color: rgb(0, 131, 0);
                 animation: pulse 1s infinite alternate;
-            }
-        }
-        .menuhamburger {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            cursor: pointer;
-            span {
-                width: 90px;
-                height: 1px;
-                background-color: rgb(212, 212, 212);
-                transition: all 0.3s ease-in-out;
             }
         }
     }

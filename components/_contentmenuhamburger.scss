@@ -4,17 +4,17 @@
     display: none;
     .divisorcontent {
       display: flex;
-      justify-content: center;
-      gap: 500px;
+      flex-direction: column;
+      gap: 50px;
       align-items: center;
-      padding: 13rem 3rem;
+      padding: 10rem 3rem;
       nav {
-        text-align: left;
+        text-align: center;
         ul {
           li {
             animation: animationTextShow 2.3s forwards;
             a {
-              font-size: 6rem;
+              font-size: 4rem;
               margin: 15px 0;
               color: $color-bg;
               &:hover {
@@ -27,7 +27,7 @@
       .menubg {
         color: $color-bg;
         animation: animationTextShow 2.3s forwards;
-        text-align: right;
+        text-align: center;
         display: flex;
         flex-direction: column;
         justify-self: flex-end;

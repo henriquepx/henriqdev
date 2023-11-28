@@ -1,0 +1,29 @@
+@import '../abstract/variables';
+
+#sobre {
+    background-color: $color-bg;
+    padding: 5rem 5rem;
+    position: relative;
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        color: #fff;
+        text-transform: uppercase;
+        font-family: 'Righteous', sans-serif;
+    }
+    p {
+        max-width: 75ch;
+        margin: 10px 0;
+    }
+    .myphoto {
+        width: 200px;
+        margin: 3rem 0rem;
+        position: absolute;
+        left: 50%;
+        top: 0;
+    }
+}
+
+.scrollanima.ativoScroll {
+    animation: animationTextShow 1.8s forwards;
+}

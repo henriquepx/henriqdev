@@ -105,3 +105,17 @@ function addAnimation() {
     });
   });
 }
+
+// ANIMA AO SCROLL
+const sectionsToAnimate = document.querySelectorAll('.sectionanima');
+
+function AnimaScroll() {
+  sectionsToAnimate.forEach((section) => {
+    const sectionTop = section.getBoundingClientRect().top - 600;
+    if (sectionTop < 0) {
+      section.classList.add('anima');
+    }
+  });
+}
+
+window.addEventListener('scroll', AnimaScroll);

@@ -18,7 +18,7 @@
 }
 
 body {
-  padding: 10px;
+  padding: 13px;
   border-radius: 15px;
   background-color: #fff;
 }
@@ -42,4 +42,13 @@ body {
 
 .back-to-top.show {
   display: block;
+}
+
+.sectionanima {
+  opacity: 0;
+}
+
+.sectionanima.anima {
+  opacity: 1;
+  animation: animationTextShow 1.5s forwards;
 }
