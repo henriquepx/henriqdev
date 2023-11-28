@@ -15,6 +15,14 @@
         max-width: 75ch;
         margin: 10px 0;
     }
+    .arrowtoinfo {
+        display: flex;
+        align-items: center;
+        gap: 60px;
+        .arrow {
+            transform: rotate(90deg);
+        }
+    }
     .myphoto {
         width: 200px;
         margin: 3rem 0rem;
@@ -26,4 +34,17 @@
 
 .scrollanima.ativoScroll {
     animation: animationTextShow 1.8s forwards;
+}
+
+@keyframes moveRight {
+    from {
+        left: 50%;
+    }
+    to {
+        left: 91.2%;
+    }
+}
+
+.myphoto.moveright {
+    animation: moveRight 1.8s forwards;
 }

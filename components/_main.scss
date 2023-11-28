@@ -2,7 +2,7 @@
 
 main {
     background-color: $color-bg;
-    padding: 7rem 5rem 5rem 5rem;
+    padding: 6rem 5rem 5rem 5rem;
     height: 90vh;
     position: relative;
     .mainsize {
@@ -44,7 +44,7 @@ main {
             .textcircle {
                 height: 130px;
                 position: absolute;
-                bottom: 3%;
+                bottom: 5%;
                 right: 3%;
                 animation: rotateAnimation infinite 7s linear;
             }

@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @keyframes animationTextShow {
   0% {
     transform: translate3d(0, 100%, 0);
@@ -59,7 +58,7 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 3%;
   background-color: #fffcf5;
   color: #0b0b0b;
   font-size: 20px;
@@ -153,20 +152,19 @@ body {
 }
 header {
   background-color: #0b0b0b;
-  padding: 1rem 5rem;
+  padding: 2rem 5rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
 header .headersize {
   display: flex;
-  justify-content: space-between; /* Divide o header em três colunas */
+  justify-content: space-between;
   align-items: center;
 }
 header .headersize .titleprofile {
   display: flex;
   align-items: center;
   gap: 10px;
-  animation: opacityHeadeer 2s forwards;
 }
 header .headersize .titleprofile h1 {
   font-weight: 800;
@@ -316,7 +314,7 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 20px;
+  right: 3%;
   background-color: #fffcf5;
   color: #0b0b0b;
   font-size: 20px;
@@ -344,7 +342,7 @@ body {
 
 main {
   background-color: #0b0b0b;
-  padding: 7rem 5rem 5rem 5rem;
+  padding: 6rem 5rem 5rem 5rem;
   height: 90vh;
   position: relative;
 }
@@ -388,7 +386,7 @@ main .mainsize .textmain .divmain .seeprojetos {
 main .mainsize .textmain .textcircle {
   height: 130px;
   position: absolute;
-  bottom: 3%;
+  bottom: 5%;
   right: 3%;
   animation: rotateAnimation infinite 7s linear;
 }
@@ -1045,6 +1043,14 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   max-width: 75ch;
   margin: 10px 0;
 }
+#sobre .arrowtoinfo {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+#sobre .arrowtoinfo .arrow {
+  transform: rotate(90deg);
+}
 #sobre .myphoto {
   width: 200px;
   margin: 3rem 0rem;
@@ -1055,4 +1061,16 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 
 .scrollanima.ativoScroll {
   animation: animationTextShow 1.8s forwards;
+}
+
+@keyframes moveRight {
+  from {
+    left: 50%;
+  }
+  to {
+    left: 91.2%;
+  }
+}
+.myphoto.moveright {
+  animation: moveRight 1.8s forwards;
 }/*# sourceMappingURL=styles.css.map */

@@ -110,12 +110,15 @@ function addAnimation() {
 const sectionsToAnimate = document.querySelectorAll('.sectionanima');
 
 function AnimaScroll() {
-  sectionsToAnimate.forEach((section) => {
-    const sectionTop = section.getBoundingClientRect().top - 600;
-    if (sectionTop < 0) {
-      section.classList.add('anima');
-    }
-  });
+    sectionsToAnimate.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top - 600;
+        const image = section.querySelector('.myphoto');
+
+        if (sectionTop < 0) {
+            section.classList.add('anima');
+            image.classList.add('moveright');
+        }
+    });
 }
 
 window.addEventListener('scroll', AnimaScroll);

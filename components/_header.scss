@@ -2,18 +2,17 @@
 
 header {
     background-color: $color-bg;
-    padding: 1rem 5rem;
+    padding: 2rem 5rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     .headersize {
         display: flex;
-        justify-content: space-between; /* Divide o header em três colunas */
+        justify-content: space-between;
         align-items: center;
         .titleprofile {
             display: flex;
             align-items: center;
             gap: 10px;
-            animation: opacityHeadeer 2s forwards;
             h1 {
                 font-weight: 800;
                 font-size: 3rem;
