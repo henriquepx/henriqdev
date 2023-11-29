@@ -1,46 +1,50 @@
 @import '../abstract/variables';
 
 #skills {
-    padding: 10rem 1rem;
-    h1 {
-        font-size: 3rem;
-        margin-bottom: 2rem;
-    }
-    .containerskills {
-        display: flex;
-        gap: 100px;
-        .containercontentlanguage {
-            width: 50%;
-            .contentlanguage {
-                display: none;
-            }
-            .contentlanguage.ativo {
-                display: block;
-                animation: animationText .9s forwards;
-            }
+    background-color: $color-bg;
+    padding: 5rem 5rem;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Righteous', sans-serif;
         }
-        .imagelanguages {
-            width: 50%;
+        .containerskills {
             display: flex;
-            gap: 50px;
-            flex-wrap: wrap;
-            .menulanguage {
-                border: 1px solid $color-dark;
-                padding: 1.5rem;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-radius: 5px;
-                img {
-                    height: 50px;
+            gap: 100px;
+            .containercontentlanguage {
+                width: 50%;
+                .contentlanguage {
+                    display: none;
+                }
+                .contentlanguage.ativo {
+                    display: block;
+                    animation: animationText .9s forwards;
                 }
             }
-            .menulanguage.ativo {
-                background-color: $color-dark;
+            .imagelanguages {
+                width: 50%;
+                display: flex;
+                gap: 50px;
+                flex-wrap: wrap;
+                .menulanguage {
+                    border: 1px solid $color-dark;
+                    padding: 1.5rem;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 5px;
+                    img {
+                        height: 40px;
+                    }
+                }
+                .menulanguage.ativo {
+                    background-color: $color-dark;
+                }
             }
         }
     }
-}
 
 @keyframes animationText {
     from {

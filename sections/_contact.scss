@@ -5,8 +5,21 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: $color-bg;
+    padding: 5rem 5rem;
+    display: flex;
+    .sobrecontato {
+        width: 50%;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Righteous', sans-serif;
+        }
+    }
     .container-form {
-        width: 100%;
+        width: 50%;
         h1 {
             text-align: center;
             font-size: 2.5rem;

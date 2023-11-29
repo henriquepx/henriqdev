@@ -664,9 +664,22 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: #0b0b0b;
+  padding: 5rem 5rem;
+  display: flex;
+}
+#contato .sobrecontato {
+  width: 50%;
+}
+#contato .sobrecontato h1 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Righteous", sans-serif;
 }
 #contato .container-form {
-  width: 100%;
+  width: 50%;
 }
 #contato .container-form h1 {
   text-align: center;
@@ -901,11 +914,15 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 #skills {
-  padding: 10rem 1rem;
+  background-color: #0b0b0b;
+  padding: 5rem 5rem;
 }
 #skills h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Righteous", sans-serif;
 }
 #skills .containerskills {
   display: flex;
@@ -936,7 +953,7 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   border-radius: 5px;
 }
 #skills .containerskills .imagelanguages .menulanguage img {
-  height: 50px;
+  height: 40px;
 }
 #skills .containerskills .imagelanguages .menulanguage.ativo {
   background-color: #2b2b2b;
@@ -950,93 +967,6 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   to {
     transform: translate3d(0, 0, 0);
     opacity: 1;
-  }
-}
-@keyframes animationTextShow {
-  0% {
-    transform: translate3d(0, 100%, 0);
-    height: 0;
-    transition: 0.8s all;
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    transition: 0.8s all;
-    height: 100%;
-    opacity: 1;
-  }
-}
-@keyframes opacityHeadeer {
-  0% {
-    opacity: 0;
-    transition: 0.8s all;
-  }
-  100% {
-    opacity: 1;
-    transition: 0.8s all;
-  }
-}
-.partners {
-  padding: 3rem 0rem;
-}
-.partners .scroller {
-  max-width: 1300px;
-  width: 100%;
-  margin: 0 auto;
-}
-.partners .scroller .scroller__inner {
-  padding-block: 1rem;
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 20px;
-}
-.partners .scroller .scroller__inner img {
-  height: 100px;
-  padding: 1.5rem 3rem;
-  background-color: #141414;
-  border-radius: 5px;
-}
-.partners .scroller .scroller__inner img:hover {
-  background-color: #1f1f1f;
-}
-
-.scroller[data-animated=true] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated=true] .scroller__inner {
-  width: -moz-max-content;
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll var(--_animation-duration, 40s) var(--_animation-direction, forwards) linear infinite;
-}
-
-.scroller[data-direction=right] {
-  --_animation-direction: reverse;
-}
-
-.scroller[data-speed=fast] {
-  --_animation-duration: 20s;
-}
-
-.scroller[data-speed=slow] {
-  --_animation-duration: 60s;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.5rem));
   }
 }
 @keyframes animationTextShow {
