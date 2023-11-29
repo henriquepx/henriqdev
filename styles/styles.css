@@ -768,11 +768,14 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #projetos {
   background-color: #0b0b0b;
-  padding: 5rem 2rem 0rem 2rem;
+  padding: 5rem 5rem;
 }
 #projetos h1 {
-  font-size: 3rem;
+  font-size: 2rem;
   margin-bottom: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: "Righteous", sans-serif;
 }
 #projetos .linebreak {
   height: 2px;
@@ -787,8 +790,10 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   width: 100%;
 }
 #projetos .containerprojects .projeto {
-  width: 47%;
+  width: 30%;
   margin-bottom: 5rem;
+  display: flex;
+  flex-direction: column;
 }
 #projetos .containerprojects .projeto .photoprojeto {
   position: relative;
@@ -810,16 +815,56 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 #projetos .containerprojects .projeto .photoprojeto:hover .imgprincipalprojetohover {
   transform: translateX(-100%);
 }
-#projetos .containerprojects .projeto .textprojeto {
+#projetos .containerprojects .projeto .contentimg {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1.5rem 0rem;
+}
+#projetos .containerprojects .projeto .contentimg .menutabsimgs {
+  display: flex;
+  gap: 20px;
+}
+#projetos .containerprojects .projeto .contentimg .menutabsimgs span {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+#projetos .containerprojects .projeto .infosprojeto {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2.5rem;
+}
+#projetos .containerprojects .projeto .infosprojeto .linkstoprojects h3 {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+}
+#projetos .containerprojects .projeto .infosprojeto .linkstoprojects a {
+  font-size: 0.8rem;
+  background-color: #181818;
+  padding: 1rem 2rem;
+  color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
+}
+#projetos .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink {
   margin-top: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  background-color: #181818;
+  padding: 1rem;
+  color: #fff;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
+  max-width: 180px;
 }
-#projetos .containerprojects .projeto .textprojeto h3 {
-  font-size: 1.5rem;
+#projetos .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink p {
+  color: #ffffff;
 }
-#projetos .containerprojects .projeto .textprojeto a {
-  font-size: 1.5rem;
+#projetos .containerprojects .projeto .infosprojeto .descriptionprojects p {
+  max-width: 30ch;
+  text-align: left;
 }
 
 @keyframes animationTextShow {
