@@ -386,8 +386,8 @@ main .mainsize .textmain .divmain .seeprojetos {
 main .mainsize .textmain .textcircle {
   height: 130px;
   position: absolute;
-  bottom: 5%;
-  right: 3%;
+  bottom: 7%;
+  left: 3%;
   animation: rotateAnimation infinite 7s linear;
 }
 
@@ -661,41 +661,38 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #contato {
   height: 60vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   background-color: #0b0b0b;
-  padding: 5rem 5rem;
+}
+#contato .contactsize {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0rem 1.5rem;
   display: flex;
 }
-#contato .sobrecontato {
-  width: 50%;
+#contato .contactsize .sobrecontato {
+  width: 30%;
 }
-#contato .sobrecontato h1 {
+#contato .contactsize .sobrecontato h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "Righteous", sans-serif;
 }
-#contato .container-form {
-  width: 50%;
+#contato .contactsize .container-form {
+  width: 100%;
 }
-#contato .container-form h1 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 3rem;
-}
-#contato .container-form .form-style {
+#contato .contactsize .container-form .form-style {
   display: flex;
   flex-direction: column;
   align-items: left;
 }
-#contato .container-form .form-style .label-form {
+#contato .contactsize .container-form .form-style .label-form {
   margin-bottom: 7px;
 }
-#contato .container-form .form-style .input-style,
-#contato .container-form .form-style .textarea-style, #contato .container-form .form-style .textarea {
+#contato .contactsize .container-form .form-style .input-style,
+#contato .contactsize .container-form .form-style .textarea-style, #contato .contactsize .container-form .form-style .textarea {
   width: 100%;
   border: 0;
   padding: 0.6em;
@@ -705,30 +702,30 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   background: transparent;
   border-bottom: 1px solid currentColor;
 }
-#contato .container-form .form-style .name-email {
+#contato .contactsize .container-form .form-style .name-email {
   display: flex;
   gap: 50px;
   justify-content: space-between;
 }
-#contato .container-form .form-style .name-email .every-input {
+#contato .contactsize .container-form .form-style .name-email .every-input {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
-#contato .container-form .form-style .name-email .every-input .input-style {
+#contato .contactsize .container-form .form-style .name-email .every-input .input-style {
   height: 40px;
   width: 100%;
   padding: 15px 8px;
 }
-#contato .container-form .form-style .message {
+#contato .contactsize .container-form .form-style .message {
   margin-top: 3rem;
 }
-#contato .container-form .form-style .message .textarea {
+#contato .contactsize .container-form .form-style .message .textarea {
   padding: 0.6rem;
   height: 100px;
   padding-bottom: 3.5rem;
 }
-#contato .container-form .form-style .button-submit-form {
+#contato .contactsize .container-form .form-style .button-submit-form {
   height: 34px;
   border-radius: 4px;
   border: 0;
@@ -740,7 +737,7 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   color: #fff;
 }
 @media (max-width: 600px) {
-  #contato .container-form .form-style .name-email {
+  #contato .contactsize .container-form .form-style .name-email {
     flex-direction: column;
     gap: 0px;
   }
@@ -783,84 +780,90 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   background-color: #0b0b0b;
   padding: 5rem 5rem;
 }
-#projetos h1 {
+#projetos .textproject {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+#projetos .textproject h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "Righteous", sans-serif;
 }
-#projetos .linebreak {
+#projetos .textproject .linebreak {
   height: 2px;
   width: 1px solid rgb(58, 58, 58);
   width: 100%;
   display: block;
 }
-#projetos .containerprojects {
+#projetos .textproject .containerprojects {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
   width: 100%;
 }
-#projetos .containerprojects .projeto {
-  width: 30%;
+#projetos .textproject .containerprojects .projeto {
+  width: 100%;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
 }
-#projetos .containerprojects .projeto .photoprojeto {
+#projetos .textproject .containerprojects .projeto .photoprojeto {
   position: relative;
   overflow: hidden;
 }
-#projetos .containerprojects .projeto .photoprojeto .imgprincipalprojeto,
-#projetos .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
+#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojeto,
+#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
   width: 100%;
-  height: auto;
+  height: 300px;
   -o-object-fit: cover;
      object-fit: cover;
   transition: transform 0.45s ease-in-out, opacity 0.2s ease;
 }
-#projetos .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
+#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
   position: absolute;
   top: 0;
   left: 100%;
 }
-#projetos .containerprojects .projeto .photoprojeto:hover .imgprincipalprojetohover {
+#projetos .textproject .containerprojects .projeto .photoprojeto:hover .imgprincipalprojetohover {
   transform: translateX(-100%);
 }
-#projetos .containerprojects .projeto .contentimg {
+#projetos .textproject .containerprojects .projeto .contentimg {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
   padding: 1.5rem 0rem;
 }
-#projetos .containerprojects .projeto .contentimg .menutabsimgs {
+#projetos .textproject .containerprojects .projeto .contentimg .menutabsimgs {
   display: flex;
   gap: 20px;
 }
-#projetos .containerprojects .projeto .contentimg .menutabsimgs span {
+#projetos .textproject .containerprojects .projeto .contentimg .menutabsimgs span {
   width: 10px;
   height: 10px;
   background-color: #fff;
 }
-#projetos .containerprojects .projeto .infosprojeto {
+#projetos .textproject .containerprojects .projeto .infosprojeto {
   display: flex;
   justify-content: space-between;
-  margin-top: 2.5rem;
+  margin-top: 0.5rem;
 }
-#projetos .containerprojects .projeto .infosprojeto .linkstoprojects h3 {
+#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects h3 {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
-#projetos .containerprojects .projeto .infosprojeto .linkstoprojects a {
+#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects a {
   font-size: 0.8rem;
   background-color: #181818;
   padding: 1rem 2rem;
   color: #fff;
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
 }
-#projetos .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink {
+#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink {
   margin-top: 1rem;
   display: flex;
   justify-content: space-between;
@@ -872,10 +875,10 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
   max-width: 180px;
 }
-#projetos .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink p {
+#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink p {
   color: #ffffff;
 }
-#projetos .containerprojects .projeto .infosprojeto .descriptionprojects p {
+#projetos .textproject .containerprojects .projeto .infosprojeto .descriptionprojects p {
   max-width: 30ch;
   text-align: left;
 }
@@ -917,34 +920,40 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   background-color: #0b0b0b;
   padding: 5rem 5rem;
 }
-#skills h1 {
+#skills .textskill {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+#skills .textskill h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "Righteous", sans-serif;
 }
-#skills .containerskills {
+#skills .textskill .containerskills {
   display: flex;
   gap: 100px;
 }
-#skills .containerskills .containercontentlanguage {
+#skills .textskill .containerskills .containercontentlanguage {
   width: 50%;
 }
-#skills .containerskills .containercontentlanguage .contentlanguage {
+#skills .textskill .containerskills .containercontentlanguage .contentlanguage {
   display: none;
 }
-#skills .containerskills .containercontentlanguage .contentlanguage.ativo {
+#skills .textskill .containerskills .containercontentlanguage .contentlanguage.ativo {
   display: block;
   animation: animationText 0.9s forwards;
 }
-#skills .containerskills .imagelanguages {
+#skills .textskill .containerskills .imagelanguages {
   width: 50%;
   display: flex;
   gap: 50px;
   flex-wrap: wrap;
 }
-#skills .containerskills .imagelanguages .menulanguage {
+#skills .textskill .containerskills .imagelanguages .menulanguage {
   border: 1px solid #2b2b2b;
   padding: 1.5rem;
   display: flex;
@@ -952,10 +961,10 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   align-items: center;
   border-radius: 5px;
 }
-#skills .containerskills .imagelanguages .menulanguage img {
+#skills .textskill .containerskills .imagelanguages .menulanguage img {
   height: 40px;
 }
-#skills .containerskills .imagelanguages .menulanguage.ativo {
+#skills .textskill .containerskills .imagelanguages .menulanguage.ativo {
   background-color: #2b2b2b;
 }
 
@@ -1004,34 +1013,39 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre {
   background-color: #0b0b0b;
-  padding: 5rem 5rem;
   position: relative;
 }
-#sobre h1 {
+#sobre .textsobre {
+  max-width: 1250px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 5rem 1.5rem;
+}
+#sobre .textsobre h1 {
   font-size: 2rem;
   margin-bottom: 2rem;
   color: #fff;
   text-transform: uppercase;
   font-family: "Righteous", sans-serif;
 }
-#sobre p {
+#sobre .textsobre p {
   max-width: 75ch;
   margin: 10px 0;
 }
-#sobre .arrowtoinfo {
+#sobre .textsobre .arrowtoinfo {
   display: flex;
   align-items: center;
   gap: 60px;
 }
-#sobre .arrowtoinfo .arrow {
+#sobre .textsobre .arrowtoinfo .arrow {
   transform: rotate(90deg);
 }
-#sobre .myphoto {
-  width: 200px;
+#sobre .textsobre .myphoto {
+  width: 250px;
   margin: 3rem 0rem;
   position: absolute;
   left: 50%;
-  top: 0;
+  top: 20%;
 }
 
 .scrollanima.ativoScroll {

@@ -3,106 +3,112 @@
 #projetos {
     background-color: $color-bg;
     padding: 5rem 5rem;
-    h1 {
-        font-size: 2rem;
-        margin-bottom: 2rem;
-        color: #fff;
-        text-transform: uppercase;
-        font-family: 'Righteous', sans-serif;
-    }
-    .linebreak {
-        height: 2px;
-        width: 1px solid rgb(58, 58, 58);
+    .textproject {
+        max-width: 1250px;
         width: 100%;
-        display: block;
-    }
-    .containerprojects {
-        display: flex;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 100%;
-
-        .projeto {
-            width: 30%;
-            margin-bottom: 5rem;
+        margin: 0 auto;
+        padding: 5rem 1.5rem;
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            color: #fff;
+            text-transform: uppercase;
+            font-family: 'Righteous', sans-serif;
+        }
+        .linebreak {
+            height: 2px;
+            width: 1px solid rgb(58, 58, 58);
+            width: 100%;
+            display: block;
+        }
+        .containerprojects {
             display: flex;
-            flex-direction: column;
-            .photoprojeto {
-                position: relative;
-                overflow: hidden;
-
-                .imgprincipalprojeto,
-                .imgprincipalprojetohover {
-                    width: 100%;
-                    height: auto;
-                    object-fit: cover;
-                    transition: transform 0.45s ease-in-out, opacity 0.2s ease;
-                }
-
-                .imgprincipalprojetohover {
-                    position: absolute;
-                    top: 0;
-                    left: 100%; 
-                }
-
-                &:hover {
-                    .imgprincipalprojetohover {
-                        transform: translateX(-100%);
-                    }
-                }
-            }
-            .contentimg {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            width: 100%;
+    
+            .projeto {
                 width: 100%;
-                padding: 1.5rem 0rem;
-                .menutabsimgs {
-                    display: flex;
-                    gap: 20px;
-                    span {
-                        width: 10px;
-                        height: 10px;
-                        background-color: #fff;
-                    }
-                }
-            }
-            .infosprojeto {
+                margin-bottom: 5rem;
                 display: flex;
-                justify-content: space-between;
-                margin-top: 2.5rem;
-                .linkstoprojects {
-                    h3 {
-                        font-size: 1.5rem;
-                        margin-bottom: 2rem;
+                flex-direction: column;
+                .photoprojeto {
+                    position: relative;
+                    overflow: hidden;
+    
+                    .imgprincipalprojeto,
+                    .imgprincipalprojetohover {
+                        width: 100%;
+                        height: 300px;
+                        object-fit: cover;
+                        transition: transform 0.45s ease-in-out, opacity 0.2s ease;
                     }
-                    a {
-                        font-size: .8rem;
-                        background-color: #181818;
-                        padding: 1rem 2rem;
-                        color: #fff;
-                        background-image: linear-gradient(rgba(255,255,255,.1), #0e0e0e00,#0e0e0e00, #0e0e0e00);
+    
+                    .imgprincipalprojetohover {
+                        position: absolute;
+                        top: 0;
+                        left: 100%; 
                     }
-                    .repositorylink {
-                        margin-top: 1rem;
-                        display: flex;
-                        justify-content: space-between;
-                        align-items: center;
-                        gap: 30px;
-                        background-color: #181818;
-                        padding: 1rem;
-                        color: #fff;
-                        background-image: linear-gradient(rgba(255,255,255,.1), #0e0e0e00,#0e0e0e00, #0e0e0e00);
-                        max-width: 180px;
-                        p {
-                            color: #ffffff;
+    
+                    &:hover {
+                        .imgprincipalprojetohover {
+                            transform: translateX(-100%);
                         }
                     }
                 }
-                .descriptionprojects {
-                    p {
-                        max-width: 30ch;
-                        text-align: left;
+                .contentimg {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: 100%;
+                    padding: 1.5rem 0rem;
+                    .menutabsimgs {
+                        display: flex;
+                        gap: 20px;
+                        span {
+                            width: 10px;
+                            height: 10px;
+                            background-color: #fff;
+                        }
+                    }
+                }
+                .infosprojeto {
+                    display: flex;
+                    justify-content: space-between;
+                    margin-top: .5rem;
+                    .linkstoprojects {
+                        h3 {
+                            font-size: 1.5rem;
+                            margin-bottom: 2rem;
+                        }
+                        a {
+                            font-size: .8rem;
+                            background-color: #181818;
+                            padding: 1rem 2rem;
+                            color: #fff;
+                            background-image: linear-gradient(rgba(255,255,255,.1), #0e0e0e00,#0e0e0e00, #0e0e0e00);
+                        }
+                        .repositorylink {
+                            margin-top: 1rem;
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            gap: 30px;
+                            background-color: #181818;
+                            padding: 1rem;
+                            color: #fff;
+                            background-image: linear-gradient(rgba(255,255,255,.1), #0e0e0e00,#0e0e0e00, #0e0e0e00);
+                            max-width: 180px;
+                            p {
+                                color: #ffffff;
+                            }
+                        }
+                    }
+                    .descriptionprojects {
+                        p {
+                            max-width: 30ch;
+                            text-align: left;
+                        }
                     }
                 }
             }
