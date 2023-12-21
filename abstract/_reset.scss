@@ -17,10 +17,18 @@
   font-size: 1rem;
 }
 
-body {
+
+.interface {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
   padding: 13px;
-  border-radius: 15px;
-  background-color: #fff;
+  section {
+    height: 100vh;
+    width: 100%;
+    scroll-snap-align: start;
+  }
+    
 }
 
 .sectionanima {

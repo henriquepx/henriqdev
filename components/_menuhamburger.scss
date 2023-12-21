@@ -4,6 +4,8 @@
             .menuhamburger.ativo {
                 z-index: 888;
                 animation: opacityHeadeer .2s forwards;
+                position: fixed;
+                left: 50%;
                 span:nth-child(1) {
                   width: 40px;
               }
