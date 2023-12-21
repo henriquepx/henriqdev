@@ -53,6 +53,8 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   padding: 13px;
+  scroll-behavior: smooth; /* Adicione esta linha */
+  transition: scroll-behavior 2s ease-in-out; /* Adicione esta linha */
 }
 .interface section {
   height: 100vh;
@@ -294,6 +296,8 @@ header .headersize .disponiveltowork span {
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   padding: 13px;
+  scroll-behavior: smooth; /* Adicione esta linha */
+  transition: scroll-behavior 2s ease-in-out; /* Adicione esta linha */
 }
 .interface section {
   height: 100vh;
@@ -987,12 +991,12 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre {
   background-color: #0b0b0b;
-  position: relative;
   padding: 5rem 5rem;
 }
 #sobre .textsobre {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 #sobre .textsobre h1 {
   font-size: 2rem;
@@ -1013,8 +1017,65 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 #sobre .textsobre .arrowtoinfo .arrow {
   transform: rotate(90deg);
 }
-#sobre .textsobre .myphoto {
-  height: 300px;
+#sobre .textsobre .imgsaboutme {
+  position: relative;
+}
+#sobre .textsobre .imgsaboutme img {
+  position: absolute;
+  width: 200px;
+  right: 0;
+  top: 20px;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(1) {
+  top: 560px;
+  right: 50px;
+  z-index: 700;
+  width: 250px;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(2) {
+  top: 160px;
+  right: 250px;
+  z-index: 700;
+  width: 300px;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(3) {
+  top: 300px;
+  right: 30px;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(4) {
+  top: 0px;
+  right: 0px;
+  z-index: 5;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(5) {
+  top: 0px;
+  right: 410px;
+  z-index: 100;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(6) {
+  top: 160px;
+  right: 250px;
+  z-index: 100;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(7) {
+  top: 160px;
+  right: 250px;
+  z-index: 100;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(8) {
+  top: 160px;
+  right: 600px;
+  z-index: 400;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(9) {
+  top: 450px;
+  right: 450px;
+  z-index: 100;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(10) {
+  top: 320px;
+  right: 200px;
+  z-index: 10;
 }
 
 .scrollanima.ativoScroll {

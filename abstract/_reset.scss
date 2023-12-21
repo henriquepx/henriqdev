@@ -23,6 +23,8 @@
   scroll-snap-type: y mandatory;
   overflow-y: scroll;
   padding: 13px;
+  scroll-behavior: smooth; /* Adicione esta linha */
+  transition: scroll-behavior 2s ease-in-out; /* Adicione esta linha */
   section {
     height: 100vh;
     width: 100%;

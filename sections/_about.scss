@@ -2,11 +2,11 @@
 
 #sobre {
     background-color: $color-bg;
-    position: relative;
     padding: 5rem 5rem;
     .textsobre {
         display: flex;
         justify-content: space-between;
+        width: 100%;
         h1 {
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -26,8 +26,65 @@
                 transform: rotate(90deg);
             }
         }
-        .myphoto {
-            height: 300px;
+        .imgsaboutme {
+            position: relative;
+            img {
+                position: absolute;
+                width: 200px;
+                right: 0;
+                top: 20px;
+                &:nth-child(1) {
+                    top: 560px;
+                    right: 50px;
+                    z-index: 700;
+                    width: 250px;
+                }
+                &:nth-child(2) {
+                    top: 160px;
+                    right: 250px;
+                    z-index: 700;
+                    width: 300px;
+                }
+                &:nth-child(3) {
+                    top: 300px;
+                    right: 30px;
+                }
+                &:nth-child(4) {
+                    top: 0px;
+                    right: 0px;
+                    z-index: 5;
+                }
+                &:nth-child(5) {
+                    top: 0px;
+                    right: 410px;
+                    z-index: 100;
+                }
+                &:nth-child(6) {
+                    top: 160px;
+                    right: 250px;
+                    z-index: 100;
+                }
+                &:nth-child(7) {
+                    top: 160px;
+                    right: 250px;
+                    z-index: 100;
+                }
+                &:nth-child(8) {
+                    top: 160px;
+                    right: 600px;
+                    z-index: 400;
+                }
+                &:nth-child(9) {
+                    top: 450px;
+                    right: 450px;
+                    z-index: 100;
+                }
+                &:nth-child(10) {
+                    top: 320px;
+                    right: 200px;
+                    z-index: 10;
+                }
+            }
         }
     }
 }
