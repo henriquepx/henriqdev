@@ -3,11 +3,10 @@
 #sobre {
     background-color: $color-bg;
     position: relative;
+    padding: 5rem 5rem;
     .textsobre {
-        max-width: 1250px;
-        width: 100%;
-        margin: 0 auto;
-        padding: 5rem 1.5rem;
+        display: flex;
+        justify-content: space-between;
         h1 {
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -28,11 +27,7 @@
             }
         }
         .myphoto {
-            width: 250px;
-            margin: 3rem 0rem;
-            position: absolute;
-            left: 50%;
-            top: 20%;
+            height: 300px;
         }
     }
 }

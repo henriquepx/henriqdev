@@ -54,27 +54,6 @@ body {
   background-color: #fff;
 }
 
-.back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 3%;
-  background-color: #fffcf5;
-  color: #0b0b0b;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.back-to-top.show {
-  display: block;
-}
-
 .sectionanima {
   opacity: 0;
 }
@@ -308,27 +287,6 @@ body {
   padding: 13px;
   border-radius: 15px;
   background-color: #fff;
-}
-
-.back-to-top {
-  display: none;
-  position: fixed;
-  bottom: 20px;
-  right: 3%;
-  background-color: #fffcf5;
-  color: #0b0b0b;
-  font-size: 20px;
-  width: 40px;
-  height: 40px;
-  text-align: center;
-  line-height: 40px;
-  border-radius: 50%;
-  cursor: pointer;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-.back-to-top.show {
-  display: block;
 }
 
 .sectionanima {
@@ -1014,12 +972,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 #sobre {
   background-color: #0b0b0b;
   position: relative;
+  padding: 5rem 5rem;
 }
 #sobre .textsobre {
-  max-width: 1250px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 5rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
 }
 #sobre .textsobre h1 {
   font-size: 2rem;
@@ -1041,11 +998,7 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   transform: rotate(90deg);
 }
 #sobre .textsobre .myphoto {
-  width: 250px;
-  margin: 3rem 0rem;
-  position: absolute;
-  left: 50%;
-  top: 20%;
+  height: 300px;
 }
 
 .scrollanima.ativoScroll {
