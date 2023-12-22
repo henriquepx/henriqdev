@@ -2,13 +2,10 @@
 
 #sobre {
     background-color: $color-bg;
-    padding: 0rem 5rem;
+    padding: 7rem 5rem;
     display: flex;
     .textsobre {
-        display: flex;
-        justify-content: space-between;
         width: 100%;
-        padding-top: 5rem;
         h1 {
             font-size: 2rem;
             margin-bottom: 2rem;
@@ -28,71 +25,74 @@
                 transform: rotate(90deg);
             }
         }
-        .imgsaboutme {
-            position: relative;
-            width: 100%;
-            img {
-                position: absolute;
-                width: 200px;
-                right: 0;
-                animation: bounceUpDown 2s infinite;
-                &:nth-child(1) {
-                    top: 560px;
-                    right: 50px;
-                    z-index: 700;
-                    width: 250px;
-                }
-                &:nth-child(2) {
-                    top: 160px;
-                    right: 250px;
-                    z-index: 700;
-                    width: 300px;
-                }
-                &:nth-child(3) {
-                    top: 300px;
-                    right: 30px;
-                }
-                &:nth-child(4) {
-                    top: 0px;
-                    right: 0px;
-                    z-index: 5;
-                }
-                &:nth-child(5) {
-                    top: 0px;
-                    right: 410px;
-                    z-index: 100;
-                }
-                &:nth-child(6) {
-                    top: 160px;
-                    right: 250px;
-                    z-index: 100;
-                }
-                &:nth-child(7) {
-                    top: 160px;
-                    right: 250px;
-                    z-index: 100;
-                }
-                &:nth-child(8) {
-                    top: 160px;
-                    right: 600px;
-                    z-index: 400;
-                }
-                &:nth-child(9) {
-                    top: 450px;
-                    right: 250px;
-                    z-index: 100;
-                }
-                &:nth-child(10) {
-                    top: 450px;
-                    right: 530px;
-                    z-index: 10;
-                }
-                &:nth-child(11) {
-                    top: 20px;
-                    right: 220px;
-                    z-index: 10;
-                    width: 140px;
-                }
+    }
+    .imgsaboutme {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        img {
+            position: absolute;
+            width: 200px;
+            right: 0;
+            animation: bounceUpDown 2s infinite;
+            &:nth-child(1) {
+                top: 560px;
+                right: 50px;
+                z-index: 700;
+                width: 250px;
+            }
+            &:nth-child(2) {
+                top: 160px;
+                right: 250px;
+                z-index: 700;
+                width: 300px;
+            }
+            &:nth-child(3) {
+                top: 300px;
+                right: 30px;
+            }
+            &:nth-child(4) {
+                top: 0px;
+                right: 0px;
+                z-index: 5;
+            }
+            &:nth-child(5) {
+                top: 0px;
+                right: 410px;
+                z-index: 100;
+            }
+            &:nth-child(6) {
+                top: 160px;
+                right: 250px;
+                z-index: 100;
+            }
+            &:nth-child(7) {
+                top: 160px;
+                right: 250px;
+                z-index: 100;
+            }
+            &:nth-child(8) {
+                top: 160px;
+                right: 600px;
+                z-index: 400;
+            }
+            &:nth-child(9) {
+                top: 450px;
+                right: 250px;
+                z-index: 100;
+            }
+            &:nth-child(10) {
+                top: 450px;
+                right: 530px;
+                z-index: 10;
+            }
+            &:nth-child(11) {
+                top: 20px;
+                right: 220px;
+                z-index: 10;
+                width: 140px;
             }
         }
     }

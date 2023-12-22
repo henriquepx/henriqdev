@@ -636,17 +636,16 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   }
 }
 #contato {
-  height: 60vh;
   background-color: #0b0b0b;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
 #contato .contactsize {
-  max-width: 1250px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 0rem 1.5rem;
+  padding: 5rem;
   display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 300px;
 }
 #contato .contactsize .sobrecontato {
   width: 30%;
@@ -756,13 +755,7 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #projetos {
   background-color: #0b0b0b;
-  padding: 5rem 5rem;
-}
-#projetos .textproject {
-  max-width: 1250px;
-  width: 100%;
-  margin: 0 auto;
-  padding: 5rem 1.5rem;
+  padding: 5rem;
 }
 #projetos .textproject h1 {
   font-size: 2rem;
@@ -781,10 +774,10 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  width: 100%;
+  gap: 100px;
 }
 #projetos .textproject .containerprojects .projeto {
-  width: 100%;
+  width: 29%;
   margin-bottom: 5rem;
   display: flex;
   flex-direction: column;
@@ -896,12 +889,9 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #skills {
   background-color: #0b0b0b;
-  padding: 5rem 5rem;
+  padding: 5rem;
 }
 #skills .textskill {
-  max-width: 1250px;
-  width: 100%;
-  margin: 0 auto;
   padding: 5rem 1.5rem;
 }
 #skills .textskill h1 {
@@ -991,14 +981,11 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre {
   background-color: #0b0b0b;
-  padding: 0rem 5rem;
+  padding: 7rem 5rem;
   display: flex;
 }
 #sobre .textsobre {
-  display: flex;
-  justify-content: space-between;
   width: 100%;
-  padding-top: 5rem;
 }
 #sobre .textsobre h1 {
   font-size: 2rem;
@@ -1019,68 +1006,71 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 #sobre .textsobre .arrowtoinfo .arrow {
   transform: rotate(90deg);
 }
-#sobre .textsobre .imgsaboutme {
+#sobre .imgsaboutme {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
 }
-#sobre .textsobre .imgsaboutme img {
+#sobre .imgsaboutme img {
   position: absolute;
   width: 200px;
   right: 0;
   animation: bounceUpDown 2s infinite;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(1) {
+#sobre .imgsaboutme img:nth-child(1) {
   top: 560px;
   right: 50px;
   z-index: 700;
   width: 250px;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(2) {
+#sobre .imgsaboutme img:nth-child(2) {
   top: 160px;
   right: 250px;
   z-index: 700;
   width: 300px;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(3) {
+#sobre .imgsaboutme img:nth-child(3) {
   top: 300px;
   right: 30px;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(4) {
+#sobre .imgsaboutme img:nth-child(4) {
   top: 0px;
   right: 0px;
   z-index: 5;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(5) {
+#sobre .imgsaboutme img:nth-child(5) {
   top: 0px;
   right: 410px;
   z-index: 100;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(6) {
+#sobre .imgsaboutme img:nth-child(6) {
   top: 160px;
   right: 250px;
   z-index: 100;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(7) {
+#sobre .imgsaboutme img:nth-child(7) {
   top: 160px;
   right: 250px;
   z-index: 100;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(8) {
+#sobre .imgsaboutme img:nth-child(8) {
   top: 160px;
   right: 600px;
   z-index: 400;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(9) {
+#sobre .imgsaboutme img:nth-child(9) {
   top: 450px;
   right: 250px;
   z-index: 100;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(10) {
+#sobre .imgsaboutme img:nth-child(10) {
   top: 450px;
   right: 530px;
   z-index: 10;
 }
-#sobre .textsobre .imgsaboutme img:nth-child(11) {
+#sobre .imgsaboutme img:nth-child(11) {
   top: 20px;
   right: 220px;
   z-index: 10;
