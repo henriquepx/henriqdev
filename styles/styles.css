@@ -991,12 +991,14 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre {
   background-color: #0b0b0b;
-  padding: 5rem 5rem;
+  padding: 0rem 5rem;
+  display: flex;
 }
 #sobre .textsobre {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  padding-top: 5rem;
 }
 #sobre .textsobre h1 {
   font-size: 2rem;
@@ -1006,7 +1008,7 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
   font-family: "Righteous", sans-serif;
 }
 #sobre .textsobre p {
-  max-width: 75ch;
+  max-width: 140ch;
   margin: 10px 0;
 }
 #sobre .textsobre .arrowtoinfo {
@@ -1019,12 +1021,13 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre .textsobre .imgsaboutme {
   position: relative;
+  width: 100%;
 }
 #sobre .textsobre .imgsaboutme img {
   position: absolute;
   width: 200px;
   right: 0;
-  top: 20px;
+  animation: bounceUpDown 2s infinite;
 }
 #sobre .textsobre .imgsaboutme img:nth-child(1) {
   top: 560px;
@@ -1069,13 +1072,19 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 #sobre .textsobre .imgsaboutme img:nth-child(9) {
   top: 450px;
-  right: 450px;
+  right: 250px;
   z-index: 100;
 }
 #sobre .textsobre .imgsaboutme img:nth-child(10) {
-  top: 320px;
-  right: 200px;
+  top: 450px;
+  right: 530px;
   z-index: 10;
+}
+#sobre .textsobre .imgsaboutme img:nth-child(11) {
+  top: 20px;
+  right: 220px;
+  z-index: 10;
+  width: 140px;
 }
 
 .scrollanima.ativoScroll {
@@ -1092,4 +1101,13 @@ header .headersize .menuhamburger.ativo .bar:nth-child(1) {
 }
 .myphoto.moveright {
   animation: moveRight 1.8s forwards;
+}
+
+@keyframes bounceUpDown {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
 }/*# sourceMappingURL=styles.css.map */
