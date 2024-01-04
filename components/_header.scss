@@ -2,7 +2,7 @@
 
 header {
     background-color: $color-bg;
-    padding: 2rem 5rem;
+    padding: 1.5rem 5rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     .headersize {
@@ -16,26 +16,27 @@ header {
             h1 {
                 font-weight: 800;
                 font-size: 3rem;
+                color: $color-dark;
             }
             #title {
                 margin-top: 5px;
                 cursor: pointer;
                 h1 {
                     font-size: 1rem;
-                    color: $color-font-white;
+                    color: $color-dark;
                     font-weight: 700;
                 }
                 .profile {
                     h3 {
                         font-size: .9rem;
-                        color: #7a7a7a;
+                        color: $color-dark;
                         overflow: hidden;
                         position: relative;
                         display: inline-block;
                         span {
                             display: inline-block;
                             transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
-                            color: #7a7a7a;
+                            color: $color-dark;
                         }
                         &::before, &::after {
                             content: '';
@@ -69,16 +70,15 @@ header {
         .menuhamburger {
             display: flex;
             flex-direction: column;
-            gap: 15px;
+            gap: 9px;
             cursor: pointer;
             justify-content: center;
             align-items: center;
             padding-right: 7.5rem;
             span {
-                width: 90px;
-                height: 1px;
-                background-color: rgb(212, 212, 212);
-                transition: all 0.3s ease-in-out;
+                width: 50px;
+                height: 3px;
+                background-color: $color-dark;
             }
         }
         .disponiveltowork {
@@ -91,6 +91,9 @@ header {
                 height: 8px;
                 background-color: rgb(0, 131, 0);
                 animation: pulse 1s infinite alternate;
+            }
+            p {
+                color: $color-dark;
             }
         }
     }

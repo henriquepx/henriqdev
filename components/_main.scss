@@ -2,7 +2,7 @@
 
 main {
     background-color: $color-bg;
-    padding: 6rem 5rem 5rem 5rem;
+    padding: 5rem;
     height: 90vh;
     position: relative;
     .mainsize {
@@ -17,6 +17,7 @@ main {
                 font-size: 4rem;
                 font-weight: 600;
                 animation: animationTextShow 2s forwards;
+                color: $color-dark;
                 span {
                     font-size: 3rem;
                 }
@@ -27,7 +28,7 @@ main {
                 line-height: 1.4;
                 font-size: 1.2rem;
                 animation: animationTextShow 2.3s forwards;
-                color: #969696;
+                color: #525252;
             }
             .divmain {
                 display: flex;
@@ -39,6 +40,9 @@ main {
                     padding: 1rem 2rem;
                     color: #fff;
                     background-image: linear-gradient(rgba(255,255,255,.1), #0e0e0e00,#0e0e0e00, #0e0e0e00);
+                }
+                a {
+                    color: $color-dark;
                 }
             }
             .textcircle {
