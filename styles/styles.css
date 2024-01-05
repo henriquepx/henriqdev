@@ -445,7 +445,18 @@ main .mainsize .textmain .textcircle {
   margin-top: 5rem;
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
   margin: 20px 0;
+  cursor: pointer;
+}
+.mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li:hover a {
+  color: #21dcfd;
+}
+.mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li:hover i {
+  color: rgb(33, 220, 253);
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li a {
   color: #000;
@@ -454,10 +465,6 @@ main .mainsize .textmain .textcircle {
 }
 .mobileMenuContent .divisorcontent .divisorpart2 {
   width: 100%;
-}
-.mobileMenuContent .divisorcontent .divisorpart2 p {
-  color: #000;
-  font-size: 0.9rem;
 }
 .mobileMenuContent .divisorcontent .divisorpart2 .socialmediasmenu {
   display: flex;
@@ -471,7 +478,7 @@ main .mainsize .textmain .textcircle {
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4392156863);
-  color: #ffae00;
+  color: #21dcfd;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -491,7 +498,7 @@ main .mainsize .textmain .textcircle {
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #ffae00;
+  background: #21dcfd;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;

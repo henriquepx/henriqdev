@@ -45,7 +45,18 @@
       nav {
         ul {
           li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
             margin: 20px 0;
+            cursor: pointer;
+            &:hover a {
+              color: #21dcfd;
+            }
+            &:hover i {
+              color: rgb(33, 220, 253);
+            }
             a {
               color: #000;
               font-size: 1.5rem;
@@ -58,10 +69,6 @@
     }
     .divisorpart2 {
       width: 100%;
-      p {
-        color: #000;
-        font-size: .9rem;
-      }
       .socialmediasmenu {
         display: flex;
         align-items: center;
@@ -74,7 +81,7 @@
           background: #fff;
           border-radius: 50%;
           box-shadow: 0 5px 15px -5px #00000070;
-          color: #ffae00;
+          color: #21dcfd;
           overflow: hidden;
           position: relative;
           display: flex;
@@ -93,7 +100,7 @@
             position: absolute;
             width: 120%;
             height: 120%;
-            background: #ffae00;
+            background: #21dcfd;
             transform: rotate(45deg);
             left: -110%;
             top: 90%;
