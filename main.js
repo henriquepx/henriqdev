@@ -46,50 +46,14 @@ menuLanguage.forEach((itemMenu, index) => {
 // MENU HAMBURGER
 const menuHamburger = document.querySelector(".menuhamburger");
 const mobileMenuContent = document.querySelector(".mobileMenuContent");
-const closeIcon = document.querySelector(".closinghamburger");
+const closeIcon = document.querySelector(".hamburgerToClose");
 
-let menuAberto = false;
-
-menuHamburger.addEventListener("click", () => {
-    if (!menuAberto) {
-        abrirMenu();
-    } else {
-        fecharMenu();
-    }
-});
+menuHamburger.addEventListener('click', () => {
+  mobileMenuContent.classList.add('ativo');
+})
 
 closeIcon.addEventListener("click", () => {
-    fecharMenu();
-});
-
-function abrirMenu() {
-    menuHamburger.classList.add("ativo");
-    mobileMenuContent.classList.add("ativo");
-    mobileMenuContent.style.height = "100%";
-    mobileMenuContent.style.animation = "animationMenu .5s ease-in-out";
-    menuAberto = true;
-}
-
-function fecharMenu() {
-    mobileMenuContent.style.animation = "animationMenuClose .5s ease-in-out";
-    setTimeout(() => {
-        mobileMenuContent.style.height = "0";
-        menuHamburger.classList.remove("ativo");
-        mobileMenuContent.classList.remove("ativo");
-        menuAberto = false;
-    }, 500);
-}
-
-
-// Adicionado evento de fechamento para o ícone X
-closeIcon.addEventListener("click", () => {
-    mobileMenuContent.style.animation = "animationMenuClose .5s ease-in-out";
-    setTimeout(() => {
-        mobileMenuContent.style.height = "0";
-        menuHamburger.classList.remove("ativo");
-        mobileMenuContent.classList.remove("ativo");
-    }, 500);
-    menuAberto = false;
+    mobileMenuContent.classList.remove("ativo");
 });
 
 // ANIMATION LANGUAGES

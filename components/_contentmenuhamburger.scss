@@ -1,76 +1,147 @@
 @import '../abstract/variables';
-
 .mobileMenuContent {
   display: none;
   .divisorcontent {
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
+    width: 100%;
+    height: 100%;
     gap: 50px;
-    align-items: center;
-    padding: 10rem 3rem;
+    padding: 4rem;
     position: relative;
-    .hamburgerToClose {
-      position: absolute;
-      right: 10%;
-      top: 15%;
+    .divisorpart1 {
+      .headermobilecontentmenu {
       display: flex;
-      flex-direction: column;
-      gap: 0px;
-      cursor: pointer;
-      justify-content: center;
       align-items: center;
-      z-index: 2;
-
-      .closinghamburger {
-        display: block;
-        width: 30px;
-        height: 3px;
-        background-color: $color-dark;
+      justify-content: space-between;
+      width: 100%;
+      .languageschange {
+        display: flex;
+        gap: 20px;
+        p {
+          color: #000;
+        }
       }
-
-      .closinghamburger:nth-child(2) {
-        transform: rotate(-45deg);
-        background-color: $color-dark;
-        width: 40px;
-        transition: .5s ease-in-out;
+      .hamburgerToClose {
+        cursor: pointer;
+        .closingmenu {
+          width: 30px;
+          height: 2px;
+          background-color: $color-dark;
+          display: block;
+          position: relative;
+          &:first-child {
+            transform: rotate(45deg);
+          }
+          &:last-child {
+            transform: rotate(-45deg);
+          }
+        }
       }
+      }
+      .linksmenutoportfolio {
+      margin-top: 5rem;
+      nav {
+        ul {
+          li {
+            margin: 20px 0;
+            a {
+              color: #000;
+              font-size: 1.5rem;
+              font-weight: 600;
+            }
+          }
+        }
+      }
+      }
+    }
+    .divisorpart2 {
+      width: 100%;
+      p {
+        color: #000;
+        font-size: .9rem;
+      }
+      .socialmediasmenu {
+        display: flex;
+        align-items: center;
+        gap: 10px;
 
-      .closinghamburger:nth-child(1) {
-        transform: rotate(45deg);
-        background-color: $color-dark;
-        width: 40px;
-        transition: .5s ease-in-out;
+        margin-top: 2rem;
+        .btn {
+          width: 50px;
+          height: 50px;
+          background: #fff;
+          border-radius: 50%;
+          box-shadow: 0 5px 15px -5px #00000070;
+          color: #ffae00;
+          overflow: hidden;
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          i {
+            font-size: 20px;
+            transition: 0.2s linear;
+          }
+          &:hover i {
+            transform: scale(1.3);
+            color: #fff;
+          }
+          &::before {
+            content: '';
+            position: absolute;
+            width: 120%;
+            height: 120%;
+            background: #ffae00;
+            transform: rotate(45deg);
+            left: -110%;
+            top: 90%;
+          }
+          &:hover::before {
+            animation: aaa 0.7s 1;
+            top: -10%;
+            left: -10%;
+          }
+        }
       }
     }
   }
 }
 
+
+
 .mobileMenuContent.ativo {
   display: block;
   height: 100vh;
-  width: 25%;
-  background-color: #f3f3f3;
+  max-width: 450px;
+  background-color: #fafafa;
   position: fixed;
   top: 0;
   right: 0;
   z-index: 777;
   animation: animationMenu .5s ease-in-out;
-}
-
-@keyframes animationMenuClose {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-  100% {
-    transform: translate3d(100%, 0, 0);
-  }
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
 
 @keyframes animationMenu {
   from {
-    transform: translate3d(0, -100%, 0);
+    transform: translate3d(100%, 0, 0);
   }
   to {
     transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes aaa {
+  0%{
+      left: -110%;
+      top: 90%;
+  }50%{
+      left: 10%;
+      top: -30%;
+  }100%{
+      top: -10%;
+      left: -10%;
   }
 }
