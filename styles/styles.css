@@ -125,7 +125,10 @@
 }
 header {
   background-color: #ffffff;
-  padding: 1.5rem 5rem;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
@@ -291,7 +294,10 @@ header .headersize .disponiveltowork p {
 
 main {
   background-color: #ffffff;
-  padding: 5rem;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
   height: 90vh;
   position: relative;
 }
@@ -424,6 +430,7 @@ main .mainsize .textmain .textcircle {
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .headermobilecontentmenu .languageschange p {
   color: #000;
+  font-size: 0.8rem;
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .headermobilecontentmenu .hamburgerToClose {
   cursor: pointer;
@@ -923,123 +930,52 @@ main .mainsize .textmain .textcircle {
 }
 #sobre {
   background-color: #ffffff;
-  padding: 7rem 5rem;
   display: flex;
-}
-#sobre .textsobre {
+  max-width: 1700px;
   width: 100%;
-}
-#sobre .textsobre h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Righteous", sans-serif;
-}
-#sobre .textsobre p {
-  max-width: 140ch;
-  margin: 10px 0;
-}
-#sobre .textsobre .arrowtoinfo {
-  display: flex;
-  align-items: center;
-  gap: 60px;
-}
-#sobre .textsobre .arrowtoinfo .arrow {
-  transform: rotate(90deg);
-}
-#sobre .imgsaboutme {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-}
-#sobre .imgsaboutme img {
-  position: absolute;
-  width: 200px;
-  right: 0;
-  animation: bounceUpDown 2s infinite;
-}
-#sobre .imgsaboutme img:nth-child(1) {
-  top: 560px;
-  right: 50px;
-  z-index: 700;
-  width: 250px;
-}
-#sobre .imgsaboutme img:nth-child(2) {
-  top: 160px;
-  right: 250px;
-  z-index: 700;
-  width: 300px;
-}
-#sobre .imgsaboutme img:nth-child(3) {
-  top: 300px;
-  right: 30px;
-}
-#sobre .imgsaboutme img:nth-child(4) {
-  top: 0px;
-  right: 0px;
-  z-index: 5;
-}
-#sobre .imgsaboutme img:nth-child(5) {
-  top: 0px;
-  right: 410px;
-  z-index: 100;
-}
-#sobre .imgsaboutme img:nth-child(6) {
-  top: 160px;
-  right: 250px;
-  z-index: 100;
-}
-#sobre .imgsaboutme img:nth-child(7) {
-  top: 160px;
-  right: 250px;
-  z-index: 100;
-}
-#sobre .imgsaboutme img:nth-child(8) {
-  top: 160px;
-  right: 600px;
-  z-index: 400;
-}
-#sobre .imgsaboutme img:nth-child(9) {
-  top: 450px;
-  right: 250px;
-  z-index: 100;
-}
-#sobre .imgsaboutme img:nth-child(10) {
-  top: 450px;
-  right: 530px;
-  z-index: 10;
-}
-#sobre .imgsaboutme img:nth-child(11) {
-  top: 20px;
-  right: 220px;
-  z-index: 10;
-  width: 140px;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
 }
 
-.scrollanima.ativoScroll {
-  animation: animationTextShow 1.8s forwards;
-}
-
-@keyframes moveRight {
-  from {
-    left: 50%;
+@keyframes animationTextShow {
+  0% {
+    transform: translate3d(0, 100%, 0);
+    height: 0;
+    transition: 0.8s all;
+    opacity: 0.2;
   }
-  to {
-    left: 91.2%;
-  }
-}
-.myphoto.moveright {
-  animation: moveRight 1.8s forwards;
-}
-
-@keyframes bounceUpDown {
-  0%, 100% {
-    transform: translateY(0);
+  20% {
+    opacity: 0.3;
   }
   50% {
-    transform: translateY(-15px);
+    opacity: 0.6;
   }
+  75% {
+    opacity: 0.8;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    transition: 0.8s all;
+    height: 100%;
+    opacity: 1;
+  }
+}
+@keyframes opacityHeadeer {
+  0% {
+    opacity: 0;
+    transition: 0.8s all;
+  }
+  100% {
+    opacity: 1;
+    transition: 0.8s all;
+  }
+}
+footer {
+  height: 60vh;
+  background-color: #ffffff;
+  display: flex;
+  max-width: 1700px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1.5rem 1rem;
 }/*# sourceMappingURL=styles.css.map */

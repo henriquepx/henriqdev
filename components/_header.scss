@@ -2,7 +2,10 @@
 
 header {
     background-color: $color-bg;
-    padding: 1.5rem 5rem;
+    max-width: 1700px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.5rem 1rem;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
     .headersize {

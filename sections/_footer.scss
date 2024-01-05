@@ -1,6 +1,7 @@
 @import '../abstract/variables';
 
-#sobre {
+footer {
+    height: 60vh;
     background-color: $color-bg;
     display: flex;
     max-width: 1700px;
@@ -8,4 +9,3 @@
     margin: 0 auto;
     padding: 1.5rem 1rem;
 }
-
