@@ -3,9 +3,13 @@
 #sobre {
     background-color: $color-bg;
     display: flex;
-    max-width: 1700px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+    }
 }
 

@@ -2,14 +2,14 @@
 
 main {
     background-color: $color-bg;
-    max-width: 1700px;
+    max-width: 1600px;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
     height: 90vh;
     position: relative;
     .mainsize {
-        padding: 9rem 0rem;
+        padding: 12rem 0rem;
 
         display: flex;
         align-items: center;
@@ -49,10 +49,11 @@ main {
                 }
             }
             .textcircle {
+                display: none;
                 height: 130px;
                 position: absolute;
                 bottom: 7%;
-                left: 3%;
+                right: 3%;
                 animation: rotateAnimation infinite 7s linear;
             }
         }

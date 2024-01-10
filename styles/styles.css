@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @keyframes animationTextShow {
   0% {
     transform: translate3d(0, 100%, 0);
@@ -125,7 +126,7 @@
 }
 header {
   background-color: #ffffff;
-  max-width: 1700px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -294,7 +295,7 @@ header .headersize .disponiveltowork p {
 
 main {
   background-color: #ffffff;
-  max-width: 1700px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -302,7 +303,7 @@ main {
   position: relative;
 }
 main .mainsize {
-  padding: 9rem 0rem;
+  padding: 12rem 0rem;
   display: flex;
   align-items: center;
 }
@@ -343,10 +344,11 @@ main .mainsize .textmain .divmain a {
   color: #1b1b1b;
 }
 main .mainsize .textmain .textcircle {
+  display: none;
   height: 130px;
   position: absolute;
   bottom: 7%;
-  left: 3%;
+  right: 3%;
   animation: rotateAnimation infinite 7s linear;
 }
 
@@ -519,7 +521,7 @@ main .mainsize .textmain .textcircle {
 .mobileMenuContent.ativo {
   display: block;
   height: 100vh;
-  max-width: 450px;
+  max-width: 650px;
   background-color: #fafafa;
   position: fixed;
   top: 0;
@@ -703,104 +705,92 @@ main .mainsize .textmain .textcircle {
   }
 }
 #projetos {
-  background-color: #ffffff;
-  padding: 5rem;
-}
-#projetos .textproject h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Righteous", sans-serif;
-}
-#projetos .textproject .linebreak {
-  height: 2px;
-  width: 1px solid rgb(58, 58, 58);
+  max-width: 1600px;
   width: 100%;
-  display: block;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 1.5rem 1rem;
 }
-#projetos .textproject .containerprojects {
+#projetos .textproject .titlepageproject {
+  font-size: 2rem;
+  font-weight: 600;
+  margin-bottom: 2rem;
+}
+#projetos .textproject .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 100px;
+  gap: 50px;
 }
-#projetos .textproject .containerprojects .projeto {
-  width: 29%;
-  margin-bottom: 5rem;
-  display: flex;
-  flex-direction: column;
+#projetos .textproject .row .card {
+  width: 480px;
 }
-#projetos .textproject .containerprojects .projeto .photoprojeto {
+#projetos .textproject .row .card .wrapper {
+  background-color: #000;
+  height: 550px;
   position: relative;
   overflow: hidden;
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
 }
-#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojeto,
-#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
-  width: 100%;
-  height: 300px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  transition: transform 0.45s ease-in-out, opacity 0.2s ease;
+#projetos .textproject .row .card .wrapper:hover .data {
+  transform: translateY(0);
 }
-#projetos .textproject .containerprojects .projeto .photoprojeto .imgprincipalprojetohover {
+#projetos .textproject .row .card .wrapper .data {
   position: absolute;
-  top: 0;
-  left: 100%;
-}
-#projetos .textproject .containerprojects .projeto .photoprojeto:hover .imgprincipalprojetohover {
-  transform: translateX(-100%);
-}
-#projetos .textproject .containerprojects .projeto .contentimg {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  bottom: 0;
   width: 100%;
-  padding: 1.5rem 0rem;
+  transform: translateY(calc(130px + 1em));
+  transition: transform 0.3s;
+  z-index: 1;
 }
-#projetos .textproject .containerprojects .projeto .contentimg .menutabsimgs {
+#projetos .textproject .row .card .wrapper .data .content {
+  padding: 0 1rem;
+}
+#projetos .textproject .row .card .wrapper .data .content .author {
+  font-size: 0.7rem;
+  color: #a7a7a7;
+}
+#projetos .textproject .row .card .wrapper .data .content .text {
+  color: #000;
+}
+#projetos .textproject .row .project1 .titleproject, #projetos .textproject .row .project2 .titleproject, #projetos .textproject .row .project3 .titleproject {
+  color: #000;
+  font-size: 2rem;
+}
+#projetos .textproject .row .project1 .text, #projetos .textproject .row .project2 .text, #projetos .textproject .row .project3 .text {
+  margin: 15px 0 10px 0;
+}
+#projetos .textproject .row .project1 .linkto, #projetos .textproject .row .project2 .linkto, #projetos .textproject .row .project3 .linkto {
+  color: #000;
   display: flex;
-  gap: 20px;
-}
-#projetos .textproject .containerprojects .projeto .contentimg .menutabsimgs span {
-  width: 10px;
-  height: 10px;
-  background-color: #fff;
-}
-#projetos .textproject .containerprojects .projeto .infosprojeto {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 0.5rem;
-}
-#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects h3 {
-  font-size: 1.5rem;
-  margin-bottom: 2rem;
-}
-#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects a {
-  font-size: 0.8rem;
-  background-color: #181818;
-  padding: 1rem 2rem;
-  color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
-}
-#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink {
-  margin-top: 1rem;
-  display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  gap: 30px;
-  background-color: #181818;
-  padding: 1rem;
+  padding: 1rem 0rem;
+  margin: 1.5rem 0rem;
+  background-color: #000;
   color: #fff;
-  background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
-  max-width: 180px;
 }
-#projetos .textproject .containerprojects .projeto .infosprojeto .linkstoprojects .repositorylink p {
-  color: #ffffff;
+#projetos .textproject .row .project1 .linkto::after, #projetos .textproject .row .project2 .linkto::after, #projetos .textproject .row .project3 .linkto::after {
+  content: "→";
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(0, -50%);
+  transition: all 0.3s;
 }
-#projetos .textproject .containerprojects .projeto .infosprojeto .descriptionprojects p {
-  max-width: 30ch;
-  text-align: left;
+#projetos .textproject .row .project1 .linkto:hover::after, #projetos .textproject .row .project2 .linkto:hover::after, #projetos .textproject .row .project3 .linkto:hover::after {
+  transform: translate(5px, -50%);
+  opacity: 1;
+}
+#projetos .textproject .row .project1 .wrapper {
+  background: url(../assets/testdsm.jpg) center/cover no-repeat;
+}
+#projetos .textproject .row .project2 .wrapper {
+  background: url(../assets/testjapa.jpg) center/cover no-repeat;
+}
+#projetos .textproject .row .project3 .wrapper {
+  background: url(../assets/testrx.jpg) center/cover no-repeat;
 }
 
 @keyframes animationTextShow {
@@ -931,10 +921,14 @@ main .mainsize .textmain .textcircle {
 #sobre {
   background-color: #ffffff;
   display: flex;
-  max-width: 1700px;
+  max-width: 1600px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
+}
+#sobre h1 {
+  font-size: 2rem;
+  font-weight: 600;
 }
 
 @keyframes animationTextShow {
