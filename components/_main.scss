@@ -2,7 +2,7 @@
 
 main {
     background-color: $color-bg;
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
@@ -12,10 +12,16 @@ main {
         padding: 12rem 0rem;
 
         display: flex;
+        justify-content: center;
+        text-align: center;
         align-items: center;
         .textmain {
             width: 100%;
             margin-right: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
             h1 {
                 font-size: 4rem;
                 font-weight: 600;

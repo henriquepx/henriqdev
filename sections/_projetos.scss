@@ -1,7 +1,7 @@
 @import '../abstract/variables';
 
 #projetos {
-    max-width: 1600px;
+    max-width: 1200px;
     width: 100%;
     margin: 0 auto;
     background-color: $color-bg;
@@ -11,6 +11,7 @@
             font-size: 2rem;
             font-weight: 600; 
             margin-bottom: 2rem;
+            text-align: center;
             }
             .row {
                 display: flex;
@@ -18,10 +19,10 @@
                 flex-wrap: wrap;
                 gap: 50px;
                 .card {
-                    width: 480px;
+                    width: 350px;
                       .wrapper {
                         background-color: #000;
-                        height: 550px;
+                        height: 400px;
                         position: relative;
                         overflow: hidden;
                         box-shadow: 0 19px 38px rgba(0, 0, 0, 0.2), 0 15px 12px rgba(0, 0, 0, 0.1);
@@ -32,7 +33,7 @@
                             position: absolute;
                             bottom: 0;
                             width: 100%;
-                            transform: translateY(calc(130px + 1em));
+                            transform: translateY(calc(145px + 1em));
                             transition: transform 0.3s;
                             z-index: 1;
                             .content {
