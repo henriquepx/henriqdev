@@ -2,7 +2,7 @@
 
 main {
     background-color: $color-bg;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
     padding: 1.5rem 1rem;
@@ -13,17 +13,13 @@ main {
 
         display: flex;
         justify-content: center;
-        text-align: center;
-        align-items: center;
         .textmain {
             width: 100%;
             margin-right: 3rem;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             h1 {
-                font-size: 4rem;
+                font-size: 3rem;
                 font-weight: 600;
                 animation: animationTextShow 2s forwards;
                 color: $color-dark;
@@ -33,7 +29,7 @@ main {
             }
             p {
                 margin: 2rem 0rem 3rem 0rem;
-                max-width: 70ch;
+                max-width: 60ch;
                 line-height: 1.4;
                 font-size: 1.2rem;
                 animation: animationTextShow 2.3s forwards;

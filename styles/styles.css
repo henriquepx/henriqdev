@@ -126,7 +126,7 @@
 }
 header {
   background-color: #ffffff;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -295,7 +295,7 @@ header .headersize .disponiveltowork p {
 
 main {
   background-color: #ffffff;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -306,19 +306,15 @@ main .mainsize {
   padding: 12rem 0rem;
   display: flex;
   justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 main .mainsize .textmain {
   width: 100%;
   margin-right: 3rem;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 main .mainsize .textmain h1 {
-  font-size: 4rem;
+  font-size: 3rem;
   font-weight: 600;
   animation: animationTextShow 2s forwards;
   color: #1b1b1b;
@@ -328,7 +324,7 @@ main .mainsize .textmain h1 span {
 }
 main .mainsize .textmain p {
   margin: 2rem 0rem 3rem 0rem;
-  max-width: 70ch;
+  max-width: 60ch;
   line-height: 1.4;
   font-size: 1.2rem;
   animation: animationTextShow 2.3s forwards;
@@ -742,6 +738,19 @@ main .mainsize .textmain .textcircle {
 #projetos .textproject .row .card .wrapper:hover .data {
   transform: translateY(0);
 }
+#projetos .textproject .row .card .wrapper::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgb(0, 217, 255);
+  transition: top 0.5s ease;
+}
+#projetos .textproject .row .card .wrapper:hover::before {
+  top: 0;
+}
 #projetos .textproject .row .card .wrapper .data {
   position: absolute;
   bottom: 0;
@@ -759,6 +768,9 @@ main .mainsize .textmain .textcircle {
 }
 #projetos .textproject .row .card .wrapper .data .content .text {
   color: #000;
+}
+#projetos .textproject .row .card .wrapper:hover .data .content .author {
+  color: #ffffff;
 }
 #projetos .textproject .row .project1 .titleproject, #projetos .textproject .row .project2 .titleproject, #projetos .textproject .row .project3 .titleproject {
   color: #000;
@@ -929,10 +941,9 @@ main .mainsize .textmain .textcircle {
   background-color: #ffffff;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
+  max-width: 1300px;
   width: 100%;
   margin: 0 auto;
-  padding: 1.5rem 1rem;
 }
 #sobre .titlesobre {
   font-size: 2rem;
@@ -958,10 +969,11 @@ main .mainsize .textmain .textcircle {
   max-width: 80ch;
 }
 #sobre .infosaboutme {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: 50px;
   margin-top: 2rem;
+  padding: 0rem 3rem;
 }
 #sobre .infosaboutme h2 {
   font-size: 1.4rem;
@@ -970,12 +982,12 @@ main .mainsize .textmain .textcircle {
   font-weight: bold;
 }
 #sobre .infosaboutme h3 {
-  margin-bottom: 3px;
+  margin-bottom: 2px;
   font-size: 1.1rem;
   text-transform: uppercase;
 }
 #sobre .infosaboutme p {
-  margin-bottom: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 @keyframes animationTextShow {

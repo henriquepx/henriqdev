@@ -29,6 +29,19 @@
                         &:hover .data {
                             transform: translateY(0);
                         }
+                        &::before {
+                          content: "";
+                          position: absolute;
+                          top: 100%; 
+                          left: 0;
+                          width: 100%;
+                          height: 100%;
+                          background:  rgb(0, 217, 255);
+                          transition: top 0.5s ease; 
+                        }
+                        &:hover::before {
+                          top: 0;
+                        }
                         .data {
                             position: absolute;
                             bottom: 0;
@@ -46,6 +59,9 @@
                                     color: #000;
                                 }
                             }
+                          }
+                          &:hover .data .content .author {
+                            color: #ffffff;
                           }
                     }
                 }
@@ -85,7 +101,7 @@
                 }
                 .project1  .wrapper {
                     background: url(../assets/testdsm.jpg) center / cover no-repeat;
-                }
+                  }
                 .project2  .wrapper {
                     background: url(../assets/testjapa.jpg) center / cover no-repeat;
                 }

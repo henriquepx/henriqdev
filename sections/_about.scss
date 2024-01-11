@@ -4,10 +4,9 @@
     background-color: $color-bg;
     display: flex;
     flex-direction: column;
-    max-width: 1200px;
+    max-width: 1300px;
     width: 100%;
     margin: 0 auto;
-    padding: 1.5rem 1rem;
     .titlesobre {
         font-size: 2rem;
         font-weight: 600;
@@ -32,10 +31,11 @@
         }
     }
     .infosaboutme {
-        display: flex;
-        justify-content: space-between;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
         gap: 50px;
         margin-top: 2rem;
+        padding: 0rem 3rem;
         h2 {
             font-size: 1.4rem;
             text-transform: uppercase;
@@ -43,12 +43,12 @@
             font-weight: bold;
         }
         h3 {
-            margin-bottom: 3px;
+            margin-bottom: 2px;
             font-size: 1.1rem;
             text-transform: uppercase;
         }
         p {
-            margin-bottom: 1rem;
+            margin-bottom: .5rem;
         }
     }
 }
