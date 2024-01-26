@@ -1,7 +1,7 @@
 @charset "UTF-8";
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -49,6 +49,10 @@
   font-size: 1rem;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 .sectionanima {
   opacity: 0;
 }
@@ -60,7 +64,7 @@
 
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -93,7 +97,7 @@
 }
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -125,8 +129,8 @@
   }
 }
 header {
-  background-color: #ffffff;
-  max-width: 1300px;
+  background-color: #f5f5f5;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -201,7 +205,6 @@ header .headersize .menuhamburger {
   cursor: pointer;
   justify-content: center;
   align-items: center;
-  padding-right: 7.5rem;
 }
 header .headersize .menuhamburger span {
   width: 50px;
@@ -236,7 +239,7 @@ header .headersize .disponiveltowork p {
 }
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -284,6 +287,10 @@ header .headersize .disponiveltowork p {
   font-size: 1rem;
 }
 
+body {
+  background-color: #f5f5f5;
+}
+
 .sectionanima {
   opacity: 0;
 }
@@ -294,8 +301,8 @@ header .headersize .disponiveltowork p {
 }
 
 main {
-  background-color: #ffffff;
-  max-width: 1300px;
+  background-color: #f5f5f5;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
   padding: 1.5rem 1rem;
@@ -306,15 +313,16 @@ main .mainsize {
   padding: 12rem 0rem;
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 main .mainsize .textmain {
   width: 100%;
-  margin-right: 3rem;
+  height: 30%;
   display: flex;
   flex-direction: column;
 }
 main .mainsize .textmain h1 {
-  font-size: 3rem;
+  font-size: 3.5rem;
   font-weight: 600;
   animation: animationTextShow 2s forwards;
   color: #1b1b1b;
@@ -327,23 +335,26 @@ main .mainsize .textmain p {
   max-width: 60ch;
   line-height: 1.4;
   font-size: 1.2rem;
-  animation: animationTextShow 2.3s forwards;
+  animation: animationTextShow 2s forwards;
   color: #525252;
 }
 main .mainsize .textmain .divmain {
   display: flex;
   align-items: center;
-  gap: 45px;
-  animation: animationTextShow 2.3s forwards;
+  gap: 25px;
+  animation: animationTextShow 2s forwards;
 }
 main .mainsize .textmain .divmain .seeprojetos {
-  background-color: #181818;
-  padding: 1rem 2rem;
+  background-color: rgb(0, 0, 0);
+  padding: 0.7rem 2rem;
+  font-weight: bold;
   color: #fff;
   background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0), rgba(14, 14, 14, 0));
 }
 main .mainsize .textmain .divmain a {
   color: #1b1b1b;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
 }
 main .mainsize .textmain .textcircle {
   display: none;
@@ -378,7 +389,7 @@ main .mainsize .textmain .textcircle {
 }
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -464,10 +475,10 @@ main .mainsize .textmain .textcircle {
   cursor: pointer;
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li:hover a {
-  color: #21dcfd;
+  color: #2c84d4;
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li:hover i {
-  color: rgb(33, 220, 253);
+  color: #2c84d4;
 }
 .mobileMenuContent .divisorcontent .divisorpart1 .linksmenutoportfolio nav ul li a {
   color: #000;
@@ -489,7 +500,7 @@ main .mainsize .textmain .textcircle {
   background: #fff;
   border-radius: 50%;
   box-shadow: 0 5px 15px -5px rgba(0, 0, 0, 0.4392156863);
-  color: #21dcfd;
+  color: #2c84d4;
   overflow: hidden;
   position: relative;
   display: flex;
@@ -509,7 +520,7 @@ main .mainsize .textmain .textcircle {
   position: absolute;
   width: 120%;
   height: 120%;
-  background: #21dcfd;
+  background: #2c84d4;
   transform: rotate(45deg);
   left: -110%;
   top: 90%;
@@ -524,7 +535,7 @@ main .mainsize .textmain .textcircle {
   display: block;
   height: 100vh;
   max-width: 650px;
-  background-color: #fafafa;
+  background-color: rgb(243, 243, 243);
   position: fixed;
   top: 0;
   right: 0;
@@ -557,7 +568,7 @@ main .mainsize .textmain .textcircle {
 }
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -675,7 +686,7 @@ main .mainsize .textmain .textcircle {
 
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -707,26 +718,34 @@ main .mainsize .textmain .textcircle {
   }
 }
 #projetos {
-  max-width: 1200px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   padding: 1.5rem 1rem;
 }
-#projetos .textproject .titlepageproject {
+#projetos .textproject .titlesobre {
   font-size: 2rem;
   font-weight: 600;
-  margin-bottom: 2rem;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  margin: 2rem 0rem;
+}
+#projetos .textproject .titlesobre::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #e7e7e7;
+  margin-left: 1.5rem;
 }
 #projetos .textproject .row {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 50px;
+  gap: 20px;
 }
 #projetos .textproject .row .card {
-  width: 350px;
+  width: 570px;
 }
 #projetos .textproject .row .card .wrapper {
   background-color: #000;
@@ -745,7 +764,7 @@ main .mainsize .textmain .textcircle {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgb(0, 217, 255);
+  background: rgb(0, 0, 0);
   transition: top 0.5s ease;
 }
 #projetos .textproject .row .card .wrapper:hover::before {
@@ -755,7 +774,7 @@ main .mainsize .textmain .textcircle {
   position: absolute;
   bottom: 0;
   width: 100%;
-  transform: translateY(calc(145px + 1em));
+  transform: translateY(calc(200px + 1em));
   transition: transform 0.3s;
   z-index: 1;
 }
@@ -767,27 +786,27 @@ main .mainsize .textmain .textcircle {
   color: #a7a7a7;
 }
 #projetos .textproject .row .card .wrapper .data .content .text {
-  color: #000;
+  color: #ffffff;
 }
 #projetos .textproject .row .card .wrapper:hover .data .content .author {
   color: #ffffff;
 }
 #projetos .textproject .row .project1 .titleproject, #projetos .textproject .row .project2 .titleproject, #projetos .textproject .row .project3 .titleproject {
-  color: #000;
+  color: #ffffff;
   font-size: 2rem;
 }
 #projetos .textproject .row .project1 .text, #projetos .textproject .row .project2 .text, #projetos .textproject .row .project3 .text {
   margin: 15px 0 10px 0;
 }
 #projetos .textproject .row .project1 .linkto, #projetos .textproject .row .project2 .linkto, #projetos .textproject .row .project3 .linkto {
-  color: #000;
+  color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem 0rem;
   margin: 1.5rem 0rem;
-  background-color: #000;
-  color: #fff;
+  background-color: #ffffff;
+  color: #000000;
 }
 #projetos .textproject .row .project1 .linkto::after, #projetos .textproject .row .project2 .linkto::after, #projetos .textproject .row .project3 .linkto::after {
   content: "→";
@@ -803,10 +822,10 @@ main .mainsize .textmain .textcircle {
   opacity: 1;
 }
 #projetos .textproject .row .project1 .wrapper {
-  background: url(../assets/testdsm.jpg) center/cover no-repeat;
+  background: url(../assets/dsmbg.jpg) center/cover no-repeat;
 }
 #projetos .textproject .row .project2 .wrapper {
-  background: url(../assets/testjapa.jpg) center/cover no-repeat;
+  background: url(../assets/japabg.jpg) center/cover no-repeat;
 }
 #projetos .textproject .row .project3 .wrapper {
   background: url(../assets/testrx.jpg) center/cover no-repeat;
@@ -814,99 +833,7 @@ main .mainsize .textmain .textcircle {
 
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
-    height: 0;
-    transition: 0.8s all;
-    opacity: 0.2;
-  }
-  20% {
-    opacity: 0.3;
-  }
-  50% {
-    opacity: 0.6;
-  }
-  75% {
-    opacity: 0.8;
-  }
-  100% {
-    transform: translate3d(0, 0, 0);
-    transition: 0.8s all;
-    height: 100%;
-    opacity: 1;
-  }
-}
-@keyframes opacityHeadeer {
-  0% {
-    opacity: 0;
-    transition: 0.8s all;
-  }
-  100% {
-    opacity: 1;
-    transition: 0.8s all;
-  }
-}
-#skills {
-  background-color: #ffffff;
-  padding: 5rem;
-}
-#skills .textskill {
-  padding: 5rem 1.5rem;
-}
-#skills .textskill h1 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color: #fff;
-  text-transform: uppercase;
-  font-family: "Righteous", sans-serif;
-}
-#skills .textskill .containerskills {
-  display: flex;
-  gap: 100px;
-}
-#skills .textskill .containerskills .containercontentlanguage {
-  width: 50%;
-}
-#skills .textskill .containerskills .containercontentlanguage .contentlanguage {
-  display: none;
-}
-#skills .textskill .containerskills .containercontentlanguage .contentlanguage.ativo {
-  display: block;
-  animation: animationText 0.9s forwards;
-}
-#skills .textskill .containerskills .imagelanguages {
-  width: 50%;
-  display: flex;
-  gap: 50px;
-  flex-wrap: wrap;
-}
-#skills .textskill .containerskills .imagelanguages .menulanguage {
-  border: 1px solid #1b1b1b;
-  padding: 1.5rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-}
-#skills .textskill .containerskills .imagelanguages .menulanguage img {
-  height: 40px;
-}
-#skills .textskill .containerskills .imagelanguages .menulanguage.ativo {
-  background-color: #1b1b1b;
-}
-
-@keyframes animationText {
-  from {
-    transform: translate3d(-15%, 0, 0);
-    opacity: 0;
-  }
-  to {
-    transform: translate3d(0, 0, 0);
-    opacity: 1;
-  }
-}
-@keyframes animationTextShow {
-  0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;
@@ -938,61 +865,60 @@ main .mainsize .textmain .textcircle {
   }
 }
 #sobre {
-  background-color: #ffffff;
+  background-color: #f5f5f5;
   display: flex;
   flex-direction: column;
-  max-width: 1300px;
+  max-width: 1400px;
   width: 100%;
   margin: 0 auto;
+  margin-bottom: 12rem;
 }
 #sobre .titlesobre {
   font-size: 2rem;
   font-weight: 600;
-  text-align: center;
-}
-#sobre .introducingmyself {
   display: flex;
-  justify-content: center;
   align-items: center;
+  margin: 2rem 0rem;
+}
+#sobre .titlesobre::after {
+  content: "";
+  width: 80%;
+  height: 2px;
+  background-color: #e7e7e7;
+  margin-left: 1.5rem;
+}
+#sobre .containersobretexts {
+  display: flex;
   gap: 50px;
-  margin: 1rem 0rem;
 }
-#sobre .introducingmyself img {
-  border-radius: 50% 50%;
-  height: 150px;
-  filter: grayscale(1);
+#sobre .containersobretexts .textsobreleft p {
+  max-width: 70ch;
+  margin: 10px 0;
 }
-#sobre .introducingmyself img:hover {
-  filter: grayscale(0);
+#sobre .containersobretexts .textsobreright .textright1 {
+  margin-bottom: 2.3rem;
 }
-#sobre .introducingmyself p {
-  max-width: 80ch;
-}
-#sobre .infosaboutme {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 50px;
-  margin-top: 2rem;
-  padding: 0rem 3rem;
-}
-#sobre .infosaboutme h2 {
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  margin-bottom: 0.7rem;
+#sobre .containersobretexts .textsobreright h2 {
+  gap: 12px;
+  font-size: 1.2rem;
   font-weight: bold;
+  background-color: #000;
+  padding: 0.5rem 0 0.5rem 1rem;
+  color: #fff;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
 }
-#sobre .infosaboutme h3 {
-  margin-bottom: 2px;
-  font-size: 1.1rem;
-  text-transform: uppercase;
+#sobre .containersobretexts .textsobreright h2 i {
+  color: #fff;
 }
-#sobre .infosaboutme p {
-  margin-bottom: 0.5rem;
+#sobre .containersobretexts .textsobreright p {
+  margin: 5px 0;
 }
 
 @keyframes animationTextShow {
   0% {
-    transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 200%, 0);
     height: 0;
     transition: 0.8s all;
     opacity: 0.2;

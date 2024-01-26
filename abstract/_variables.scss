@@ -4,7 +4,7 @@ $color-font-white: #fffcf5;
 
 @keyframes animationTextShow {
     0% {
-        transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 200%, 0);
         height: 0;
         transition: .8s all;
         opacity: .2;

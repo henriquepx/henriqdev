@@ -1,54 +1,57 @@
 @import '../abstract/variables';
 
 #sobre {
-    background-color: $color-bg;
+    background-color: #f5f5f5;
     display: flex;
     flex-direction: column;
-    max-width: 1300px;
+    max-width: 1400px;
     width: 100%;
     margin: 0 auto;
+    margin-bottom: 12rem;
     .titlesobre {
         font-size: 2rem;
         font-weight: 600;
-        text-align: center;
-    }
-    .introducingmyself {
         display: flex;
-        justify-content: center;
         align-items: center;
+        margin: 2rem 0rem;
+        &::after {
+            content: '';
+            width: 80%;
+            height: 2px;
+            background-color: #e7e7e7;
+            margin-left: 1.5rem;
+        }
+    }
+    .containersobretexts {
+        display: flex;
         gap: 50px;
-        margin: 1rem 0rem;
-        img {
-            border-radius: 50% 50%;
-            height: 150px;
-            filter: grayscale(1);
-            &:hover {
-                filter: grayscale(0);
+        .textsobreleft {
+            p {
+                max-width: 70ch;
+                margin: 10px 0;
             }
         }
-        p {
-            max-width: 80ch;
-        }
-    }
-    .infosaboutme {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
-        margin-top: 2rem;
-        padding: 0rem 3rem;
-        h2 {
-            font-size: 1.4rem;
-            text-transform: uppercase;
-            margin-bottom: .7rem;
-            font-weight: bold;
-        }
-        h3 {
-            margin-bottom: 2px;
-            font-size: 1.1rem;
-            text-transform: uppercase;
-        }
-        p {
-            margin-bottom: .5rem;
+        .textsobreright {
+            .textright1 {
+                margin-bottom: 2.3rem;
+            }
+            h2 {
+                gap: 12px;
+                font-size: 1.2rem;
+                font-weight: bold;
+                background-color: #000;
+                padding: .5rem 0 .5rem 1rem;
+                color: #fff;
+                margin-bottom: 1rem;
+                display: flex;
+                align-items: center;
+                i {
+                    color: #fff;
+                }
+            }
+            p {
+                margin: 5px 0;
+            }
         }
     }
 }
