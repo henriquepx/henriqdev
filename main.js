@@ -52,18 +52,21 @@ const overlayBg = document.querySelector('.overlay');
 menuHamburger.addEventListener('click', () => {
   mobileMenuContent.classList.add('ativo');
   overlayBg.classList.add('ativo');
+  document.body.style.overflow = 'hidden';
 })
 
 overlayBg.addEventListener("click", () => {
   mobileMenuContent.classList.remove("ativo");
   overlayBg.classList.remove('ativo');
+  document.body.style.overflow = 'auto';
 });
-
 
 closeIcon.addEventListener("click", () => {
   mobileMenuContent.classList.remove("ativo");
   overlayBg.classList.remove('ativo');
+  document.body.style.overflow = 'auto';
 });
+
 
 
 // ANIMA AO SCROLL

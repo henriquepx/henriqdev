@@ -550,8 +550,8 @@ main .mainsize .textmain .textcircle {
 
 .overlay.ativo {
   display: block;
-  transition: 2s;
   position: absolute;
+  transition: 0.7s;
   top: 0;
   left: 0;
   width: 100%;

@@ -1,5 +1,6 @@
 @import '../abstract/variables';
 
+
 .mobileMenuContent {
   display: none;
   .divisorcontent {
@@ -136,8 +137,8 @@
 
 .overlay.ativo {
   display: block;
-  transition: 2s;
   position: absolute;
+  transition: .7s;
   top: 0;
   left: 0;
   width: 100%;
