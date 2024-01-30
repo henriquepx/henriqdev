@@ -47,13 +47,22 @@ menuLanguage.forEach((itemMenu, index) => {
 const menuHamburger = document.querySelector(".menuhamburger");
 const mobileMenuContent = document.querySelector(".mobileMenuContent");
 const closeIcon = document.querySelector(".hamburgerToClose");
+const overlayBg = document.querySelector('.overlay');
 
 menuHamburger.addEventListener('click', () => {
   mobileMenuContent.classList.add('ativo');
+  overlayBg.classList.add('ativo');
 })
 
+overlayBg.addEventListener("click", () => {
+  mobileMenuContent.classList.remove("ativo");
+  overlayBg.classList.remove('ativo');
+});
+
+
 closeIcon.addEventListener("click", () => {
-    mobileMenuContent.classList.remove("ativo");
+  mobileMenuContent.classList.remove("ativo");
+  overlayBg.classList.remove('ativo');
 });
 
 
