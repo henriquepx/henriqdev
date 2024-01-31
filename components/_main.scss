@@ -9,7 +9,7 @@ main {
     height: 90vh;
     position: relative;
     .mainsize {
-        padding: 12rem 0rem;
+        padding: 9rem 0rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -18,22 +18,103 @@ main {
             height: 30%;
             display: flex;
             flex-direction: column;
-            h1 {
-                font-size: 3.5rem;
-                font-weight: 600;
+            .mainimgwork {
+                display: flex;
+                gap: 15px;
                 animation: animationTextShow 2s forwards;
-                color: $color-dark;
-                span {
-                    font-size: 3rem;
+                img {
+                    width: 80px;
+                }
+                .disponiveltowork {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    span {
+                        border-radius: 100%;
+                        width: 8px;
+                        height: 8px;
+                        background-color: rgb(0, 131, 0);
+                        animation: pulse 1s infinite alternate;
+                    }
+                    p {
+                        color: $color-dark;
+                    }
                 }
             }
-            p {
-                margin: 2rem 0rem 3rem 0rem;
-                max-width: 60ch;
-                line-height: 1.4;
-                font-size: 1.2rem;
+            /* 
+            #title {
+                cursor: pointer;
+                margin: 1.5rem 0rem .5rem 0rem;
                 animation: animationTextShow 2s forwards;
-                color: #525252;
+                h1 {
+                    font-size: 4rem;
+                    color: $color-dark;
+                    font-weight: 700;
+                }
+                .profile {
+                    h3 {
+                        font-size: 4rem;
+                        color: $color-dark;
+                        overflow: hidden;
+                        position: relative;
+                        display: inline-block;
+                        span {
+                            font-size: 4rem;
+                            display: inline-block;
+                            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                            color: $color-dark;
+                        }
+                        &::before, &::after {
+                            content: '';
+                            position: absolute;
+                            width: 100%;
+                            left: 0;
+                        }
+                        &::after {
+                            content: attr(data-replace);
+                            height: 100%;
+                            top: 0;
+                            transform-origin: 50% 100%;
+                            transform: translate3d(0, 100%, 0);
+                            transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+                            color: #000000;
+                        }
+                        &:hover::before {
+                            transform-origin: 50% 50%;
+                            transform: scaleY(0);
+                        }
+                        &:hover::after {
+                            transform: translate3d(0, 0, 0);
+                        }
+                        &:hover span {
+                            transform: translate3d(0, 100%, 0);
+                        }
+                    }
+                }
+            }
+            */
+            .mainfocus {
+                animation: animationTextShow 2s forwards;
+                h1 {
+                    font-size: 5rem;
+                }
+            }
+            .introtextmain {
+                animation: animationTextShow 2s forwards;
+                margin-bottom: 1.2rem;
+                h3 { 
+                   font-size: 1.2rem;
+                    font-weight: 600;
+            
+                    color: $color-dark; 
+                }
+                p {
+                    max-width: 60ch;
+                    line-height: 1.4;
+                    font-size: 1.2rem;
+
+                    color: #525252;
+                }
             }
             .divmain {
                 display: flex;
@@ -51,6 +132,9 @@ main {
                     color: $color-dark;
                     color: rgb(0, 0, 0);
                     font-weight: bold;
+                    padding: .6rem 1.4rem;
+                    border: 1px solid #000;
+                    border-radius: 20px;
                 }
             }
             .textcircle {

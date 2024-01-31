@@ -55,17 +55,14 @@ menuHamburger.addEventListener('click', () => {
   document.body.style.overflow = 'hidden';
 })
 
-overlayBg.addEventListener("click", () => {
+function fecharMenu() {
   mobileMenuContent.classList.remove("ativo");
   overlayBg.classList.remove('ativo');
   document.body.style.overflow = 'auto';
-});
+}
 
-closeIcon.addEventListener("click", () => {
-  mobileMenuContent.classList.remove("ativo");
-  overlayBg.classList.remove('ativo');
-  document.body.style.overflow = 'auto';
-});
+overlayBg.addEventListener("click", fecharMenu);
+closeIcon.addEventListener("click", fecharMenu);
 
 
 
