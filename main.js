@@ -3,14 +3,14 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
   
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 3000)); 
+      await new Promise(resolve => setTimeout(resolve, 4100)); 
       preloader.style.opacity = '0';
   
       setTimeout(() => {
         preloader.style.display = 'none'; 
-      }, 200);
+      }, 300);
     };
-  
+
     fetchData();
   });
 
