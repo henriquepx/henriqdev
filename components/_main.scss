@@ -6,12 +6,13 @@ main {
 
     padding: 2rem;
     .description {
+        margin-bottom: 1.2rem;
         .title {
             span {
                 font-size: 1px;
             }
             h1 {
-                font-size: 1.5rem;
+                font-size: 5rem;
             }
         }
         .textsdescription {
@@ -21,18 +22,24 @@ main {
             p {
                 max-width: 40ch;
                 font-size: 1.1rem;
+                margin: 10px 0;
             }
         }
     }
     .links {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
         span {
             font-size: .5rem;
         }
         nav {
              ul {
+                display: flex;
+                flex-direction: column;
                 li {
                     cursor: pointer;
+                }
+                .indexcontent {
+                    color: #000000;
                 }
              }
         }
@@ -51,6 +58,7 @@ main {
             text-decoration: none;
             color: var(--color);
             position: relative;
+            width: 87px;
             span {
                 background-image: linear-gradient(0deg, var(--line) 0%, var(--line) 100%);
                 background-position: 100% 100%;

@@ -3,12 +3,15 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
   
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 4100)); 
+      await new Promise(resolve => setTimeout(resolve, 3000)); 
       preloader.style.opacity = '0';
   
       setTimeout(() => {
         preloader.style.display = 'none'; 
-      }, 300);
+        document.querySelectorAll('.mainelements').forEach(element => {
+          element.classList.add('fade-in');
+      });
+      });
     };
 
     fetchData();
@@ -46,4 +49,23 @@ document.addEventListener("DOMContentLoaded", function () {
         image.style.transform = `translate(${x}px, ${y}px)`;
       });
     });
+});
+  
+// SHOWING CONTENT
+function changeSection(sectionClass) {
+  const pages = document.querySelectorAll('.page');
+  pages.forEach(page => {
+      page.style.animation = 'slideOut 0.5s ease-in-out';
   });
+
+  const targetPage = document.querySelector(`.${sectionClass}`);
+  targetPage.style.animation = 'slideIn 0.5s ease-in-out';
+  targetPage.style.transform = 'translateY(0)';
+
+  // Remova a animação após a conclusão
+  setTimeout(() => {
+      pages.forEach(page => {
+          page.style.animation = '';
+      });
+  }, 500);
+}

@@ -12,8 +12,8 @@
         display: flex;
         flex-direction: column;
         justify-content: flex-end;
+        animation: ShowingContent .7s forwards;
     }
-
     .home {
         text-align: left;
         p {
@@ -22,7 +22,6 @@
             text-align: left;
         }
     }
-
     .project {
         text-align: right;
         .containerproject {
@@ -57,5 +56,18 @@
                   }
             }
         }
+    }
+}
+
+
+@keyframes ShowingContent {
+    from {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
     }
 }
