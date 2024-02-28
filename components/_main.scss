@@ -29,6 +29,13 @@ main {
         span {
             font-size: .5rem;
         }
+        nav {
+             ul {
+                li {
+                    cursor: pointer;
+                }
+             }
+        }
     }
     .midias {
         display: flex;

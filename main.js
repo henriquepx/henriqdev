@@ -14,3 +14,20 @@ indexpages.forEach((itemMenu, index) => {
     activeTab(index);
   })
 })
+
+// MOUSE IMG HOVER
+document.addEventListener("DOMContentLoaded", function () {
+    const links = document.querySelectorAll("a");
+
+    links.forEach(link => {
+      link.addEventListener("mousemove", e => {
+        const image = link.querySelector(".hoverimage");
+        const rect = link.getBoundingClientRect();
+
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+
+        image.style.transform = `translate(${x}px, ${y}px)`;
+      });
+    });
+  });

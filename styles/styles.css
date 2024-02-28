@@ -60,6 +60,7 @@ body {
   padding: 1.1rem;
   height: 100vh;
   width: 100vw;
+  overflow: hidden;
 }
 
 @keyframes animationTextShow {
@@ -151,6 +152,9 @@ main .links {
 }
 main .links span {
   font-size: 0.5rem;
+}
+main .links nav ul li {
+  cursor: pointer;
 }
 main .midias {
   display: flex;
@@ -251,4 +255,28 @@ main .midias .underline:hover {
 }
 .contentpages .home p {
   max-width: 30ch;
+}
+.contentpages .project .containerproject {
+  display: flex;
+  flex-direction: column;
+}
+.contentpages .project .containerproject a {
+  display: inline-block;
+  position: relative;
+  font-size: 5rem;
+  color: #333;
+  text-decoration: none;
+}
+.contentpages .project .containerproject .hoverimage {
+  display: none;
+  width: 300px;
+  position: absolute;
+  bottom: 98px;
+  left: -150px;
+  pointer-events: none;
+  transition: transform 0.2s ease-out;
+}
+.contentpages .project .containerproject a:hover .hoverimage {
+  display: block;
+  z-index: 20;
 }/*# sourceMappingURL=styles.css.map */

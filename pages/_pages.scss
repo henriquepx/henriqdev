@@ -17,4 +17,31 @@
             max-width: 30ch;
         }
     }
+
+    .project {
+        .containerproject {
+            display: flex;
+            flex-direction: column;
+            a {
+                display: inline-block;
+                position: relative;
+                font-size: 5rem;
+                color: #333;
+                text-decoration: none;
+              }
+              .hoverimage {
+                display: none;
+                width: 300px;
+                position: absolute;
+                bottom: 98px;
+                left: -150px;
+                pointer-events: none;
+                transition: transform 0.2s ease-out;
+              }
+              a:hover .hoverimage {
+                display: block;
+                z-index: 20;
+              }
+        }
+    }
 }
