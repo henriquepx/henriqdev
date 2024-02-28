@@ -1,3 +1,19 @@
+// PREALODER
+document.addEventListener('DOMContentLoaded', () => {
+    const preloader = document.getElementById('preloader');
+  
+    const fetchData = async () => {
+      await new Promise(resolve => setTimeout(resolve, 3000)); 
+      preloader.style.opacity = '0';
+  
+      setTimeout(() => {
+        preloader.style.display = 'none'; 
+      }, 200);
+    };
+  
+    fetchData();
+  });
+
 // TAB CONTENT
 const pages = document.querySelectorAll('.page');
 const indexpages = document.querySelectorAll('.indexcontent');

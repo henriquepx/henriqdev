@@ -63,6 +63,35 @@ body {
   overflow: hidden;
 }
 
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+#preloader .loader {
+  border: 8px solid #f3f3f3;
+  border-top: 8px solid #3498db;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 @keyframes animationTextShow {
   0% {
     transform: translate3d(0, 200%, 0);
@@ -251,23 +280,40 @@ main .midias .underline:hover {
   display: none;
 }
 .contentpages .page.active {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.contentpages .home {
+  text-align: left;
 }
 .contentpages .home p {
   max-width: 30ch;
+  font-size: 1.2rem;
+  text-align: left;
+}
+.contentpages .project {
+  text-align: right;
 }
 .contentpages .project .containerproject {
   display: flex;
   flex-direction: column;
 }
-.contentpages .project .containerproject a {
-  display: inline-block;
+.contentpages .project .containerproject .projecttexts {
+  display: flex;
+  gap: 15px;
+  justify-content: flex-end;
+}
+.contentpages .project .containerproject .projecttexts p {
+  margin-top: 4.6rem;
+}
+.contentpages .project .containerproject .projecttexts a {
   position: relative;
-  font-size: 5rem;
+  font-size: 6rem;
   color: #333;
   text-decoration: none;
 }
-.contentpages .project .containerproject .hoverimage {
+.contentpages .project .containerproject .projecttexts .hoverimage {
   display: none;
   width: 300px;
   position: absolute;
@@ -275,8 +321,9 @@ main .midias .underline:hover {
   left: -150px;
   pointer-events: none;
   transition: transform 0.2s ease-out;
+  border: 5px solid #333;
 }
-.contentpages .project .containerproject a:hover .hoverimage {
+.contentpages .project .containerproject .projecttexts a:hover .hoverimage {
   display: block;
   z-index: 20;
 }/*# sourceMappingURL=styles.css.map */
