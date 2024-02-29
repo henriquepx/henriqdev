@@ -194,6 +194,7 @@ main .links nav ul .indexcontent {
   max-width: 30ch;
   font-size: 1rem;
   text-align: left;
+  margin: 10px 0;
 }
 .contentpages .project {
   text-align: right;

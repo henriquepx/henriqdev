@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const preloader = document.getElementById('preloader');
   
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 000)); 
+      await new Promise(resolve => setTimeout(resolve, 3000)); 
       preloader.style.opacity = '0';
   
       setTimeout(() => {
