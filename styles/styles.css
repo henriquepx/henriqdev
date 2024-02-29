@@ -119,6 +119,7 @@ main {
   display: flex;
   flex-direction: column;
   padding: 2rem;
+  position: absolute;
 }
 main .description {
   margin-bottom: 1.2rem;
@@ -203,7 +204,6 @@ main .links nav ul .indexcontent {
   display: flex;
   gap: 20px;
   flex-direction: column;
-  overflow-y: scroll;
   scrollbar-width: thin;
   scrollbar-color: transparent transparent;
 }
