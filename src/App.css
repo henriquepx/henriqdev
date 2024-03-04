@@ -14,3 +14,6 @@
 body {
   background-color: #2e2e2e;
 }
+.local {
+  display: flex;
+}

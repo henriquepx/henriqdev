@@ -1,13 +1,17 @@
 import './App.css'
-import Header from './components/Header'
-import Side from './components/Side'
+import Header from './pages/Header'
+import Side from './pages/Side'
+import Main from './pages/Main'
 
 function App() {
 
   return (
     <>
       <Header />
-      <Side />
+      <div className='local'>
+        <Side />
+        <Main />
+      </div>
     </>
   )
 }
