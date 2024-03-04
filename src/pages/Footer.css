@@ -8,6 +8,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border-top: 2px solid rgb(43, 43, 43);
 }
 
 .footer1 {
@@ -44,7 +45,7 @@ footer {
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: .25rem .6rem;
+    padding: .20rem .6rem;
 
     svg {
         color: #fff;

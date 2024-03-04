@@ -4,14 +4,14 @@
 
     display: flex;
     justify-content: space-between;
-    background-color: #1c1c1c;
+    background-color: rgb(31, 31, 31);
     align-items: center;
-    border-bottom: 1px solid #525252;
+    border-bottom: 2px solid (43, 43, 43);
 }
 
 .header1 {
     display: flex;
-    gap: 13px;
+    gap: 5px;
     align-items: center;
 
     svg {
@@ -24,7 +24,14 @@
         color: #fff;
         font-size: .7rem;
         font-weight: 300;
-        cursor: pointer;
+        cursor: default;
+            font-weight: 400;
+            padding: .35rem .4rem;
+            border-radius: 5px;
+        
+            &:hover {
+                background-color: rgb(70, 70, 70);
+            }
     }
 }
 

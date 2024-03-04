@@ -9,11 +9,14 @@
   vertical-align: baseline;
   list-style: none;
   text-decoration: none;
-  font-family: 'Montserrat', sans-serif;
+  font-family: Segoe WPC, Segoe UI, sans-serif;
 }
+
 body {
   background-color: #2e2e2e;
+  overflow: hidden;
 }
+
 .local {
   display: flex;
 }

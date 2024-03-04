@@ -5,15 +5,39 @@ const Side = () => {
     return (
         <aside>
             <div className='aside1'>
-                <VscFiles size={24} />
-                <VscSearch size={24} />
-                <VscSourceControl size={24} />
-                <VscDebugAltSmall size={24} />
-                <VscExtensions size={24} />
+                <div className='iconaside active'>
+                    <span className='sidebaractive'></span>
+                    <VscFiles size={24} />
+                </div>
+                <div className='iconaside'>
+                    <span className='sidebaractive'></span>
+                    <VscSearch size={24} />
+                </div>
+                <div className='iconaside'>
+                    <span className='sidebaractive'></span>
+                    <VscSourceControl size={24} />
+                </div>
+                <div className='iconaside'>
+                    <span className='sidebaractive'></span>
+                    <VscDebugAltSmall size={24} />
+                </div>
+                <div className='iconaside'>
+                    <span className='sidebaractive'></span>
+                    <VscExtensions size={24} />
+                </div>
+
+
+
+
+
             </div>
             <div className='aside2'>
-                <VscAccount size={24} />
-                <VscSettingsGear size={24} />
+                <div className='iconaside'>
+                    <VscAccount size={24} />
+                </div>
+                <div className='iconaside'>
+                    <VscSettingsGear size={24} />
+                </div>
             </div>
         </aside>
     )

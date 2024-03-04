@@ -6,18 +6,8 @@ main {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    padding-bottom: 7rem;
 
     svg {
         color: #222222;
-    }
-
-    h1 {
-        font-size: 3rem;
-        color: #1f1f1f;
-    }
-
-    h2 {
-        color: #1f1f1f;
     }
 }
