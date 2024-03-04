@@ -5,7 +5,7 @@ const AdviceToClick = () => {
     return (
         <div className='container-advice'>
             <img src={ArrowImage} alt="Arrow" />
-            <p>Clique aqui e veja tudo que precisa sobre meu portfólio.</p>
+            <p>Clique aqui e navegue pelo meu portfólio.</p>
         </div>
     )
 }

@@ -2,6 +2,7 @@ import './App.css'
 import Header from './pages/Header'
 import Side from './pages/Side'
 import Main from './pages/Main'
+import Footer from './pages/Footer'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
         <Side />
         <Main />
       </div>
+      <Footer />
     </>
   )
 }

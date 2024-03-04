@@ -5,7 +5,7 @@
     display: flex;
     justify-content: space-between;
     background-color: #1c1c1c;
-    align-items: center;`
+    align-items: center;
     border-bottom: 1px solid #525252;
 }
 
@@ -17,6 +17,7 @@
     svg {
         margin-left: 1rem;
         color: #fff;
+        cursor: pointer;
     }
 
     p {
@@ -32,10 +33,13 @@
     align-items: center;
     gap: 10px;
     color: #fff;
-
+    svg {
+            cursor: pointer;
+        }
     div {
         svg {
             margin: 0 16px;
+            cursor: pointer;
         }
     }
 }

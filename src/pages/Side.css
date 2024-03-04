@@ -1,7 +1,7 @@
 aside {
     position: absolute;
     left: 0;
-    height: calc(100vh - 3.8vh);
+    height: calc(100vh - 3.8vh - 2.5vh);
     width: 2.5%;
     background-color: #181818;
     border-right: 1px solid #525252;
@@ -22,5 +22,7 @@ aside {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-
+    svg {
+            cursor: pointer;
+        }
 }
