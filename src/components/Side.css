@@ -1,0 +1,26 @@
+aside {
+    position: absolute;
+    left: 0;
+    height: calc(100vh - 3.8vh);
+    width: 2.5%;
+    background-color: #181818;
+    border-right: 1px solid #525252;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 1rem 0rem;
+
+    svg {
+        color: #fff;
+    }
+}
+
+.aside1,
+.aside2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+}

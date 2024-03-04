@@ -2,7 +2,6 @@ import './Header.css'
 import { IoCodeSlash } from "react-icons/io5";
 import { VscLayoutSidebarLeft, VscLayoutPanelOff, VscLayoutSidebarRightOff, VscLayout, VscChromeMinimize, VscChromeRestore, VscChromeClose } from "react-icons/vsc";
 
-
 const Header = () => {
     return (
         <header className='container'>
@@ -16,7 +15,6 @@ const Header = () => {
                 <p>Run</p>
                 <p>Terminal</p>
                 <p>Help</p>
-
             </div>
             <div className='header2'>
                 <VscLayoutSidebarLeft />
