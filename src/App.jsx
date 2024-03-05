@@ -1,8 +1,8 @@
 import './App.css'
-import Header from './pages/Header'
-import Side from './pages/Side'
+import Header from './pages/Layout/Header'
+import Side from './pages/Layout/Side'
 import Main from './pages/Main'
-import Footer from './pages/Footer'
+import Footer from './pages/Layout/Footer'
 
 function App() {
 
