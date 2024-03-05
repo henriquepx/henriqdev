@@ -1,0 +1,17 @@
+.containerContact {
+    height: 100vh;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+}
+
+.quadrado {
+    width: 500px;
+    height: 600px;
+    background-color: brown;
+
+    display: block;
+}

@@ -2,7 +2,9 @@ import './Github.css'
 
 const Github = () => {
     return (
-        <div>Github</div>
+        <div>
+            <h1>Github</h1>
+        </div>
     )
 }
 

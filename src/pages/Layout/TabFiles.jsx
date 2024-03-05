@@ -15,12 +15,14 @@ const tabData = [
 ];
 
 const TabFiles = ({ activeIndex }) => {
+    const tabInfo = tabData[activeIndex];
+
     return (
-        <div className='tabcontainer'>
+        <div className={`tabcontainer ${activeIndex === 0 ? 'active' : ''}`}>
             <FileTab
-                nameFile={tabData[activeIndex].nameFile}
-                imgIcon={tabData[activeIndex].imgIcon}
-                altIcon={tabData[activeIndex].altIcon}
+                nameFile={tabInfo.nameFile}
+                imgIcon={tabInfo.imgIcon}
+                altIcon={tabInfo.altIcon}
             />
         </div>
     );
