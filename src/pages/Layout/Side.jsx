@@ -5,6 +5,7 @@ import { FaGithub } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import './Side.css';
+import IconSide from '../../components/IconSide';
 
 const Side = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -31,14 +32,12 @@ const Side = () => {
         <aside>
             <div className='aside1'>
                 {iconData.slice(0, 5).map((item, index) => (
-                    <div
+                    <IconSide
                         key={index}
-                        className={`iconaside ${index === activeIndex ? 'active' : ''}`}
+                        icon={item.icon}
+                        active={index === activeIndex}
                         onClick={() => handleClick(index)}
-                    >
-                        <span className='sidebaractive'></span>
-                        {item.icon}
-                    </div>
+                    />
                 ))}
             </div>
             <div className='aside2'>

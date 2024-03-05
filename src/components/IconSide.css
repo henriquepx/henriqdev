@@ -1,0 +1,30 @@
+.iconaside {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    height: 50px;
+    place-content: center;
+    position: relative;
+    width: 100%;
+    
+    span {
+        background-color: #181818;
+        height: 100%;
+        left: 1px;
+        position: absolute;
+        width: 1.5px;
+    }
+
+    svg {
+        cursor: pointer;
+        color: #7e7b74;
+    }
+}
+
+    
+.iconaside.active {
+    span {
+        background-color: #005d6d;
+    }
+}
