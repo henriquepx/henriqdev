@@ -16,7 +16,7 @@ const Side = () => {
 
     const handleClick = (index) => {
         if (index === activeIndex) {
-            return;
+            return;                 
         }
         setActiveIndex(index);
         closeDropdowns();

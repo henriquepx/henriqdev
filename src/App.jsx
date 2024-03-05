@@ -8,12 +8,15 @@ function App() {
 
   return (
     <>
-      <Header />
-      <div className='local'>
-        <Side />
-        <Main />
+      <div className='interface'>
+        <Header />
+        <div className='local'>
+          <Side />
+          <Main />
+        </div>
+        <Footer />
       </div>
-      <Footer />
+
     </>
   )
 }

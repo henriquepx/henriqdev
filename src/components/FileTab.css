@@ -5,8 +5,7 @@
     gap: 5px;
     padding: .4rem 1rem .4rem .6rem;
     border-top: 1px solid white;
-    display: none;
-
+    display: flex;
     h1 {
         color: #fff;
     }
@@ -14,8 +13,4 @@
     img {
         width: 17px;
     }
-}
-
-.filetab.active {
-    display: flex;
 }

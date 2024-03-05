@@ -1,6 +1,7 @@
 main {
     width: 100%;
     height: calc(100vh - 3.8vh);
+    margin-left: 55px;
 
     display: flex;
     justify-content: center;

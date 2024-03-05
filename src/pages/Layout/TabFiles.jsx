@@ -13,7 +13,6 @@ const TabFiles = () => {
                 nameFile='Home.jsx'
                 imgIcon={ReactIcon}
                 altIcon='ícone do JSX'
-                isActive={true}
             />
             <FileTab
                 nameFile='projects.ts'
@@ -33,7 +32,7 @@ const TabFiles = () => {
             <FileTab
                 nameFile='GITHUB.md'
                 imgIcon={ReadMEIcon}
-                altIcon='ícone do README'
+                altIcon='ícone do HTML'
             />
         </div>
     )

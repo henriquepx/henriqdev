@@ -1,8 +1,10 @@
 aside {
-    position: relative;
+    position: fixed;
+    
+        z-index: 999;
     left: 0;
     height: calc(100vh - 3.8vh - 2.5vh);
-    width: 3%;
+    width: 55px;
 
     background-color: rgb(24, 24, 24);
     border-right: 2px solid rgb(43, 43, 43);
