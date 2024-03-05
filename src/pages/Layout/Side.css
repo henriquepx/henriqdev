@@ -1,7 +1,7 @@
 aside {
     position: fixed;
     
-        z-index: 999;
+    z-index: 999;
     left: 0;
     height: calc(100vh - 3.8vh - 2.5vh);
     width: 55px;

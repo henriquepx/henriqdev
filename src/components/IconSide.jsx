@@ -1,19 +1,19 @@
-
 import PropTypes from 'prop-types';
 import './IconSide.css';
 
-const IconSide = ({ icon, active, onClick }) => {
+const IconSide = ({ icon, active, link, onClick, ...rest }) => {
     return (
-        <div className={`iconaside ${active ? 'active' : ''}`} onClick={onClick}>
+        <a href={link} className={`iconaside ${active ? 'active' : ''}`} onClick={onClick} {...rest} >
             <span className='sidebaractive'></span>
             {icon}
-        </div>
+        </a>
     );
 }
 
 IconSide.propTypes = {
     icon: PropTypes.element.isRequired,
     active: PropTypes.bool.isRequired,
+    link: PropTypes.string,
     onClick: PropTypes.func.isRequired,
 };
 

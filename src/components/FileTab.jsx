@@ -1,19 +1,20 @@
-import './FileTab.css'
 import PropTypes from 'prop-types';
+import './FileTab.css'; 
 
-const FileTab = ({ nameFile, imgIcon, altIcon }) => {
+const FileTab = ({ nameFile, imgIcon, altIcon, active }) => {
     return (
-        <div className='filetab'>
+        <div className={`filetab ${active ? 'active' : ''}`}>
             <img src={imgIcon} alt={altIcon} />
-            <h1>{nameFile}</h1>
+            <span>{nameFile}</span>
         </div>
     );
-}
+};
 
 FileTab.propTypes = {
     nameFile: PropTypes.string.isRequired,
     imgIcon: PropTypes.string.isRequired,
     altIcon: PropTypes.string.isRequired,
+    active: PropTypes.bool.isRequired,
 };
 
 export default FileTab;

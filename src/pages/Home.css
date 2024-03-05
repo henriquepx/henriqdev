@@ -1,3 +1,6 @@
-h1 {
-    color: #fff;
+.homecontainer {
+    position: relative;
+
+    height: calc(100vh - 6.3);
+    width: 100%;
 }

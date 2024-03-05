@@ -6,11 +6,19 @@
     padding: .4rem 1rem .4rem .6rem;
     border-top: 1px solid white;
     display: flex;
-    h1 {
-        color: #fff;
-    }
-
     img {
         width: 17px;
+    }
+}
+
+.filetab {
+    display: none;
+}
+
+.filetab.active {
+    display: flex;
+
+    span {
+        color: #fff;
     }
 }

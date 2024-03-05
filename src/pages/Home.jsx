@@ -1,12 +1,12 @@
-import './Home.css'
-
+import './Home.css';
+import TabFiles from './Layout/TabFiles';
 
 const Home = () => {
     return (
-        <div>
-            <h1>Home</h1>
+        <div className='homecontainer'>
+            <TabFiles activeTab='Home' />
         </div>
-    )
+    );
 }
 
-export default Home
+export default Home;

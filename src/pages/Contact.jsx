@@ -1,12 +1,13 @@
-import './Contact.css'
+import './Contact.css';
+import TabFiles from './Layout/TabFiles';
 
 const Contact = () => {
     return (
         <div className='containerContact'>
+            <TabFiles activeTab='Contact' />
             <h1>Contato</h1>
-            <span className='quadrado'></span>
         </div>
-    )
+    );
 }
 
-export default Contact
+export default Contact;
