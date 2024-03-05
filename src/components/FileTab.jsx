@@ -2,10 +2,8 @@ import './FileTab.css'
 import PropTypes from 'prop-types';
 
 const FileTab = ({ nameFile, imgIcon, altIcon, isActive }) => {
-    const fileTabClasses = `filetab ${isActive ? 'active' : ''}`;
-
     return (
-        <div className={fileTabClasses}>
+        <div className={`filetab ${isActive ? 'active' : ''}`}>
             <img src={imgIcon} alt={altIcon} />
             <h1>{nameFile}</h1>
         </div>

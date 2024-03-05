@@ -1,0 +1,16 @@
+.dropdownProfileContainer {
+    position: absolute;
+    bottom: 6%;
+    left: 100%;
+    z-index: 999;
+    background: #1c1c1c;
+    width: 230px;
+    height: 40px;
+    border: 1.5px solid rgb(87, 87, 87);
+    border-radius: 5px;
+    padding: .5rem;
+
+    h1 {
+        color: #fff;
+    }
+}
