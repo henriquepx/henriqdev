@@ -1,6 +1,6 @@
 .dropdownSettingsContainer {
     position: absolute;
-    bottom: 0%;
+    bottom: 60px;
     left: 100%;
     z-index: 999;
     background: #1c1c1c;

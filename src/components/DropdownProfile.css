@@ -1,6 +1,6 @@
 .dropdownProfileContainer {
     position: absolute;
-    bottom: 6%;
+    bottom: 120px;
     left: 100%;
     z-index: 999;
     background: #1c1c1c;
