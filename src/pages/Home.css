@@ -4,3 +4,21 @@
     height: calc(100vh - 6.3);
     width: 100%;
 }
+.infoHome {
+    margin: 20rem 0rem 0rem 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        font-size: 4rem;
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    h2 {
+        font-size: 2rem;
+        font-family: 'Montserrat', sans-serif;
+        color: #b9b9b9;
+        margin-left: .8rem;
+    }
+}

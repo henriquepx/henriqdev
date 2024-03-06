@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 import { VscFiles, VscAccount, VscSettingsGear } from "react-icons/vsc";
 import { IoCodeSlashOutline } from "react-icons/io5";
 import { FaGithub } from "react-icons/fa6";
@@ -33,31 +34,36 @@ const Side = () => {
     return (
         <aside>
             <div className='aside1'>
-                <IconSide
-                    icon={<VscFiles size={24} />}
-                    active={activeIndex === 0}
-                    onClick={() => handleClick(0)}
-                />
-                <IconSide
-                    icon={<RiComputerFill size={24} />}
-                    active={activeIndex === 1}
-                    onClick={() => handleClick(1)}
-                />
-                <IconSide
-                    icon={<IoCodeSlashOutline size={24} />}
-                    active={activeIndex === 2}
-                    onClick={() => handleClick(2)}
-                />
-                <IconSide
-                    icon={<FaEnvelope size={24} />}
-                    active={activeIndex === 3}
-                    onClick={() => handleClick(3)}
-                />
-                <IconSide
-                    icon={<FaGithub size={24} />}
-                    active={activeIndex === 4}
-                    onClick={() => handleClick(4)}
-                />
+                <Link to="/" onClick={() => handleClick(0)}>
+                    <IconSide
+                        icon={<VscFiles size={24} />}
+                        active={activeIndex === 0}
+                    />
+                </Link>
+                <Link to="/projects" onClick={() => handleClick(1)}>
+                    <IconSide
+                        icon={<RiComputerFill size={24} />}
+                        active={activeIndex === 1}
+                    />
+                </Link>
+                <Link to="/skills" onClick={() => handleClick(2)}>
+                    <IconSide
+                        icon={<IoCodeSlashOutline size={24} />}
+                        active={activeIndex === 2}
+                    />
+                </Link>
+                <Link to="/contact" onClick={() => handleClick(3)}>
+                    <IconSide
+                        icon={<FaEnvelope size={24} />}
+                        active={activeIndex === 3}
+                    />
+                </Link>
+                <Link to="/github" onClick={() => handleClick(4)}>
+                    <IconSide
+                        icon={<FaGithub size={24} />}
+                        active={activeIndex === 4}
+                    />
+                </Link>
             </div>
             <div className='aside2'>
                 <IconSide

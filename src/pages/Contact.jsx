@@ -5,7 +5,9 @@ const Contact = () => {
     return (
         <div className='containerContact'>
             <TabFiles activeTab='Contact' />
-            <h1>Contato</h1>
+            <div className='contactsize'>
+                <h1>Minhas redes sociais</h1>
+            </div>
         </div>
     );
 }
