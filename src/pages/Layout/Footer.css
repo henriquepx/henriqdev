@@ -1,5 +1,5 @@
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     height: 2.5vh;
     background-color: #181818;
@@ -9,6 +9,8 @@ footer {
     justify-content: space-between;
     align-items: center;
     border-top: 2px solid rgb(43, 43, 43);
+
+    z-index: 500;
 }
 
 .footer1 {

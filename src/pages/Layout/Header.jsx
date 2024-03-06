@@ -1,12 +1,13 @@
 import './Header.css'
 import { IoCodeSlash } from "react-icons/io5";
-import { VscLayoutSidebarLeft, VscLayoutPanelOff, VscLayoutSidebarRightOff, VscLayout, VscChromeMinimize, VscChromeRestore, VscChromeClose } from "react-icons/vsc";
+import { VscLayoutSidebarLeft, VscMenu, VscLayoutPanelOff, VscLayoutSidebarRightOff, VscLayout, VscChromeMinimize, VscChromeRestore, VscChromeClose } from "react-icons/vsc";
 
 const Header = () => {
     return (
         <header className='container'>
             <div className='header1'>
                 <IoCodeSlash size={20} />
+                <VscMenu className='hamburger' />
                 <p>File</p>
                 <p>Edit</p>
                 <p>Selection</p>
