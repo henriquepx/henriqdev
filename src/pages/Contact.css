@@ -9,12 +9,51 @@
 }
 .contactsize {
     position: absolute;
-    left: 80px;
-    top: 50px;
-
+    left: 100px;
+    top: 80px;
     display: flex;
-
-    h1 {
-        color: #fff;
+    @media (max-width: 450px) {
+        left: 50px;
+        top: 40px;
+        padding: 1rem;
     }
 }
+.contactmidias {
+    h1 {
+        color: #999898;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.5rem;
+        margin-bottom: 1.7rem;
+    }
+}
+.socialmediascontact {
+    counter-reset: line;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    p {
+        font-family: 'Montserrat', sans-serif;
+        color: #c0c0c0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        @media (max-width: 450px) {
+            font-size: .9rem;
+        }
+    }
+}
+.socialmediascontact p::before {
+    content: counter(line);
+    counter-increment: line;
+    margin-right: 1rem;
+    color: grey;
+}
+.contactways {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    @media (max-width: 1300px) {
+        flex-direction: column;
+    }
+}
+
