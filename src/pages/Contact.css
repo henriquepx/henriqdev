@@ -32,10 +32,14 @@
     line-height: 2rem;
     p {
         font-family: 'Montserrat', sans-serif;
-        color: #c0c0c0;
+         color: #c0c0c0;
         display: flex;
-        align-items: center;
+        align-items: center;    
         gap: 10px;
+        a {
+            color: #c0c0c0;
+            text-decoration: underline;
+        }
         @media (max-width: 450px) {
             font-size: .9rem;
         }
@@ -47,13 +51,7 @@
     margin-right: 1rem;
     color: grey;
 }
-.contactways {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    @media (max-width: 1300px) {
-        flex-direction: column;
-    }
-}
 
+.socialmediascontact p::after:nth-child(2) {
+    margin-right: 2rem;
+}
