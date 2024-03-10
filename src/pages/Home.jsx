@@ -20,7 +20,7 @@ const InfoHome = styled.div`
     align-items: center;
     padding-bottom: 8rem;
     text-align: center;
-
+    margin-left: 25px;
     h1 {
         font-size: 4rem;
         font-family: 'Montserrat', sans-serif;
