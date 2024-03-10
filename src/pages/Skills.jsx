@@ -1,12 +1,16 @@
 import TabFiles from './Layout/TabFiles'
-import './Skills.css'
+import styled from 'styled-components'
+
+const SkillsContainer = styled.div`
+
+`
 
 const Skills = () => {
     return (
-        <div>
+        <SkillsContainer>
             <TabFiles activeTab='Skills' />
             <h1>Skills</h1>
-        </div>
+        </SkillsContainer>
     )
 }
 

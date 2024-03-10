@@ -1,13 +1,18 @@
-import './Form.css';
+import styled from "styled-components";
+
+const FormContainer = styled.div`
+
+
+`
 
 const Form = () => {
 
   return (
-    <div>
+    <FormContainer>
       <form>
         <h1>Form</h1>
       </form>
-    </div>
+    </FormContainer>
   );
 }
 

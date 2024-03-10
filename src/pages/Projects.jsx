@@ -1,12 +1,16 @@
 import TabFiles from './Layout/TabFiles'
-import './Projects.css'
+import styled from 'styled-components'
+
+const ProjectContainer = styled.div`
+
+`
 
 const Projects = () => {
     return (
-        <div>
+        <ProjectContainer>
             <TabFiles activeTab='Projects' />
             <h1>Projects</h1>
-        </div>
+        </ProjectContainer>
     )
 }
 

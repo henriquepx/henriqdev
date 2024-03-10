@@ -1,12 +1,16 @@
-import './Github.css'
+import styled from 'styled-components'
 import TabFiles from './Layout/TabFiles'
+
+const GithubContainer = styled.div`
+
+`
 
 const Github = () => {
     return (
-        <div>
+        <GithubContainer>
             <TabFiles activeTab='Github' />
             <h1>Github</h1>
-        </div>
+        </GithubContainer>
     )
 }
 

@@ -6,9 +6,28 @@ import { FaGithub } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import IconSide from '../../components/IconSide';
-import './Side.css';
 import DropdownSettings from '../../components/DropdownSettings';
 import DropdownProfile from '../../components/DropdownProfile';
+import styled from 'styled-components';
+
+const StyledAside = styled.aside`
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    height: 100%;
+    width: 55px;
+    padding-bottom: 4rem;
+    background-color: rgb(24, 24, 24);
+    border-right: 2px solid rgb(43, 43, 43);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+`;
+
+const StyledAsideSection = styled.div`
+    width: 100%;
+    padding-right: 0.2rem;
+`;
 
 const Side = () => {
     const [activeIndex, setActiveIndex] = useState(0);
@@ -32,8 +51,8 @@ const Side = () => {
     };
 
     return (
-        <aside>
-            <div className='aside1'>
+        <StyledAside>
+            <StyledAsideSection>
                 <Link to="/" onClick={() => handleClick(0)}>
                     <IconSide
                         icon={<VscFiles size={24} />}
@@ -64,8 +83,8 @@ const Side = () => {
                         active={activeIndex === 4}
                     />
                 </Link>
-            </div>
-            <div className='aside2'>
+            </StyledAsideSection>
+            <StyledAsideSection>
                 <IconSide
                     icon={<VscAccount size={24} />}
                     active={activeIndex === 5}
@@ -82,8 +101,8 @@ const Side = () => {
                 {isDropdownOpen && (
                     <DropdownSettings />
                 )}
-            </div>
-        </aside>
+            </StyledAsideSection>
+        </StyledAside>
     );
 }
 

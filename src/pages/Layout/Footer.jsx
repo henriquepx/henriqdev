@@ -1,44 +1,170 @@
-import './Footer.css'
+import styled from 'styled-components';
 import { VscRemote, VscSourceControl, VscSync, VscError, VscWarning, VscRadioTower, VscBell } from "react-icons/vsc";
 import { FaReact } from "react-icons/fa";
 
+const FooterContainer = styled.footer`
+    position: fixed;
+    bottom: 0;
+    height: 2.5vh;
+    background-color: #181818;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 2px solid rgb(43, 43, 43);
+    z-index: 500;
+`;
+
+const FooterSection = styled.div`
+    display: flex;
+    align-items: center;
+    font-size: 0.7rem;
+
+    svg {
+        color: #8f8f8f;
+    }
+
+    p {
+        font-size: 0.8rem;
+        color: #8f8f8f;
+    }
+`;
+
+const IconBranch = styled.div`
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    margin: 0 0.2rem;
+    cursor: pointer;
+    padding: 0.127rem 0.6rem;
+
+    &:hover {
+        background-color: rgb(70, 70, 70);
+    }
+`;
+
+const IconBlue = styled.div`
+    background-color: rgb(1, 128, 160);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 0.20rem 0.6rem;
+
+    svg {
+        color: #fff;
+    }
+
+    &:hover {
+        background-color: rgb(4, 164, 204);
+    }
+`;
+
+const IconFooter = styled.div`
+    cursor: pointer;
+    display: flex;
+    gap: 3px;
+    align-items: center;
+
+    svg {
+        color: #8f8f8f;
+    }
+
+    margin: 0 0.2rem;
+    padding: 0.127rem 0.4rem;
+
+    &:hover {
+        background-color: rgb(70, 70, 70);
+    }
+`;
+
+const Footer2 = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-right: 1rem;
+
+    svg {
+        color: #8f8f8f;
+
+        &:hover {
+            background-color: rgb(70, 70, 70);
+        }
+    }
+`;
+
+const NotificationFooter = styled.div`
+    padding: 0.14rem 0.5rem;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+    svg {
+        color: #8f8f8f;
+    }
+`;
+
+const LanguageFooter = styled.div`
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding: 0.14rem 0.6rem;
+    gap: 6px;
+
+    @media (max-width: 400px) {
+        display: none;
+    }
+
+    &:hover {
+        background-color: rgb(70, 70, 70);
+    }
+
+    p {
+        font-size: 5px;
+        color: #808080;
+    }
+`;
+
 const Footer = () => {
     return (
-        <footer>
-            <div className='footer1'>
-                <div className='iconblue'>
+        <FooterContainer>
+            <FooterSection>
+                <IconBlue>
                     <VscRemote size={14} />
-                </div>
-                <div className='iconbranch'>
+                </IconBlue>
+                <IconBranch>
                     <VscSourceControl size={14} />
                     <p>main*</p>
                     <VscSync size={14} className='sync' />
-                </div>
+                </IconBranch>
 
-                <div className='iconfooter'>
-                    <VscError size={14} />
-                    <p>0</p>
-                    <VscWarning size={14} />
-                    <p>0</p>
-                </div>
-                <div className='iconfooter'>
-                    <VscRadioTower size={14} />
-                    <p>0</p>
-                </div>
+                <FooterSection>
+                    <IconFooter>
+                        <VscError size={14} />
+                        <p>0</p>
+                        <VscWarning size={14} />
+                        <p>0</p>
+                    </IconFooter>
+                    <IconFooter>
+                        <VscRadioTower size={14} />
+                        <p>0</p>
+                    </IconFooter>
+                </FooterSection>
+            </FooterSection>
 
-            </div>
-            <div className='footer2'>
-                <div className='langaguefooter'>
+            <Footer2>
+                <LanguageFooter>
                     <FaReact size={14} />
                     <p>powered by ReactJS</p>
-                </div>
-                <div className='notificationfooter'>
+                </LanguageFooter>
+                <NotificationFooter>
                     <VscBell size={14} />
-                </div>
+                </NotificationFooter>
+            </Footer2>
+        </FooterContainer>
+    );
+};
 
-            </div>
-        </footer>
-    )
-}
-
-export default Footer
+export default Footer;

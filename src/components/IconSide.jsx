@@ -1,14 +1,39 @@
 import PropTypes from 'prop-types';
-import './IconSide.css';
+import styled from 'styled-components';
+
+const StyledIconSide = styled.a`
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: grid;
+    height: 50px;
+    place-content: center;
+    position: relative;
+    width: 100%;
+
+    span {
+        background-color: ${({ active }) => (active ? '#005d6d' : '#181818')};
+        height: 100%;
+        left: 1px;
+        position: absolute;
+        width: 1.5px;
+    }
+
+    svg {
+        cursor: pointer;
+        color: #7e7b74;
+    }
+
+`;
 
 const IconSide = ({ icon, active, link, onClick, ...rest }) => {
     return (
-        <p href={link} className={`iconaside ${active ? 'active' : ''}`} onClick={onClick} {...rest} >
-            <span className='sidebaractive'></span>
+        <StyledIconSide active={active} href={link} onClick={onClick} {...rest}>
+            <span></span>
             {icon}
-        </p>
+        </StyledIconSide>
     );
-}
+};
 
 IconSide.propTypes = {
     icon: PropTypes.element.isRequired,
