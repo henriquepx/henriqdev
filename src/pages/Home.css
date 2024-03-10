@@ -3,9 +3,11 @@
 
     height: calc(100vh - 6.3);
     width: 100%;
+    margin-left: 55px;
     @media (max-width: 800px) {
-        padding: 1rem;
+        padding: .5rem;
     }
+    
 }
 
 .infoHome {
@@ -14,15 +16,14 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 200px;
-    @media (max-width: 800px) {
-        margin-left: 60px;
-    }
+    align-items: center;
+    padding-bottom: 5rem;
+    text-align: center;
     h1 {
         font-size: 4rem;
         font-family: 'Montserrat', sans-serif;
         @media (max-width: 800px) {
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
     }
     h2 {
@@ -32,7 +33,6 @@
         @media (max-width: 800px) {
             font-size: 1.2rem;
         }
-    
     }
     p {
         font-size: 1rem;
@@ -54,17 +54,24 @@
         color: #fff;
         background-color: rgb(0, 153, 180);
         padding: .5rem 2rem;
+        font-weight: 600;
     } 
+}
+
+.descriptionhome {
+    padding-top: 1rem;
+    max-width: 50ch;
 }
 
 .wallpaperMain {
     position: fixed;
-    right: -500px;
-    bottom: 0;
-    transform: rotate(110deg);
+    right: 300px;
+    bottom: -310px;
+    transform: rotate(210deg);
     width: 1300px;
     z-index: 0;
-    @media (max-width: 1200px) {
-        display: none;
+    @media (max-width: 450px) {
+        right: 50px;
+        bottom: -270px;
     }
 }

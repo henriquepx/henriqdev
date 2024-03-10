@@ -9,11 +9,12 @@ const Home = () => {
             <div className='infoHome'>
                 <h1>Henrique Pinheiro</h1>
                 <h2>Desenvolvedor Front-end</h2>
-                <p>Faço umas telas interativas e animadas e construo softwares bonitos.</p>
+                <p className='descriptionhome'>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário.</p>
                 <div className='linkshome'>
                     <a href="#">CV</a>
                     <a href="#">Contrate-me</a>
                 </div>
+                
                 <img className='wallpaperMain' src={Wallpaper} alt="Wallpaper" />
             </div>
         </div>
