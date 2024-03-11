@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import Wallpaper from '../assets/wallpaper.png';
+import { Link } from 'react-router-dom';
 
 const HomeContainer = styled.div`
     position: relative;
@@ -10,7 +11,6 @@ const HomeContainer = styled.div`
         padding: .5rem;
     }
 `;
-
 const InfoHome = styled.div`
     height: 100vh;
     width: 100%;
@@ -43,33 +43,35 @@ const InfoHome = styled.div`
         font-size: 1rem;
         font-family: 'Montserrat', sans-serif;
         color: #b9b9b9;
-        margin-top: .5rem;
         @media (max-width: 800px) {
             max-width: 30ch;
         }
     }
 `;
-
 const LinksHome = styled.div`
     display: flex;
     align-items: center;
     gap: 20px;
     margin-top: 1.5rem;
-
-    a {
-        color: #fff;
-        background-color: rgb(0, 153, 180);
-        padding: .5rem 2rem;
-        font-weight: 600;
-        cursor: pointer;
-    }
 `;
-
+const CV = styled.a`
+    color: #fff;
+    background-color: rgb(0, 153, 180);
+    padding: .5rem 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+`
+const LinkToContact = styled(Link)`
+    color: #fff;
+    background-color: rgb(0, 153, 180);
+    padding: .5rem 2rem;
+    font-weight: 600;
+    border-radius: 5px;
+`
 const DescriptionHome = styled.p`
     padding-top: 1rem;
     max-width: 50ch;
 `;
-
 const WallpaperMain = styled.img`
     position: fixed;
     right: 300px;
@@ -93,8 +95,8 @@ const Home = () => {
                 <h2>Desenvolvedor Front-end</h2>
                 <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário.</DescriptionHome>
                 <LinksHome>
-                    <a href="#">CV</a>
-                    <a href="#">Contrate-me</a>
+                    <CV href="#">CV</CV>
+                    <LinkToContact to="/contact">Contrate-me</LinkToContact>
                 </LinksHome>
                 <WallpaperMain src={Wallpaper} alt="Wallpaper" />
             </InfoHome>

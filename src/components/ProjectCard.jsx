@@ -1,48 +1,86 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const ProjectCardContainer = styled.a`
-  img {
-    width: 340px;
-    border-radius: 10px;
-    @media (max-width: 320px) {
-      width: 240px;
-    }
-    @media (min-width: 321px) and (max-width: 400px) {
-      width: 270px;
-    }
-    @media (min-width: 401px) and (max-width: 500px) {
-      width: 320px;
-    }
-  }
-`;
 
-const TextProject = styled.div`
+const BlogCardWrapper = styled.a`
   display: flex;
-  justify-content: space-between;
-  margin-top: .4rem;
-  h1, p {
-    color: #fff;
-    font-weight: 500;
-    font-family: 'Montserrat', sans-serif;
+  flex-direction: column;
+  box-shadow: 0 3px 7px -1px rgba(#000, .1);
+  border-radius: 15px;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 0;
+  @media (min-width: 640px) {
+    flex-direction: row;
+    max-width: 800px;
+    height: 200px;
   }
 `;
 
-const ProjectCard = ({ linkProject, imgProject, altImg, titleProject, descProject }) => {
+const MetaWrapper = styled.div`
+display: flex;
+justify-content: center;
+align-items: center;
+`;
+const PhotoWrapper = styled.img`
+  width: 300px;
+  @media (max-width: 450px) {
+    width: 200px;
+  }
+`;
+const DescriptionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #c2c2c2;
+  text-align: left;
+  padding: 1rem;
+  h1 {
+    font-size: 1.6rem;
+    color: #000000;
+    font-family: 'Monserrat', sans-serif;
+  }
+  h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #313131;
+  }
+  p {
+    position: relative;
+    margin: .2rem 0 0;
+    margin-top: 1.25rem;
+    color: #000000;
+    &:before {
+      content: "";
+      position: absolute;
+      height: 2px;
+      background: #00b7ff;
+      width: 35px;
+      top: -0.75rem;
+    }
+  }
+`;
+
+const ProjectCard = ({ linkProject, languagesProject, imgProject, titleProject, descProject }) => {
   return (
-    <ProjectCardContainer href={linkProject} target='_blank' rel='noreferrer'>
-      <img src={imgProject} alt={altImg} />
-      <TextProject>
-        <h1>{titleProject}</h1>
-        <p>{descProject}</p>
-      </TextProject>
-    </ProjectCardContainer>
+    <BlogCardWrapper href={linkProject} target='_blank' rel='noreferrer'>
+      <MetaWrapper>
+        <PhotoWrapper src={imgProject} />
+      </MetaWrapper>
+      <DescriptionWrapper>
+        <div>
+          <h1>{titleProject}</h1>
+          <h2>{descProject}</h2>
+        </div>
+        <p>{languagesProject}</p>
+      </DescriptionWrapper>
+    </BlogCardWrapper>
   );
 };
 
 ProjectCard.propTypes = {
   imgProject: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
-  altImg: PropTypes.string.isRequired,
+  languagesProject: PropTypes.string.isRequired,
   linkProject: PropTypes.string.isRequired,
   titleProject: PropTypes.string.isRequired,
   descProject: PropTypes.string,
