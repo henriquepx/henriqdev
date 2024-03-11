@@ -43,7 +43,7 @@ const SocialMediasContact = styled.div`
 
     p {
         font-family: 'Montserrat', sans-serif;
-        color: #757575;
+        color: #969696;
         display: flex;
         align-items: center;    
         gap: 10px;
@@ -65,7 +65,7 @@ const SocialMediasContact = styled.div`
 `;
 
 const SocialMediasContactLink = styled.a`
-    color: #d1d1d1;
+    color: #ebebeb;
     font-size: 1.2rem;
 
     &:hover {

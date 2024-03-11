@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const ProjectCardContainer = styled.div`
+const ProjectCardContainer = styled.a`
   img {
     width: 340px;
+    border-radius: 10px;
     @media (max-width: 320px) {
       width: 240px;
     }
@@ -19,15 +20,17 @@ const ProjectCardContainer = styled.div`
 const TextProject = styled.div`
   display: flex;
   justify-content: space-between;
+  margin-top: .4rem;
   h1, p {
     color: #fff;
+    font-weight: 500;
     font-family: 'Montserrat', sans-serif;
   }
 `;
 
-const ProjectCard = ({ imgProject, altImg, titleProject, descProject }) => {
+const ProjectCard = ({ linkProject, imgProject, altImg, titleProject, descProject }) => {
   return (
-    <ProjectCardContainer>
+    <ProjectCardContainer href={linkProject} target='_blank' rel='noreferrer'>
       <img src={imgProject} alt={altImg} />
       <TextProject>
         <h1>{titleProject}</h1>
@@ -40,6 +43,7 @@ const ProjectCard = ({ imgProject, altImg, titleProject, descProject }) => {
 ProjectCard.propTypes = {
   imgProject: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired,
   altImg: PropTypes.string.isRequired,
+  linkProject: PropTypes.string.isRequired,
   titleProject: PropTypes.string.isRequired,
   descProject: PropTypes.string,
 };

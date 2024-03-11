@@ -1,9 +1,7 @@
 import ProjectCard from '../components/ProjectCard'
 import TabFiles from './Layout/TabFiles'
 import styled from 'styled-components'
-import DevInsights from '../assets/projects/devinsights.png';
-import DsmBg from '../assets/projects/dsmbg.jpg';
-import JapaCard from '../assets/projects/japabg.jpg';
+import DevInsights from '../assets/devphoto.jpg'
 
 const ProjectContainer = styled.div`
     position: relative;
@@ -24,8 +22,6 @@ const ProjectSize = styled.div`
     margin-left: 25px;
 `
 
-
-
 const Projects = () => {
     return (
         <ProjectContainer>
@@ -33,22 +29,11 @@ const Projects = () => {
             <h1>Projects that I made</h1>
             <ProjectSize>
                 <ProjectCard
-                    imgProject={DsmBg}
-                    altImg="Imagem do Projeto1"
-                    titleProject="Projeto1"
-                    descProject="blablablabla"
-                />
-                <ProjectCard
-                    imgProject={JapaCard}
-                    altImg="Imagem do Projeto1"
-                    titleProject="Projeto1"
-                    descProject="blablablabla"
-                />
-                <ProjectCard
-                    imgProject={JapaCard}
-                    altImg="Imagem do Projeto1"
-                    titleProject="Projeto1"
-                    descProject="blablablabla"
+                    imgProject={DevInsights}
+                    altImg="Imagem representando o Dev Insights"
+                    titleProject="Dev Insights"
+                    descProject="Blog / ReactJS"
+                    linkProject='https://dev-insights-self.vercel.app/'
                 />
             </ProjectSize>
         </ProjectContainer>
