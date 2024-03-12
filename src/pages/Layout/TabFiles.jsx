@@ -3,7 +3,6 @@ import FileTab from '../../components/FileTab';
 import ReactIcon from '../../assets/react.png';
 import TSIcon from '../../assets/ts.png';
 import HTMLIcon from '../../assets/code-orange.png';
-import ReadMEIcon from '../../assets/markdown.png';
 import CSSIcon from '../../assets/brackets-blue.png';
 import styled from 'styled-components';
 
@@ -45,12 +44,6 @@ const TabFiles = ({ activeTab }) => {
                 imgIcon={HTMLIcon}
                 altIcon='ícone do HTML'
                 active={activeTab === 'Contact'}
-            />
-            <FileTab
-                nameFile='GITHUB.md'
-                imgIcon={ReadMEIcon}
-                altIcon='ícone do HTML'
-                active={activeTab === 'Github'}
             />
         </TabFilesContainer>
     );

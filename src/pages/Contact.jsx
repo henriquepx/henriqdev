@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import Form from '../components/Form';
-import { FaFile, FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa'
 
 const ContainerContact = styled.div`
     height: calc(100vh - 6.3vh);
@@ -43,61 +42,14 @@ const ContactSize = styled.div`
         text-align: center;
     }
 `;
-const UlContact = styled.ul`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-`;
-const ALinkContact = styled.a`
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-    padding: .5rem 1rem;
-    width: 220px;
-    background-color: #1d1d1d;
-    border-radius: 10px;
-    border: 2px solid #333232;
-    &:hover {
-        background-color: #242323;
-    }
-    p {
-        color: #fff; 
-    }
-`
+
 
 const Contact = () => {
     return (
         <ContainerContact>
             <TabFiles activeTab='Contact' />
             <ContactSize>
-                    <nav>
-                        <UlContact>
-                            <ALinkContact href="#" target='_blank' rel='noreferre'>
-                                <FaLinkedin size={18} color='#fff'/>
-                                <p>LinkedIn</p>
-                            </ALinkContact>
-                            <ALinkContact href="#" target='_blank' rel='noreferre'>
-                                <FaGithub size={18} color='#fff'/>
-                                <p>Github</p>
-                            </ALinkContact>
-                            <ALinkContact href="#" target='_blank' rel='noreferre'>
-                                <FaWhatsapp size={18} color='#fff'/>
-                                <p>Whatsapp</p>
-                            </ALinkContact>
-                            <ALinkContact href="#" target='_blank' rel='noreferre'>
-                                <FaFile size={18} color='#fff'/>
-                                <p>Blog</p>
-                            </ALinkContact>
-                        </UlContact>
-                    </nav>
-                    <p>or</p>
-                    <div>
-                        <Form />
-                    </div>
-
+                <Form />
             </ContactSize>
         </ContainerContact>
     );
