@@ -10,37 +10,22 @@ const ContainerContact = styled.div`
     align-items: center;
     margin-left: 55px;
     background-color: #2e2e2e;
-
     @media (max-width: 450px) {
         margin-left: 50px;
     }
 `;
 const ContactSize = styled.div`
-    margin-top: 10rem;
-    @media (max-width: 700px) {
-        margin-top: 4rem;
-    }
     display: flex;
-    flex-direction: column-reverse;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
     color: #fff;
+    margin-top: 15rem;
+    @media (max-width: 400px) {
+        margin-top: 8rem;
+    }
 
     overflow-y: auto; 
-    &::-webkit-scrollbar {
-        width: 12px; 
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #505050; 
-        border-radius: 6px; 
-    }
-    &::-webkit-scrollbar-track {
-        background-color: #1d1d1d;
-    }
-    scrollbar-width: thin;
-    scrollbar-color: #9c9c9c #1d1d1d;
-    p {
-        text-align: center;
-    }
 `;
 
 
