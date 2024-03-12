@@ -13,6 +13,7 @@ import SQL from '../assets/skills/sql.png'
 import StyledComponents from '../assets/skills/styledcomponents.png'
 import Tailwind from '../assets/skills/tailwind.png'
 import Typescript from '../assets/skills/typescript.png'
+import NextJS from '../assets/skills/next.png'
 
 const SkillsContainer = styled.div`
     position: relative;
@@ -25,33 +26,29 @@ const SkillsContainer = styled.div`
 `
 const SkillsSize = styled.div`
     width: 100%;
-    max-width: 1500px;
+    max-width: 1200px;
     margin: 0 auto;
     overflow-y: auto; 
     max-height: calc(100vh - 6.3rem); 
 
-
     &::-webkit-scrollbar {
         width: 12px; 
     }
-
     &::-webkit-scrollbar-thumb {
         background-color: #505050; 
         border-radius: 6px; 
     }
-
     &::-webkit-scrollbar-track {
         background-color: #1d1d1d;
     }
-
     scrollbar-width: thin;
     scrollbar-color: #9c9c9c #1d1d1d;
 
     display: flex;
     flex-direction: column;
-    margin-top: 10rem;
+    margin-top: 4rem;
     @media (max-width: 800px) {
-        margin-top: 4rem;
+        margin-top: 2rem;
         padding-bottom: 10rem;
     }
 `
@@ -60,7 +57,6 @@ const SkillsWrap = styled.div`
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 55px;
-
 `
 const LearningSkills = styled.h2`
     font-family: 'Montserrat', sans-serif;
@@ -74,7 +70,6 @@ const LearningSkills = styled.h2`
      padding: 1rem;
      margin: 3rem 2rem 0rem 4rem;
      background-color: #1d1d1d;
-     max-width: 720px;
      h3 {
          font-family: 'Montserrat', sans-serif;
          font-size: .9rem;
@@ -157,13 +152,18 @@ const Skills = () => {
                        icon={Nodejs}
                        title="NodeJS" 
                        description="Ambiente de Servidor JavaScript."
-                   />
+                    />
+                    <LanguageSkill
+                        icon={NextJS}
+                        title="NextJS"
+                        description='Framework JavaScript para desenvolvimento web.'
+                    />
                </SkillsWrap>
                 <TextAboutSkills>
                    <h3>Planos pro futuro.</h3>
-                   <p>Atualmente, meu foco principal é no desenvolvimento front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
-                   <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como TypeScript e Angular, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
-                   <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no front-end antes de prosseguir para o back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
+                   <p>Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
+                   <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
+                   <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
                </TextAboutSkills>
            </SkillsSize>
         </SkillsContainer>
