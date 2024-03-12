@@ -16,26 +16,40 @@ const ContainerContact = styled.div`
         margin-left: 50px;
     }
 `;
-
 const ContactSize = styled.div`
-    margin-top: 6rem;
+    margin-top: 10rem;
+    @media (max-width: 700px) {
+        margin-top: 4rem;
+    }
     display: flex;
     flex-direction: column-reverse;
     gap: 20px;
     color: #fff;
+
+    overflow-y: auto; 
+    &::-webkit-scrollbar {
+        width: 12px; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #505050; 
+        border-radius: 6px; 
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #1d1d1d;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: #9c9c9c #1d1d1d;
     p {
         text-align: center;
     }
 `;
-
 const UlContact = styled.ul`
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 10px;
 `;
-
 const ALinkContact = styled.a`
     display: flex;
     justify-content: center;
@@ -43,8 +57,12 @@ const ALinkContact = styled.a`
     gap: 10px;
     padding: .5rem 1rem;
     width: 220px;
+    background-color: #1d1d1d;
     border-radius: 10px;
-    border: 3px solid #7a7a7a;
+    border: 2px solid #333232;
+    &:hover {
+        background-color: #242323;
+    }
     p {
         color: #fff; 
     }
@@ -55,7 +73,6 @@ const Contact = () => {
         <ContainerContact>
             <TabFiles activeTab='Contact' />
             <ContactSize>
-
                     <nav>
                         <UlContact>
                             <ALinkContact href="#" target='_blank' rel='noreferre'>

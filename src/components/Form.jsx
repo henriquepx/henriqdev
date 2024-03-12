@@ -2,22 +2,20 @@ import styled from 'styled-components';
 
 const ContainerForm = styled.div`
    width: 100%;
-   background-color: #2e2e2e; /* Cor do background */
+   background-color: #2e2e2e; 
 `
 
 const FormStyle = styled.form`
     display: flex;
     flex-direction: column;
     align-items: left;
-    color: #fff; /* Cor da fonte */
+    color: #fff;
 `
-
 const LabelForm = styled.label`
     margin-bottom: 7px;
     font-family: 'Montserrat', monospace;
-    color: #fff; /* Cor da fonte */
+    color: #fff;
 `
-
 const InputStyle = styled.input`
     margin-bottom: 14px;
     border-radius: 4px;
@@ -27,9 +25,8 @@ const InputStyle = styled.input`
     padding: 15px 8px;
     font-family: 'Montserrat', monospace;
     background-color: transparent;
-    border: 1px solid #fff; /* Cor da borda */
+    border: 1px solid #1d1d1d; 
 `
-
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
     border-radius: 4px;
@@ -37,26 +34,24 @@ const TextareaStyle = styled.textarea`
     border: 0;
     padding: 8px;
     background-color: transparent;
-    border: 1px solid #fff; /* Cor da borda */
-    height: 200px;
+    border: 1px solid #1d1d1d; 
+    height: 120px;
     width: 100%;
     color: #fff;
     resize: none;
 `
-
 const ButtonSubmitForm = styled.button`
     height: 34px;
     border-radius: 4px;
     border: 0;
     cursor: pointer;
-    background-color: #181818; /* Cor do header, footer e aside */
+    background-color: #181818; 
     font-size: 1rem;
     margin: 0 auto;
     width: 30%;
     color: #fff;
     font-family: 'Montserrat', monospace;
 `
-
 const NameEmail = styled.div`
     display: flex;
     gap: 50px;
@@ -66,7 +61,6 @@ const NameEmail = styled.div`
         gap: 0px;
     }
 `
-
 const EveryInput = styled.div`
     display: flex;
     flex-direction: column;
