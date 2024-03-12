@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
-import Wallpaper from '../assets/wallpaper.png';
 import { Link } from 'react-router-dom';
+import Earth from '../components/Earth';
 
 const HomeContainer = styled.div`
     position: relative;
@@ -15,7 +15,7 @@ const InfoHome = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 8rem;
+    padding-bottom: 6rem;
     text-align: center;
     margin-left: 25px;
     h1 {
@@ -69,19 +69,6 @@ const DescriptionHome = styled.p`
     padding-top: 1rem;
     max-width: 50ch;
 `;
-const WallpaperMain = styled.img`
-    position: fixed;
-    right: 300px;
-    bottom: -310px;
-    transform: rotate(210deg);
-    width: 1300px;
-    z-index: 0;
-
-    @media (max-width: 450px) {
-        right: 50px;
-        bottom: -300px;
-    }
-`;
 
 const Home = () => {
     return (
@@ -95,7 +82,7 @@ const Home = () => {
                     <CV href="#">CV</CV>
                     <LinkToContact to="/contact">Contrate-me</LinkToContact>
                 </LinksHome>
-                <WallpaperMain src={Wallpaper} alt="Wallpaper" />
+                <Earth />
             </InfoHome>
         </HomeContainer>
     );
