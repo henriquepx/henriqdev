@@ -20,17 +20,14 @@ const SkillsContainer = styled.div`
     height: calc(100vh - 6.3);
     width: 100%;
     overflow: hidden; 
-    @media (max-width: 800px) {
-        padding: .5rem;
-    }
 `
 const SkillsSize = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
-    overflow-y: auto; 
     max-height: calc(100vh - 6.3rem); 
-
+    
+    overflow-y: auto; 
     &::-webkit-scrollbar {
         width: 12px; 
     }

@@ -17,7 +17,7 @@ const StyledAside = styled.aside`
     height: 100%;
     width: 55px;
     padding-bottom: 4rem;
-    background-color: rgb(24, 24, 24);
+    background-color: #181818;
     border-right: 2px solid rgb(43, 43, 43);
     display: flex;
     flex-direction: column;

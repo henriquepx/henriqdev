@@ -7,9 +7,6 @@ const HomeContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
     width: 100%;
-    @media (max-width: 800px) {
-        padding: .5rem;
-    }
 `;
 const InfoHome = styled.div`
     height: 100vh;

@@ -5,7 +5,6 @@ import styled from 'styled-components';
 const BlogCardWrapper = styled.a`
   display: flex;
   flex-direction: column;
-  box-shadow: 0 3px 7px -1px rgba(#000, .1);
   border-radius: 15px;
   overflow: hidden;
   background-color: #fff;
@@ -32,29 +31,29 @@ const DescriptionWrapper = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #c2c2c2;
+  background-color: rgb(31, 31, 31);
   text-align: left;
   padding: 1rem;
   h1 {
     font-size: 1.6rem;
-    color: #000000;
+    color: #ffffff;
     font-family: 'Monserrat', sans-serif;
   }
   h2 {
     font-size: 1rem;
     font-weight: 300;
-    color: #313131;
+    color: #e4e4e4;
   }
   p {
     position: relative;
     margin: .2rem 0 0;
     margin-top: 1.25rem;
-    color: #000000;
+    color: #ebebeb;
     &:before {
       content: "";
       position: absolute;
       height: 2px;
-      background: #00b7ff;
+      background: #3b3b3b;
       width: 35px;
       top: -0.75rem;
     }

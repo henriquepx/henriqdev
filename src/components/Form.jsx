@@ -4,7 +4,6 @@ const ContainerForm = styled.div`
    width: 100%;
    background-color: #2e2e2e; 
 `
-
 const FormStyle = styled.form`
     display: flex;
     flex-direction: column;
@@ -25,7 +24,10 @@ const InputStyle = styled.input`
     padding: 15px 8px;
     font-family: 'Montserrat', monospace;
     background-color: transparent;
-    border: 1px solid #1d1d1d; 
+    border: 4px solid #1d1d1d;
+    &:focus {
+        color: #1d1d1d;
+    }
 `
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
