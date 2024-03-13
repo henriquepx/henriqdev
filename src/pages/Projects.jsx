@@ -8,6 +8,7 @@ const ProjectContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
     width: 100%;
+    overflow: hidden; 
 `
 const ProjectAdjust = styled.div`
     padding: 1rem;
@@ -22,6 +23,20 @@ const ProjectSize = styled.div`
     align-items: center;
     text-align: center;
     margin-left: 35px;
+
+    overflow-y: auto; 
+    &::-webkit-scrollbar {
+        width: 12px; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #505050; 
+        border-radius: 6px; 
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #1d1d1d;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: #9c9c9c #1d1d1d;
 `
 
 const Projects = () => {

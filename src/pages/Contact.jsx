@@ -16,11 +16,16 @@ const ContainerContact = styled.div`
 `;
 const ContactSize = styled.div`
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 50px;
     color: #fff;
-    margin-top: 15rem;
+    margin-top: 12rem;
+    h1 {
+        font-size: 1.5rem;
+        color: #979797;
+    }
     @media (max-width: 400px) {
         margin-top: 8rem;
     }
@@ -34,6 +39,7 @@ const Contact = () => {
         <ContainerContact>
             <TabFiles activeTab='Contact' />
             <ContactSize>
+                <h1>Entre em contato! ;)</h1>
                 <Form />
             </ContactSize>
         </ContainerContact>
