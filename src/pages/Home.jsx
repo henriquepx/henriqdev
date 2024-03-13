@@ -1,7 +1,6 @@
 import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import { Link } from 'react-router-dom';
-import Earth from '../components/Earth';
 
 const HomeContainer = styled.div`
     position: relative;
@@ -70,6 +69,25 @@ const DescriptionHome = styled.p`
     max-width: 50ch;
 `;
 
+const Faixa = styled.div`
+  position: absolute;
+  right: -130px;
+  overflow: hidden;
+  bottom: 150px;
+  padding: .8rem 10rem;
+  transform: rotate(-45deg);
+  background-color: #272727;
+  p {
+    color: #dad9d9;
+  }
+  @media (max-width: 376px) {
+    bottom: 150px;
+    padding: .8rem 6rem .8rem 5rem;
+    right: -90px;
+    bottom: 130px;
+  }
+`
+
 const Home = () => {
     return (
         <HomeContainer>
@@ -78,11 +96,14 @@ const Home = () => {
                 <h1>Henrique Pinheiro</h1>
                 <h2>Desenvolvedor Front-end</h2>
                 <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário.</DescriptionHome>
+                <p>Disponível para trabalhos.</p>
                 <LinksHome>
                     <CV href="#">CV</CV>
                     <LinkToContact to="/contact">Contrate-me</LinkToContact>
                 </LinksHome>
-                <Earth />
+                <Faixa>
+                    <p>Disponível para trabalho.</p>
+                </Faixa>
             </InfoHome>
         </HomeContainer>
     );
