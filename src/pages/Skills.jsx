@@ -54,6 +54,7 @@ const SkillsWrap = styled.div`
     flex-wrap: wrap;
     gap: 20px;
     margin-left: 55px;
+    padding: 0 .8rem;
 `
 const LearningSkills = styled.h2`
     font-family: 'Montserrat', sans-serif;
@@ -62,6 +63,7 @@ const LearningSkills = styled.h2`
     color: white;
     font-weight: 610;
     margin-left: 55px;
+    padding-left: 1rem;
 `
  const TextAboutSkills = styled.div`
      padding: 1rem;
