@@ -48,22 +48,19 @@ const DescriptionHome = styled.p`
     max-width: 50ch;
 `;
 const Faixa = styled.div`
-  position: absolute;
-  right: -130px;
-  overflow: hidden;
-  bottom: 150px;
-  padding: .8rem 10rem;
-  transform: rotate(-45deg);
-  background-color: #272727;
-  p {
-    color: #dad9d9;
-  }
-  @media (max-width: 376px) {
-    bottom: 150px;
-    padding: .8rem 6rem .8rem 5rem;
+    position: absolute;
     right: -90px;
-    bottom: 130px;
-  }
+    bottom: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    transform: rotate(-45deg);
+    background-color: #272727;
+    p {
+        color: #dad9d9;
+    }
 `
 
 const Home = () => {
