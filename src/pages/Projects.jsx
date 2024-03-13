@@ -5,6 +5,7 @@ import DSM from '../assets/projects/DSM.png'
 import Portfoliov1 from '../assets/projects/Portfoliov1.png'
 import Japapou from '../assets/projects/Japapou.png'
 import Rexpeita from '../assets/projects/Rexpeita.png'
+import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 
 const ProjectContainer = styled.div`
@@ -50,6 +51,13 @@ const Projects = () => {
             <TabFiles activeTab='Projects' />
             <ProjectAdjust>
                 <ProjectSize>
+                    <CardProject
+                        codeContent={`project1 {
+    name: 'DevInsights',
+    stacks: 'ReactJS, Styled Components & React Router Dom'
+}`}
+                        backgroundImage={Dev}
+                    />
                     <CardProject
                         codeContent={`project2 {
     name: 'Portfólio v1',
