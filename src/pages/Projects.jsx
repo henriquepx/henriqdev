@@ -1,7 +1,11 @@
 import TabFiles from './Layout/TabFiles'
 import styled from 'styled-components'
-import DevInsights from '../assets/devphoto.jpg'
-import Photographer from '../assets/photobg.jpg'
+import Photographer from '../assets/projects/PortfolioPhotographer.png'
+import DevInsights from '../assets/projects/DevInsights.png'
+import DSM from '../assets/projects/DSM.png'
+import Portfoliov1 from '../assets/projects/Portfoliov1.png'
+import Japapou from '../assets/projects/Japapou.png'
+import Rexpeita from '../assets/projects/Rexpeita.png'
 import CardProject from '../components/CardProject'
 
 const ProjectContainer = styled.div`
@@ -45,7 +49,6 @@ const Projects = () => {
             <ProjectAdjust>
                 <ProjectSize>
                     <CardProject
-                        title="Dev Insights"
                         codeContent={`project1 {
     name: 'DevInsights',
     stacks: 'ReactJS, Styled Components & React Router Dom'
@@ -53,15 +56,40 @@ const Projects = () => {
                         backgroundImage={DevInsights}
                     />
                     <CardProject
-                        title="Photographer Protótipo"
                         codeContent={`project2 {
+    name: 'Portfólio v1',
+    stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'
+}`}
+                        backgroundImage={Portfoliov1}
+                    />
+                    <CardProject
+                        codeContent={`project3 {
     name: 'PhotographerPortfólio',
     stacks: 'HTML, CSS & JavaScript'
 }`}
                         backgroundImage={Photographer}
                     />
-
-
+                    <CardProject
+                        codeContent={`project4 {
+    name: 'Japapou?',
+    stacks: 'ReactJS & CSS Modules'
+}`}
+                        backgroundImage={Japapou}
+                    />
+                    <CardProject
+                        codeContent={`project5 {
+    name: 'DSM Consultoria',
+    stacks: 'HTML, CSS & JavaScript'
+}`}
+                        backgroundImage={DSM}
+                    />
+                    <CardProject
+                        codeContent={`project6 {
+    name: 'Rexpeita',
+    stacks: 'HTML, CSS & JavaScript'
+}`}
+                        backgroundImage={Rexpeita}
+                    />
                 </ProjectSize>
             </ProjectAdjust>
             

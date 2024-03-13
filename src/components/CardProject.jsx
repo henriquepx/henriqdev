@@ -4,31 +4,27 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 
 const CardContainer = styled.div`
   width: 300px;
-  height: 430px;
+  height: 450px;
   margin: 0 auto;
   background-color: #636363;
   border-radius: 8px;
   z-index: 1;
   transition: 0.5s;
 `;
-
 const Header = styled.div`
   margin: 5px;
   margin-top: 5px;
   border-radius: 5px;
 `;
-
 const TopContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
 `;
-
 const Circle = styled.div`
   padding: 0 4px;
 `;
-
 const CircleDot = styled.span`
   display: inline-block;
   align-items: center;
@@ -37,31 +33,21 @@ const CircleDot = styled.span`
   padding: 1px;
   border-radius: 5px;
 `;
-
 const RedDot = styled(CircleDot)`
   background-color: #ff605c;
 `;
-
 const YellowDot = styled(CircleDot)`
   background-color: #ffbd44;
 `;
-
 const GreenDot = styled(CircleDot)`
   background-color: #00ca4e;
 `;
-
-const Title = styled.div`
-  color: white;
-  font-size: 15px;
-`;
-
 const CodeContainer = styled.div`
   text-align: center;
 `;
-
 const CodeTextarea = styled.textarea`
   width: 270px;
-  height: 130px;
+  height: 150px;
   resize: none;
   background-color: rgb(48, 48, 48);
   border-radius: 10px;
@@ -72,12 +58,10 @@ const CodeTextarea = styled.textarea`
     outline: none !important;
   }
 `;
-
 const TopSize = styled.div`
     display: flex;
     justify-content: space-between;
 `;
-
 const ImageContainer = styled.div`
   background-image: url(${(props) => props.backgroundImage});
   background-size: cover;
@@ -99,7 +83,6 @@ const LinksToProject = styled.div`
   margin: 0 auto;
   margin-top: .3rem;
 `;
-
 const Link = styled.a`
   display: flex;
   justify-content: center;
@@ -111,7 +94,8 @@ const Link = styled.a`
   width: 50%;
   background-color: #4e4e4e;
 `;
-const CardProject = ({ title, codeContent, backgroundImage }) => {
+
+const CardProject = ({ codeContent, backgroundImage }) => {
   return (
     <CardContainer>
       <Header>
@@ -127,9 +111,6 @@ const CardProject = ({ title, codeContent, backgroundImage }) => {
               <GreenDot />
             </Circle>
           </TopSize>
-          <Title>
-            <p id="title2">{title}</p>
-          </Title>
         </TopContainer>
       </Header>
       <ImageContainer backgroundImage={backgroundImage} />
@@ -151,7 +132,6 @@ const CardProject = ({ title, codeContent, backgroundImage }) => {
 };
 
 CardProject.propTypes = {
-    title: PropTypes.string.isRequired,
     codeContent: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string.isRequired,
   };
