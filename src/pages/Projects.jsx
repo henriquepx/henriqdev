@@ -1,11 +1,11 @@
 import TabFiles from './Layout/TabFiles'
 import styled from 'styled-components'
 import Photographer from '../assets/projects/PortfolioPhotographer.png'
-import DevInsights from '../assets/projects/DevInsights.png'
 import DSM from '../assets/projects/DSM.png'
 import Portfoliov1 from '../assets/projects/Portfoliov1.png'
 import Japapou from '../assets/projects/Japapou.png'
 import Rexpeita from '../assets/projects/Rexpeita.png'
+import Dev from '../assets/projects/DevInsights.png'
 import CardProject from '../components/CardProject'
 
 const ProjectContainer = styled.div`
@@ -56,7 +56,7 @@ const Projects = () => {
     name: 'DevInsights',
     stacks: 'ReactJS, Styled Components & React Router Dom'
 }`}
-                        backgroundImage={DevInsights}
+                        backgroundImage={Dev}
                     />
                     <CardProject
                         codeContent={`project2 {
