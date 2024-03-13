@@ -21,8 +21,11 @@ const InputStyle = styled.input`
     width: 100%; 
     padding: 15px 8px;
     font-family: 'Montserrat', monospace;
-    background-color: transparent;
-    border: 1px solid white;
+    background-color: #242323;
+    border: 1px solid #1d1d1d;
+    &:focus {
+        outline: none;
+    }
 `
 const TextareaStyle = styled.textarea`
     margin-bottom: 14px;
@@ -30,12 +33,15 @@ const TextareaStyle = styled.textarea`
     font-family: 'Montserrat', monospace;
     border: 0;
     padding: 8px;
-    background-color: transparent;
-    border: 1px solid white;
+    background-color: #242323;
+    border: 1px solid #1d1d1d;
     height: 200px;
     width: 100%;
     color: #fff;
     resize: none;
+    &:focus {
+        outline: none;
+    }
 `
 const ButtonSubmitForm = styled.button`
     height: 34px;
