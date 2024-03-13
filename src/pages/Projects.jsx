@@ -1,8 +1,8 @@
-import ProjectCard from '../components/ProjectCard'
 import TabFiles from './Layout/TabFiles'
 import styled from 'styled-components'
 import DevInsights from '../assets/devphoto.jpg'
 import Photographer from '../assets/photobg.jpg'
+import CardProject from '../components/CardProject'
 
 const ProjectContainer = styled.div`
     position: relative;
@@ -11,20 +11,12 @@ const ProjectContainer = styled.div`
     overflow: hidden; 
 `
 const ProjectAdjust = styled.div`
-    padding: 1rem;
-    margin: 2rem 1rem 0rem 2.2rem;
-`
-const ProjectSize = styled.div`
-    margin-top: 3rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin-left: 35px;
+    padding: 1rem 4rem;
+    overflow-y: auto;
+    width: 100%;
+    margin: 0 auto;
+    max-height: calc(100vh - 6.3rem); 
 
-    overflow-y: auto; 
     &::-webkit-scrollbar {
         width: 12px; 
     }
@@ -38,6 +30,13 @@ const ProjectSize = styled.div`
     scrollbar-width: thin;
     scrollbar-color: #9c9c9c #1d1d1d;
 `
+const ProjectSize = styled.div`
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-left: 35px;
+`
 
 const Projects = () => {
     return (
@@ -45,20 +44,24 @@ const Projects = () => {
             <TabFiles activeTab='Projects' />
             <ProjectAdjust>
                 <ProjectSize>
-                    <ProjectCard
-                        imgProject={DevInsights}
-                        titleProject="Dev Insights"
-                        descProject="Blog pessoa com meus artigos de programação."
-                        linkProject='https://dev-insights-self.vercel.app/'
-                        languagesProject='ReactJS, Styled Components & React Router Dom'
+                    <CardProject
+                        title="Dev Insights"
+                        codeContent={`project1 {
+    name: 'DevInsights',
+    stacks: 'ReactJS, Styled Components & React Router Dom'
+}`}
+                        backgroundImage={DevInsights}
                     />
-                    <ProjectCard
-                        imgProject={Photographer}
-                        titleProject="Photographer Protótipo"
-                        descProject="Blog pessoa com meus artigos de programação."
-                        linkProject='https://dev-insights-self.vercel.app/'
-                        languagesProject='ReactJS, Styled Components & React Router Dom'
+                    <CardProject
+                        title="Photographer Protótipo"
+                        codeContent={`project2 {
+    name: 'PhotographerPortfólio',
+    stacks: 'HTML, CSS & JavaScript'
+}`}
+                        backgroundImage={Photographer}
                     />
+
+
                 </ProjectSize>
             </ProjectAdjust>
             

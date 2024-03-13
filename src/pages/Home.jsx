@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
-import { Link } from 'react-router-dom';
 
 const HomeContainer = styled.div`
     position: relative;
@@ -44,31 +43,10 @@ const InfoHome = styled.div`
         }
     }
 `;
-const LinksHome = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    margin-top: 1.5rem;
-`;
-const CV = styled.a`
-    color: #fff;
-    background-color: rgb(0, 153, 180);
-    padding: .5rem 2rem;
-    font-weight: 600;
-    border-radius: 5px;
-`
-const LinkToContact = styled(Link)`
-    color: #fff;
-    background-color: rgb(0, 153, 180);
-    padding: .5rem 2rem;
-    font-weight: 600;
-    border-radius: 5px;
-`
 const DescriptionHome = styled.p`
     padding-top: 1rem;
     max-width: 50ch;
 `;
-
 const Faixa = styled.div`
   position: absolute;
   right: -130px;
@@ -97,10 +75,6 @@ const Home = () => {
                 <h2>Desenvolvedor Front-end</h2>
                 <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário.</DescriptionHome>
                 <p>Disponível para trabalhos.</p>
-                <LinksHome>
-                    <CV href="#">CV</CV>
-                    <LinkToContact to="/contact">Contrate-me</LinkToContact>
-                </LinksHome>
                 <Faixa>
                     <p>Disponível para trabalho.</p>
                 </Faixa>
