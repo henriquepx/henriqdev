@@ -54,6 +54,7 @@ const CodeTextarea = styled.textarea`
   border: none;
   color: white;
   padding: 10px;
+  margin: 0 13px;
   &:focus {
     outline: none !important;
   }

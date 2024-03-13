@@ -40,6 +40,9 @@ const ProjectSize = styled.div`
     flex-wrap: wrap;
     gap: 50px;
     margin-left: 35px;
+    @media (max-width: 420px) {
+        margin-left: 3px;
+    }
 `
 
 const Projects = () => {
