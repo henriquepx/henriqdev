@@ -5,6 +5,7 @@ const HomeContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
     width: 100%;
+    overflow: hidden;
 `;
 const InfoHome = styled.div`
     height: 100vh;
@@ -48,9 +49,9 @@ const DescriptionHome = styled.p`
     max-width: 50ch;
 `;
 const Faixa = styled.div`
-    position: absolute;
+    position: fixed;
     right: -90px;
-    bottom: 140px;
+    bottom: 90px;
     display: flex;
     justify-content: center;
     align-items: center;

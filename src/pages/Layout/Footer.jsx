@@ -3,11 +3,12 @@ import { VscRemote, VscSourceControl, VscSync, VscError, VscWarning, VscRadioTow
 import { FaReact } from "react-icons/fa";
 
 const FooterContainer = styled.footer`
-    position: fixed;
-    bottom: 0;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0%;
     height: 2.5vh;
     background-color: #181818;
-    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +95,7 @@ const Footer2 = styled.div`
 `;
 
 const NotificationFooter = styled.div`
-    padding: 0.14rem 0.5rem;
+    padding: 0rem 0.5rem;
     cursor: pointer;
 
     &:hover {
@@ -113,7 +114,7 @@ const LanguageFooter = styled.div`
     padding: 0.14rem 0.6rem;
     gap: 6px;
 
-    @media (max-width: 400px) {
+    @media (max-width: 500px) {
         display: none;
     }
 
@@ -122,7 +123,7 @@ const LanguageFooter = styled.div`
     }
 
     p {
-        font-size: 5px;
+        font-size: .5rem;
         color: #808080;
     }
 `;

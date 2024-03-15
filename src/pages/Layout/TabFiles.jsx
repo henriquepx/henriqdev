@@ -7,14 +7,13 @@ import CSSIcon from '../../assets/brackets-blue.png';
 import styled from 'styled-components';
 
 const TabFilesContainer = styled.div`
-    width: 100%;
+    width: calc(100% - 55px);
     height: 4vh;
     z-index: 150;
     background-color: rgb(31, 31, 31);
     position: absolute;
     top: 0%;
-
-    margin-left: 55px;
+    right: 0;
     display: flex;
 `
 

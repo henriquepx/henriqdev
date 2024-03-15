@@ -14,9 +14,8 @@ const StyledAside = styled.aside`
     position: fixed;
     z-index: 100;
     left: 0;
-    height: 100%;
+    height: calc(100vh - 2.5vh - 3.8vh);
     width: 55px;
-    padding-bottom: 4rem;
     background-color: #181818;
     border-right: 2px solid rgb(43, 43, 43);
     display: flex;
