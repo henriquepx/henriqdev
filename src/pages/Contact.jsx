@@ -19,18 +19,18 @@ const ContactSize = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 20px;
     color: #fff;
     margin-top: 12rem;
+    overflow-y: auto; 
+    padding: 1rem 0rem 3rem 0rem;
+    @media (max-width: 450px) {
+        margin-top: 3rem;
+    }
     h1 {
         font-size: 1.5rem;
         color: #979797;
     }
-    @media (max-width: 400px) {
-        margin-top: 8rem;
-    }
-
-    overflow-y: auto; 
 `;
 
 

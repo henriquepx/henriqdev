@@ -123,7 +123,7 @@ const LanguageFooter = styled.div`
     }
 
     p {
-        font-size: .5rem;
+        font-size: .7rem;
         color: #808080;
     }
 `;
