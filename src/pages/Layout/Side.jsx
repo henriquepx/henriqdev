@@ -11,7 +11,7 @@ import DropdownProfile from '../../components/DropdownProfile';
 import styled from 'styled-components';
 
 const StyledAside = styled.aside`
-    position: fixed;
+    position: absolute;
     z-index: 100;
     left: 0;
     height: calc(100vh - 2.5vh - 3.8vh);
