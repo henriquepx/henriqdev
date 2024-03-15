@@ -49,7 +49,8 @@ const DescriptionHome = styled.p`
     max-width: 50ch;
 `;
 const Faixa = styled.div`
-    position: fixed;
+    position:fixed;
+    overflow: hidden;
     right: -90px;
     bottom: 90px;
     display: flex;
