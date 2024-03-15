@@ -4,8 +4,8 @@ import { VscLayoutSidebarLeft, VscMenu, VscLayoutPanelOff, VscLayoutSidebarRight
 
 const HeaderContainer = styled.header`
     width: 100%;
-    height: 3.8vh;
     z-index: 200;
+    height: 30px;
     display: flex;
     justify-content: space-between;
     background-color: rgb(31, 31, 31);

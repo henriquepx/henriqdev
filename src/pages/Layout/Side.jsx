@@ -11,10 +11,11 @@ import DropdownProfile from '../../components/DropdownProfile';
 import styled from 'styled-components';
 
 const StyledAside = styled.aside`
-    position: absolute;
+    position: fixed;
     z-index: 100;
     left: 0;
-    height: calc(100vh - 2.5vh - 3.8vh);
+    top: 27px; 
+    bottom: 2.3vh; 
     width: 55px;
     background-color: #181818;
     border-right: 2px solid rgb(43, 43, 43);
