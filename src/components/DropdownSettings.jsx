@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 const DropdownSettingsContainer = styled.div`
     position: absolute;
-    bottom: 74px;
+    bottom: 8px;
     left: 100%;
     z-index: 999;
     background: #1c1c1c;
