@@ -5,7 +5,6 @@ import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
 const CardContainer = styled.div`
   width: 300px;
   height: 450px;
-  margin: 0 auto;
   background-color: #636363;
   border-radius: 8px;
   z-index: 1;
@@ -96,7 +95,7 @@ const Link = styled.a`
   background-color: #4e4e4e;
 `;
 
-const CardProject = ({ codeContent, backgroundImage }) => {
+const CardProject = ({ codeContent, linkDeploy, linkRepository, backgroundImage }) => {
   return (
     <CardContainer>
       <Header>
@@ -119,11 +118,11 @@ const CardProject = ({ codeContent, backgroundImage }) => {
         <CodeTextarea readOnly name="code" id="code" className="area" defaultValue={codeContent} />
       </CodeContainer>
       <LinksToProject>
-        <Link href="#">
+        <Link href={linkRepository} target='_blank' rel='noreferrer'>
           <FaGithub style={{ marginRight: '5px' }} />
           Github
         </Link>
-        <Link href="#">
+        <Link href={linkDeploy} target='_blank' rel='noreferrer'>
           <FaExternalLinkAlt style={{ marginRight: '5px' }} />
           Deploy
         </Link>
@@ -135,6 +134,8 @@ const CardProject = ({ codeContent, backgroundImage }) => {
 CardProject.propTypes = {
     codeContent: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string.isRequired,
+    linkRepository: PropTypes.string.isRequired,
+    linkDeploy: PropTypes.string.isRequired
   };
 
 export default CardProject;

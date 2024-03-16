@@ -4,7 +4,6 @@ import Photographer from '../assets/projects/PortfolioPhotographer.png'
 import DSM from '../assets/projects/DSM.png'
 import Portfoliov1 from '../assets/projects/Portfoliov1.png'
 import Japapou from '../assets/projects/Japapou.png'
-import Rexpeita from '../assets/projects/Rexpeita.png'
 import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 
@@ -20,7 +19,7 @@ const ProjectAdjust = styled.div`
     width: 100%;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
-
+    margin-top: 3rem;
     &::-webkit-scrollbar {
         width: 12px; 
     }
@@ -35,12 +34,12 @@ const ProjectAdjust = styled.div`
     scrollbar-color: #9c9c9c #1d1d1d;
 `
 const ProjectSize = styled.div`
-    margin-top: 3rem;
     display: flex;
+    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 50px;
-    margin-left: 35px;
-    padding-bottom: 5rem;
+    gap: 10px;
+    padding-bottom: 3rem;
     @media (max-width: 420px) {
         margin-left: 3px;
     }
@@ -58,6 +57,8 @@ const Projects = () => {
     stacks: 'ReactJS, Styled Components & React Router Dom'
 }`}
                         backgroundImage={Dev}
+                        linkDeploy='dev-insights-self.vercel.app'
+                        linkRepository='https://github.com/henriquepx/dev-insights'
                     />
                     <CardProject
                         codeContent={`project2 {
@@ -65,6 +66,8 @@ const Projects = () => {
     stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'
 }`}
                         backgroundImage={Portfoliov1}
+                        linkDeploy='portfolio-henriquepx.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject
                         codeContent={`project3 {
@@ -72,6 +75,8 @@ const Projects = () => {
     stacks: 'HTML, CSS & JavaScript'
 }`}
                         backgroundImage={Photographer}
+                        linkDeploy='photographerportfolio.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
                         codeContent={`project4 {
@@ -79,6 +84,8 @@ const Projects = () => {
     stacks: 'ReactJS & CSS Modules'
 }`}
                         backgroundImage={Japapou}
+                        linkDeploy='app-order-food.vercel.app'
+                        linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
                         codeContent={`project5 {
@@ -86,17 +93,11 @@ const Projects = () => {
     stacks: 'HTML, CSS & JavaScript'
 }`}
                         backgroundImage={DSM}
-                    />
-                    <CardProject
-                        codeContent={`project6 {
-    name: 'Rexpeita',
-    stacks: 'HTML, CSS & JavaScript'
-}`}
-                        backgroundImage={Rexpeita}
+                        linkDeploy='dsmconsultoria.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/dsm'
                     />
                 </ProjectSize>
             </ProjectAdjust>
-            
         </ProjectContainer>
     )
 }
