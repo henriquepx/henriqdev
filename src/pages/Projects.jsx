@@ -38,10 +38,10 @@ const ProjectSize = styled.div`
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 30px;
     padding-bottom: 3rem;
     @media (max-width: 420px) {
-        margin-left: 3px;
+        margin-left: 55px;
     }
 `
 
