@@ -1,4 +1,6 @@
 import styled from 'styled-components';
+import { useRef  } from 'react';
+import emailjs from '@emailjs/browser';
 
 const ContainerForm = styled.div`
    width: 100%;
@@ -71,10 +73,23 @@ const EveryInput = styled.div`
 `
 
 const Form = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_webqtko', 'template_kxj8ru8', form.current, '6XCPVQDlEI-egjo2f')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+      e.target.reset();
+    };
 
     return (
         <ContainerForm>
-            <FormStyle >
+            <FormStyle ref={form} onSubmit={sendEmail}>
                 <NameEmail>
                     <EveryInput>
                         <LabelForm htmlFor="user_name">Nome</LabelForm>
