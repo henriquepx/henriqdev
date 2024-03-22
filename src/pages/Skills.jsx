@@ -46,13 +46,13 @@ const SkillsSize = styled.div`
     margin-top: 4rem;
     @media (max-width: 800px) {
         margin-top: 2rem;
-        padding-bottom: 10rem;
+        padding-bottom: 2rem;
     }
 `
 const SkillsWrap = styled.div`
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 10px;
     margin-left: 55px;
     padding: 0 .8rem;
 `
@@ -103,7 +103,12 @@ const Skills = () => {
                        icon={Typescript}
                        title="TypeScript" 
                        description="Superset do JavaScript."
-                     />
+                    />
+                    <LanguageSkill
+                       icon={SQL} 
+                       title="SQL" 
+                       description="Gerenciamento de Dados Relacionais."
+                   />
                    <LanguageSkill
                        icon={StyledComponents}
                        title="Styled Components" 
@@ -134,11 +139,6 @@ const Skills = () => {
                        title="HTML" 
                        description="Marcação de páginas web."
                      />
-                     <LanguageSkill
-                       icon={SQL} 
-                       title="SQL" 
-                       description="Gerenciamento de Dados Relacionais."
-                   />
                </SkillsWrap>
                <LearningSkills>Estudando & aprendendo</LearningSkills>
                <SkillsWrap>

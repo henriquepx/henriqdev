@@ -15,23 +15,42 @@ const ContainerContact = styled.div`
     }
 `;
 const ContactSize = styled.div`
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    max-height: calc(100vh - 6.3rem); 
+    
+    overflow-y: auto; 
+    &::-webkit-scrollbar {
+        width: 12px; 
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: #505050; 
+        border-radius: 6px; 
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #1d1d1d;
+    }
+    scrollbar-width: thin;
+    scrollbar-color: #9c9c9c #1d1d1d;
+
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    color: #fff;
-    margin-top: 12rem;
-    overflow-y: auto; 
-    padding: 1rem 0rem 3rem 0rem;
-    @media (max-width: 450px) {
-        margin-top: 3rem;
-    }
-    h1 {
-        font-size: 1.5rem;
-        color: #979797;
+    margin-top: 8rem;
+    @media (max-width: 800px) {
+        margin-top: 2rem;
+        padding-bottom: 2rem;
     }
 `;
+const ContactMolde = styled.div`
+    margin-left: 45px;
+`
+const TitleContact = styled.h1`
+    color: #fff;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+`
 
 
 const Contact = () => {
@@ -39,8 +58,10 @@ const Contact = () => {
         <ContainerContact>
             <TabFiles activeTab='Contact' />
             <ContactSize>
-                <h1>Entre em contato! ;)</h1>
-                <Form />
+                <ContactMolde>
+                    <TitleContact>Tem uma pergunta ou proposta? Mande uma mensagem.</TitleContact>
+                    <Form />
+                </ContactMolde>
             </ContactSize>
         </ContainerContact>
     );
