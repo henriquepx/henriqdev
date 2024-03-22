@@ -6,6 +6,7 @@ import Portfoliov1 from '../assets/projects/Portfoliov1.png'
 import Japapou from '../assets/projects/Japapou.png'
 import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
+import GithubProject from '../assets/projects/Gitrepositories.png'
 
 const ProjectContainer = styled.div`
     position: relative;
@@ -71,6 +72,15 @@ const Projects = () => {
                     />
                     <CardProject
                         codeContent={`project3 {
+    name: 'Github Repositórios',
+    stacks: 'React, TypeScriot, API com Axios, Sass'
+}`}
+                        backgroundImage={GithubProject}
+                        linkDeploy='https://githubapi-repositories.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/github_repositories'
+                    />
+                    <CardProject
+                        codeContent={`project4 {
     name: 'PhotographerPortfólio',
     stacks: 'HTML, CSS & JavaScript'
 }`}
@@ -79,7 +89,7 @@ const Projects = () => {
                         linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
-                        codeContent={`project4 {
+                        codeContent={`project5 {
     name: 'Japapou?',
     stacks: 'ReactJS & CSS Modules'
 }`}
@@ -88,7 +98,7 @@ const Projects = () => {
                         linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
-                        codeContent={`project5 {
+                        codeContent={`project6 {
     name: 'DSM Consultoria',
     stacks: 'HTML, CSS & JavaScript'
 }`}
