@@ -20,9 +20,9 @@ const InfoHome = styled.div`
     text-align: center;
     margin-left: 25px;
     h1 {
-        font-size: 4rem;
-        font-family: 'Montserrat', sans-serif;
         color: #fff;
+        font-size: 4rem;
+        font-weight: 700;
         @media (max-width: 800px) {
             font-size: 1.8rem;
         }
@@ -30,7 +30,7 @@ const InfoHome = styled.div`
 
     h2 {
         font-size: 2rem;
-        font-family: 'Montserrat', sans-serif;
+        font-weight: 700;
         color: #b9b9b9;
         @media (max-width: 800px) {
             font-size: 1.2rem;
@@ -39,7 +39,7 @@ const InfoHome = styled.div`
 
     p {
         font-size: 1rem;
-        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
         color: #b9b9b9;
         @media (max-width: 800px) {
             max-width: 30ch;

@@ -12,31 +12,33 @@ const FormStyle = styled.form`
     align-items: left;
     color: #FFF;
 `
-const LabelForm = styled.label`
-    margin-bottom: 7px;
-    font-family: 'Montserrat', monospace;
-`
 const TextareaStyle = styled.textarea`
-    margin-bottom: 14px;
-    border-radius: 4px;
-    font-family: 'Montserrat', monospace;
-    border: 0;
-    padding: 8px;
-    background-color: #242323;
-    border: 1px solid #1d1d1d;
-    height: 200px;
-    width: 100%;
     color: #fff;
-    resize: none;
-    &:focus {
-        outline: none;
-    }
+  font-size: 0.9rem;
+  background-color: transparent;
+  width: 100%;
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: 1px solid rgba(221, 221, 221, 0.39);
+
+  &:hover {
+    background:#4985e01f;
+  }
+
+  &:focus {
+    outline: none;
+  }
+
+  &:focus ~ .input-border {
+    width: 100%;
+  }
 `
-const ButtonSubmitForm = styled.button`
+const ButtonSubmitForm = styled.a`
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 34px;
     border-radius: 4px;
     border: 0;
     cursor: pointer;
@@ -44,8 +46,10 @@ const ButtonSubmitForm = styled.button`
     font-size: 1rem;
     margin: 0 auto;
     width: 100%;
+    padding: 1rem 1.2rem;
+    margin-top: 1.5rem;
     color: #fff;
-    font-family: 'Montserrat', monospace;
+    font-weight: 600;
 `
 const NameEmail = styled.div`
     display: flex;
@@ -137,13 +141,15 @@ const Form = () => {
                         <InputBorder className="input-border" />
                     </DivForm>
                 </NameEmail>
-
-                <LabelForm htmlFor="message">Mensagem:</LabelForm>
-                <TextareaStyle 
+                <DivForm>
+                    <TextareaStyle 
                     placeholder="Insira sua mensagem"
                     name="message"
                     id="message"
-                />
+                    />
+                    <InputBorder className="input-border" />
+                </DivForm>
+                
 
                 <ButtonSubmitForm type="submit" value="Send">Enviar <MdArrowOutward /></ButtonSubmitForm>
             </FormStyle>
