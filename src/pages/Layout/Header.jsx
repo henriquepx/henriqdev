@@ -7,6 +7,7 @@ const HeaderContainer = styled.header`
     z-index: 200;
     height: 30px;
     display: flex;
+    position: fixed;
     justify-content: space-between;
     background-color: rgb(31, 31, 31);
     align-items: center;
@@ -70,6 +71,7 @@ const HeaderSection2 = styled.div`
 
 const Header = () => {
     return (
+        <div>
         <HeaderContainer>
             <HeaderSection1>
                 <IoCodeSlash size={20} />
@@ -94,7 +96,8 @@ const Header = () => {
                     <VscChromeClose />
                 </div>
             </HeaderSection2>
-        </HeaderContainer>
+            </HeaderContainer>
+        </div>
     );
 };
 

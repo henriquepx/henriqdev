@@ -12,7 +12,7 @@ const TabFilesContainer = styled.div`
     z-index: 150;
     background-color: rgb(31, 31, 31);
     position: absolute;
-    top: 0%;
+    top: 30px;
     right: 0;
     display: flex;
 `
