@@ -43,8 +43,8 @@ const VSCodeImgIcon = styled.div`
     max-height: 18%;
     width: 18%;
     @media (max-width: 500px) {
-        max-height: 65%;
-        width: 65%;
+        max-height: 20%;
+        width: 20%;
     }
 `
 const NavegationPrealoder = styled.div`

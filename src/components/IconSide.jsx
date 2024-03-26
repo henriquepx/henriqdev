@@ -6,7 +6,7 @@ const StyledIconSide = styled.div`
     border: none;
     cursor: pointer;
     display: grid;
-    height: 50px;
+    height: 47px;
     place-content: center;
     position: relative;
     width: 100%;

@@ -15,7 +15,7 @@ const ProjectContainer = styled.div`
     overflow: hidden; 
 `
 const ProjectAdjust = styled.div`
-    padding: 1rem 4rem;
+    padding: 1rem 4.2rem;
     overflow-y: auto;
     width: 100%;
     margin: 0 auto;
