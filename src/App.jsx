@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 6000));
+      await new Promise(resolve => setTimeout(resolve, 5500));
       setLoading(false); 
     };
     fetchData();
@@ -57,7 +57,7 @@ function App() {
   return (
     <Router>
       {loading ? <Preloader /> :
-        <Interface loaded={loaded}>
+        <Interface loaded={loaded ? "true" : "false"}>
           <>
             <Header />
             <LocalContainer>

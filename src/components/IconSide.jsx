@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import styled from 'styled-components';
 
-const StyledIconSide = styled.a`
+const StyledIconSide = styled.div`
     background-color: transparent;
     border: none;
     cursor: pointer;
@@ -12,11 +12,11 @@ const StyledIconSide = styled.a`
     width: 100%;
 
     span {
-        background-color: ${({ active }) => (active ? '#005d6d' : '#181818')};
+        background-color: ${({ active }) => (active ? '#008ba3' : '#181818')};
         height: 100%;
         left: 1px;
         position: absolute;
-        width: 1.5px;
+        width: 2px;
     }
 
     svg {
@@ -37,7 +37,7 @@ const IconSide = ({ icon, active, link, onClick, ...rest }) => {
 
 IconSide.propTypes = {
     icon: PropTypes.element.isRequired,
-    active: PropTypes.bool.isRequired,
+    active: PropTypes.bool,
     link: PropTypes.string,
     onClick: PropTypes.func,
 };
