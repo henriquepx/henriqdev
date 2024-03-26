@@ -15,7 +15,7 @@ const FormStyle = styled.form`
 `
 const TextareaStyle = styled.textarea`
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 16px;
   background-color: transparent;
   width: 100%;
   box-sizing: border-box;
@@ -70,7 +70,7 @@ const DivForm = styled.div`
 `;
 const Input = styled.input`
   color: #fff;
-  font-size: 0.9rem;
+  font-size: 16px;
   background-color: transparent;
   width: 100%;
   box-sizing: border-box;
