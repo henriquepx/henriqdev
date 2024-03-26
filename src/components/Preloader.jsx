@@ -3,6 +3,7 @@ import { VscFiles } from 'react-icons/vsc';
 import { RiComputerFill } from 'react-icons/ri';
 import { IoCodeSlashOutline } from 'react-icons/io5';
 import { FaEnvelope } from 'react-icons/fa6';
+import Loader from './Loader';
 
 const fadeIn = keyframes`
   from {
@@ -66,7 +67,7 @@ const ExplanationOfIcons = styled.div`
     img {
         width: 30px;
     }
-`   
+`  
 
 
 
@@ -92,8 +93,8 @@ const Preloader = () => {
                   <p>Página Contato:</p>
                   <FaEnvelope size={20} color='#7c7c74'/>
                 </ExplanationOfIcons>
-              </NavegationPrealoder>
-         
+      </NavegationPrealoder> 
+      <Loader />
     </PreloaderBg>
   )
 }
