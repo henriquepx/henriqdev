@@ -1,4 +1,5 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
+import { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './pages/Layout/Header';
 import Side from './pages/Layout/Side';
@@ -8,12 +9,24 @@ import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
 import Github from './pages/Github';
+import Preloader from './components/Preloader';
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+`;
 
 const Interface = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
   height: 100%;
+  opacity: ${props => props.loaded ? '1' : '0'};
+  animation: ${fadeIn} 1.5s ease;
 `;
 
 const LocalContainer = styled.div`
@@ -23,24 +36,44 @@ const LocalContainer = styled.div`
 `;
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+  const [loaded, setLoaded] = useState(false);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await new Promise(resolve => setTimeout(resolve, 8000));
+      setLoading(false); 
+    };
+    fetchData();
+  }, []); 
+
+  useEffect(() => {
+    if (!loading) {
+      setLoaded(true);
+    }
+  }, [loading]);
+
   return (
     <Router>
-      <>
-        <Interface>
-          <Header />
-          <LocalContainer>
-            <Side />
-            <Routes>
-              <Route path="/" element={<Home />} />
-              <Route path="/projects" element={<Projects />} />
-              <Route path="/skills" element={<Skills />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/github" element={<Github />} />
-            </Routes>
-          </LocalContainer>
-          <Footer />
+      {loading ? <Preloader /> :
+        <Interface loaded={loaded}>
+          <>
+            <Header />
+            <LocalContainer>
+              <Side />
+              <Routes>
+                <Route path="/" element={<Home />} />
+                <Route path="/projects" element={<Projects />} />
+                <Route path="/skills" element={<Skills />} />
+                <Route path="/contact" element={<Contact />} />
+                <Route path="/github" element={<Github />} />
+              </Routes>
+            </LocalContainer>
+            <Footer />
+          </>
         </Interface>
-      </>
+      }
     </Router>
   );
 }
