@@ -8,12 +8,13 @@ const ContainerForm = styled.div`
 `
 const FormStyle = styled.form`
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: left;
     color: #FFF;
 `
 const TextareaStyle = styled.textarea`
-    color: #fff;
+  color: #fff;
   font-size: 0.9rem;
   background-color: transparent;
   width: 100%;
@@ -22,7 +23,7 @@ const TextareaStyle = styled.textarea`
   padding-block: 0.7em;
   border: none;
   border-bottom: 1px solid rgba(221, 221, 221, 0.39);
-
+  height: 120px;
   &:hover {
     background:#4985e01f;
   }
@@ -37,6 +38,7 @@ const TextareaStyle = styled.textarea`
 `
 const ButtonSubmitForm = styled.a`
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: center;
     border-radius: 4px;
@@ -45,7 +47,7 @@ const ButtonSubmitForm = styled.a`
     background-color: #3f3f3f;
     font-size: 1rem;
     margin: 0 auto;
-    width: 100%;
+    width: 30%;
     padding: 1rem 1.2rem;
     margin-top: 1.5rem;
     color: #fff;
@@ -96,65 +98,65 @@ const InputBorder = styled.span`
   left: 0;
   transition: 0.3s;
 `;
+const LabelInputForm = styled.label`
+  margin-bottom: 1rem;
+  font-size: .5rem;
+  font-style: italic;
+`
 
 
 const Form = () => {
-    const form = useRef();
+  const form = useRef();
 
-    const sendEmail = (e) => {
-    e.preventDefault();
+  const sendEmail = (e) => {
+  e.preventDefault();
 
-    emailjs.sendForm('service_webqtko', 'template_kxj8ru8', form.current, '6XCPVQDlEI-egjo2f')
-      .then((result) => {
-          console.log(result.text);
-      }, (error) => {
-          console.log(error.text);
-      });
-      e.target.reset();
-    };
+  emailjs.sendForm('service_webqtko', 'template_kxj8ru8', form.current, '6XCPVQDlEI-egjo2f')
+  .then((result) => {
+    console.log(result.text);
+  }, (error) => {
+    console.log(error.text);
+  });
+  e.target.reset();
+  };
 
-    return (
-        <ContainerForm>
-
-            
-
-
-            <FormStyle ref={form} onSubmit={sendEmail}>
-                <NameEmail>
-                    <DivForm>
-                        <Input
-                            type="text"
-                            placeholder="Insira seu nome:"
-                            name="from_name"
-                            id="user_name"
-                            required />
-                        <InputBorder className="input-border" />
-                    </DivForm>
-
-                    <DivForm>
-                        <Input
-                            type="text"
-                            placeholder="Insira seu e-mail:"
-                            name="reply_to"
-                            id="user_email"
-                            required />
-                        <InputBorder className="input-border" />
-                    </DivForm>
-                </NameEmail>
-                <DivForm>
-                    <TextareaStyle 
-                    placeholder="Insira sua mensagem"
-                    name="message"
-                    id="message"
-                    />
-                    <InputBorder className="input-border" />
-                </DivForm>
-                
-
-                <ButtonSubmitForm type="submit" value="Send">Enviar <MdArrowOutward /></ButtonSubmitForm>
-            </FormStyle>
-        </ContainerForm>
-    );
+  return (
+    <ContainerForm>
+      <FormStyle ref={form} onSubmit={sendEmail}>
+        <NameEmail>
+          <DivForm>
+            <LabelInputForm htmlFor="user_name">nome</LabelInputForm>
+            <Input
+              type="text"
+              placeholder="Insira seu nome:"
+              name="from_name"
+              id="user_name"
+              required />
+            <InputBorder className="input-border" />
+          </DivForm>
+          <DivForm>
+            <LabelInputForm htmlFor="user_email">e-mail</LabelInputForm>
+            <Input
+              type="text"
+              placeholder="Insira seu e-mail:"
+              name="reply_to"
+              id="user_email"
+              required />
+            <InputBorder className="input-border" />
+          </DivForm>
+        </NameEmail>
+          <DivForm>
+            <LabelInputForm htmlFor="message">mensagem</LabelInputForm>
+            <TextareaStyle 
+              placeholder="Olá, Henrique. Gostei muito do seu portfólio e tenho um projeto que gostaria da sua contribuição. Vamos conversar?"
+              name="message"
+              id="message"
+            />
+          </DivForm>
+        <ButtonSubmitForm type="submit" value="Send">Enviar <MdArrowOutward size={20}/></ButtonSubmitForm>
+      </FormStyle>
+    </ContainerForm>
+  );
 }
 
 export default Form;

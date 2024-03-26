@@ -6,17 +6,18 @@ const ContainerContact = styled.div`
     height: calc(100vh - 6.3vh);
     width: 100%;
     display: flex;
+    justify-content: center;
     flex-direction: column;
     align-items: center;
-    margin-left: 55px;
     background-color: #2e2e2e;
+    padding: 1rem;
     @media (max-width: 450px) {
-        margin-left: 50px;
+        margin-left: 25px;
     }
 `;
 const ContactSize = styled.div`
     width: 100%;
-    max-width: 1000px;
+    max-width: 800px;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
     
@@ -36,9 +37,7 @@ const ContactSize = styled.div`
 
     display: flex;
     flex-direction: column;
-    margin-top: 8rem;
     @media (max-width: 800px) {
-        margin-top: 2rem;
         padding-bottom: 2rem;
     }
 `;
@@ -49,7 +48,22 @@ const TitleContact = styled.h1`
     color: #fff;
     font-size: 2rem;
     font-weight: 700;
+    text-align: center;
+    @media (max-width: 450px) {
+        font-size: 1.3rem;
+    }
+`
+const SubTitleContact = styled.h2`
+    color: #a5a5a5;
+    font-size: 'Montserrat', sans-serif;
+    font-size: 1.4rem;
+    text-align: center;
+    margin: 0 auto;
+    max-width: 40ch;
     margin-bottom: 2rem;
+    @media (max-width: 450px) {
+        font-size: 1.3rem;
+    }
 `
 
 
@@ -59,7 +73,8 @@ const Contact = () => {
             <TabFiles activeTab='Contact' />
             <ContactSize>
                 <ContactMolde>
-                    <TitleContact>Tem uma pergunta ou proposta? Mande uma mensagem.</TitleContact>
+                    <TitleContact>Mande uma mensagem.</TitleContact>
+                    <SubTitleContact>Tem uma pergunta, proposta ou quer apenas fazer um comentário? Fique a vontade</SubTitleContact>
                     <Form />
                 </ContactMolde>
             </ContactSize>
