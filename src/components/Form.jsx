@@ -42,13 +42,12 @@ const ButtonSubmitForm = styled.a`
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    border: 0;
     cursor: pointer;
     background-color: #3f3f3f;
     font-size: 1rem;
     margin: 0 auto;
     width: 30%;
-    padding: 1rem 1.2rem;
+    padding: .7rem 1.2rem;
     margin-top: 1.5rem;
     color: #fff;
     font-weight: 600;

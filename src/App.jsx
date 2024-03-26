@@ -12,10 +12,10 @@ import Github from './pages/Github';
 import Preloader from './components/Preloader';
 
 const fadeIn = keyframes`
-  from {
+  0% {
     opacity: 0;
   }
-  to {
+  100% {
     opacity: 1;
   }
 `;
@@ -26,7 +26,7 @@ const Interface = styled.div`
   width: 100%;
   height: 100%;
   opacity: ${props => props.loaded ? '1' : '0'};
-  animation: ${fadeIn} 1.5s ease;
+  animation: ${fadeIn} 2s ease;
 `;
 
 const LocalContainer = styled.div`
@@ -42,7 +42,7 @@ function App() {
 
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise(resolve => setTimeout(resolve, 5500));
+      await new Promise(resolve => setTimeout(resolve, 6000));
       setLoading(false); 
     };
     fetchData();

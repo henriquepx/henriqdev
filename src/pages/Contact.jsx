@@ -11,13 +11,7 @@ const ContainerContact = styled.div`
     align-items: center;
     background-color: #2e2e2e;
     padding: 1.5rem;
-`;
-const ContactSize = styled.div`
-    width: 100%;
-    max-width: 800px;
-    margin: 0 auto;
-    max-height: calc(100vh - 6.3rem); 
-    
+
     overflow-y: auto; 
     &::-webkit-scrollbar {
         width: 12px; 
@@ -31,6 +25,12 @@ const ContactSize = styled.div`
     }
     scrollbar-width: thin;
     scrollbar-color: #9c9c9c #1d1d1d;
+`;
+const ContactSize = styled.div`
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    max-height: calc(100vh - 6.3rem); 
 
     display: flex;
     flex-direction: column;
@@ -41,27 +41,27 @@ const ContactSize = styled.div`
 const ContactMolde = styled.div`
     margin-left: 45px;
 `
-const TitleContact = styled.h1`
-    color: #fff;
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    @media (max-width: 450px) {
-        font-size: 1.3rem;
-    }
-`
-const SubTitleContact = styled.h2`
-    color: #a5a5a5;
-    font-size: 'Montserrat', sans-serif;
-    font-size: 1.4rem;
-    text-align: center;
-    margin: 0 auto;
-    max-width: 40ch;
-    margin-bottom: 2rem;
-    @media (max-width: 450px) {
-        font-size: 1.3rem;
-    }
-`
+// const TitleContact = styled.h1`
+//     color: #fff;
+//     font-size: 2rem;
+//     font-weight: 700;
+//     text-align: center;
+//     @media (max-width: 450px) {
+//         font-size: 1.3rem;
+//     }
+// `
+// const SubTitleContact = styled.h2`
+//     color: #a5a5a5;
+//     font-size: 'Montserrat', sans-serif;
+//     font-size: 1.4rem;
+//     text-align: center;
+//     margin: 0 auto;
+//     max-width: 40ch;
+//     margin-bottom: 2rem;
+//     @media (max-width: 450px) {
+//         font-size: 1.3rem;
+//     }
+// `
 
 
 const Contact = () => {
@@ -70,8 +70,8 @@ const Contact = () => {
             <TabFiles activeTab='Contact' />
             <ContactSize>
                 <ContactMolde>
-                    <TitleContact>Mande uma mensagem.</TitleContact>
-                    <SubTitleContact>Tem uma pergunta, proposta ou quer apenas fazer um comentário? Fique a vontade</SubTitleContact>
+                    {/* <TitleContact>Mande uma mensagem.</TitleContact>
+                    <SubTitleContact>Tem uma pergunta, proposta ou quer apenas fazer um comentário? Fique a vontade</SubTitleContact> */}
                     <Form />
                 </ContactMolde>
             </ContactSize>
