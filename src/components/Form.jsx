@@ -52,6 +52,9 @@ const ButtonSubmitForm = styled.a`
     margin-top: 1.5rem;
     color: #fff;
     font-weight: 600;
+    @media (max-width: 500px) {
+      width: 100%;
+    }
 `
 const NameEmail = styled.div`
     display: flex;
@@ -59,7 +62,7 @@ const NameEmail = styled.div`
     margin-bottom: 3rem;
     @media (max-width: 600px) {
         flex-direction: column;
-        gap: 0px;
+        gap: 20px;
     }
 `
 const DivForm = styled.div`

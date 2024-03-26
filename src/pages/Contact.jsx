@@ -10,10 +10,7 @@ const ContainerContact = styled.div`
     flex-direction: column;
     align-items: center;
     background-color: #2e2e2e;
-    padding: 1rem;
-    @media (max-width: 450px) {
-        margin-left: 25px;
-    }
+    padding: 1.5rem;
 `;
 const ContactSize = styled.div`
     width: 100%;
