@@ -11,20 +11,7 @@ const ContainerContact = styled.div`
     align-items: center;
     background-color: #2e2e2e;
     padding: 1.5rem;
-
-    overflow-y: auto; 
-    &::-webkit-scrollbar {
-        width: 12px; 
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #505050; 
-        border-radius: 6px; 
-    }
-    &::-webkit-scrollbar-track {
-        background-color: #1d1d1d;
-    }
-    scrollbar-width: thin;
-    scrollbar-color: #9c9c9c #1d1d1d;
+    overflow: hidden;
 `;
 const ContactSize = styled.div`
     width: 100%;
