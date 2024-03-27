@@ -9,48 +9,48 @@ const HomeContainer = styled.div`
     width: 100%;
     overflow: hidden;
 `;
-const InfoHome = styled.div`
+const HomeSize = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding-bottom: 6rem;
-    text-align: center;
-    margin-left: 25px;
+    margin-left: 40rem;
+`
+const InfoHome = styled.div`
+    margin-bottom: 5rem;
     h1 {
         color: #fff;
         font-size: 4rem;
         font-weight: 700;
-        @media (max-width: 800px) {
-            font-size: 1.8rem;
+        @media (max-width: 499px) {
+            font-size: 1.6rem;
+        }
+        @media (min-width: 500px) and (max-width: 710px) {
+            font-size: 2.5rem;
         }
     }
-
     h2 {
         font-size: 2rem;
         font-weight: 700;
         color: #b9b9b9;
-        @media (max-width: 800px) {
+        @media (max-width: 460px) {
+            font-size: 1rem;
+        }
+        @media (max-width: 710px) {
             font-size: 1.2rem;
         }
-    }
-
-    p {
-        font-size: 1rem;
-        font-weight: 600;
-        color: #b9b9b9;
-        @media (max-width: 800px) {
-            max-width: 30ch;
-        }
-    }
+    }    
 `;
-const DescriptionHome = styled.p`
-    padding-top: 1rem;
-    max-width: 50ch;
+const DescriptionHome = styled.h3`
+    max-width: 70ch;
+    padding-left: 1rem;
+    border-left: 2px solid #e0e0e0;
+    color: #fff;
+    margin: 1rem 0;
 `;
 const Faixa = styled.div`
+    z-index: 200;
     position:fixed;
     overflow: hidden;
     right: -90px;
@@ -74,9 +74,66 @@ const CV = styled.a`
     background-color: #222222;
     border: 1px solid #8b8b8b;
     border-radius: 15px;
+    width: 120px;
     padding: .3rem 2rem;
     margin-top: 1rem;
     cursor: pointer;
+`
+const DivIntroduction = styled.div`
+`
+const DivIntroductionSize = styled.div`
+    position: relative;
+    &::before {
+        content: " ";
+        width: 90px;
+        height: 90px;
+        background: linear-gradient(135deg, #5a5a5a 0%, #0a0a0a 50%, #494949 100%);
+        opacity: 1;
+        border-top-left-radius: 8px;
+        transition: all .3s ease-in-out;
+        position: absolute;
+        top: -4px;
+        bottom: 0;
+        left: -4px;
+    }
+`
+const DivNavegate = styled.div`
+    z-index: 1;
+    background: #2e2e2e;
+    border-top-left-radius: 7px;
+    flex-direction: column;
+    margin-left: 0;
+    padding: 1.5rem;
+    display: flex;
+    position: relative;
+    color: #fff;
+    a {
+        display: inline-block;
+        position: relative;
+        margin: 5px 0;
+        span {
+            color: #fff;
+            position: relative;
+            &::before {
+                content: "";
+                height: 1px;
+                width: 100%;
+                background: linear-gradient(270deg, #5a5a5a 0%, #0a0a0a 50%, #494949 100%);
+                opacity: 1;
+                transition: all .3s ease-in-out;
+                display: inline-block;
+                position: absolute;
+                bottom: -2px;
+                left: 0;
+                right: 0;
+            }
+
+        }
+    }
+    h2 {
+        max-width: 60ch;
+        margin-bottom: 1.2rem;
+    }
 `
 
 const Home = () => {
@@ -90,19 +147,31 @@ const Home = () => {
     return (
         <HomeContainer>
             <TabFiles activeTab='Home' />
-            <InfoHome>
-                <h1>Henrique Pinheiro</h1>
-                <h2>Desenvolvedor Front-end</h2>
-                <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário.</DescriptionHome>
-                <p>Disponível para trabalhos.</p>
-                <CV onClick={handleDownloadCV} name="CV" download>
-                    <FaFilePdf />
-                    CV
-                </CV>
-                <Faixa>
-                    <p>Disponível para trabalho.</p>
-                </Faixa>
-            </InfoHome>
+            <HomeSize>
+                <InfoHome>
+                    <h1>Henrique Pinheiro</h1>
+                    <h2>Desenvolvedor Front-end</h2>
+                        <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário. <br />Esse portfólio é uma interface inspirada no VisualStudioCode. <br />Navegue clicando nos links abaixo ou nos ícones no canto superior esquerdo.</DescriptionHome>
+                     <CV onClick={handleDownloadCV} name="CV" download>
+                        <FaFilePdf />
+                        CV
+                    </CV>
+                    <Faixa>
+                        <p>Disponível para trabalho.</p>
+                    </Faixa>
+                </InfoHome>
+
+                <DivIntroduction>
+                    <DivIntroductionSize>
+                        <DivNavegate>
+                            <a href="#"><span>Projetos</span></a>
+                            <a href="#"><span>Habilidades</span></a>
+                            <a href="#"><span>Contato</span></a>
+                        </DivNavegate>
+                    </DivIntroductionSize>
+                </DivIntroduction>
+            </HomeSize>
+            
         </HomeContainer>
     );
 }

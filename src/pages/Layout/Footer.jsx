@@ -12,7 +12,7 @@ const FooterContainer = styled.footer`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-top: 2px solid rgb(43, 43, 43);
+    border-top: 1px solid rgb(43, 43, 43);
     z-index: 500;
 `;
 
@@ -50,7 +50,7 @@ const IconBlue = styled.div`
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    padding: 0.20rem 0.6rem;
+    padding: 0.20rem .8rem;
 
     svg {
         color: #fff;
