@@ -20,7 +20,7 @@ const SkillsContainer = styled.div`
     height: calc(100vh - 6.3);
     width: 100%;
     overflow: hidden; 
-    padding-top: 3rem;
+    padding: 3rem 0;
 `
 const SkillsSize = styled.div`
     width: 100%;

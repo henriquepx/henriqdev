@@ -2,6 +2,7 @@ import styled from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
+import { Link } from 'react-router-dom';
 
 const HomeContainer = styled.div`
     position: relative;
@@ -13,12 +14,18 @@ const HomeSize = styled.div`
     height: 100vh;
     width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    margin-left: 40rem;
+    align-items: center;
+    gap: 30px;
+    margin-left: 75px;
+    padding: 1.5rem 0;
+    @media (max-width: 1024px) {
+        flex-direction: column;
+        gap: 20px;
+    }
 `
 const InfoHome = styled.div`
-    margin-bottom: 5rem;
+    margin: 2rem 0;
     h1 {
         color: #fff;
         font-size: 4rem;
@@ -43,8 +50,8 @@ const InfoHome = styled.div`
     }    
 `;
 const DescriptionHome = styled.h3`
-    max-width: 70ch;
-    padding-left: 1rem;
+    max-width: 90ch;
+    padding: 0rem 7rem 0 .5rem;
     border-left: 2px solid #e0e0e0;
     color: #fff;
     margin: 1rem 0;
@@ -53,8 +60,8 @@ const Faixa = styled.div`
     z-index: 200;
     position:fixed;
     overflow: hidden;
-    right: -90px;
-    bottom: 90px;
+    right: -120px;
+    bottom: 80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +110,7 @@ const DivNavegate = styled.div`
     border-top-left-radius: 7px;
     flex-direction: column;
     margin-left: 0;
-    padding: 1.5rem;
+    padding: 1rem;
     display: flex;
     position: relative;
     color: #fff;
@@ -130,9 +137,9 @@ const DivNavegate = styled.div`
 
         }
     }
-    h2 {
-        max-width: 60ch;
+    p {
         margin-bottom: 1.2rem;
+        padding-right: 3rem;
     }
 `
 
@@ -150,8 +157,7 @@ const Home = () => {
             <HomeSize>
                 <InfoHome>
                     <h1>Henrique Pinheiro</h1>
-                    <h2>Desenvolvedor Front-end</h2>
-                        <DescriptionHome>Apaixonado por criar interfaces web robustas e escaláveis que proporcionam experiências excepcionais ao usuário. <br />Esse portfólio é uma interface inspirada no VisualStudioCode. <br />Navegue clicando nos links abaixo ou nos ícones no canto superior esquerdo.</DescriptionHome>
+                        <DescriptionHome>Jovem Desenvolvedor Front-end especializado na construção de experiências digitais excepcionais, trago minha paixão por criar interfaces web robustas e escaláveis. Com proficiência nos principais frameworks para a Web, meu foco reside em transformar ideias em realidade, garantindo que cada interação seja intuitiva e envolvente para o usuário.</DescriptionHome>
                      <CV onClick={handleDownloadCV} name="CV" download>
                         <FaFilePdf />
                         CV
@@ -164,9 +170,10 @@ const Home = () => {
                 <DivIntroduction>
                     <DivIntroductionSize>
                         <DivNavegate>
-                            <a href="#"><span>Projetos</span></a>
-                            <a href="#"><span>Habilidades</span></a>
-                            <a href="#"><span>Contato</span></a>
+                            <p>Esse portfólio é uma interface inspirada no VisualStudioCode. <br />Navegue clicando nos links abaixo ou nos ícones no canto superior esquerdo.</p>
+                            <Link to="/projects"><span>Projetos</span></Link>
+                            <Link to="/skills"><span>Habilidades</span></Link>
+                            <Link to="/contact"><span>Contato</span></Link>
                         </DivNavegate>
                     </DivIntroductionSize>
                 </DivIntroduction>
