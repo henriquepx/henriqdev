@@ -51,7 +51,7 @@ const HamburgerIcon = styled(VscMenu)`
     }
 `;
 
-const HeaderSection2 = styled.div`
+const HeaderSection3 = styled.div`
     display: flex;
     align-items: center;
     gap: 10px;
@@ -84,8 +84,8 @@ const Header = () => {
                 <p>Run</p>
                 <p>Terminal</p>
                 <p>Help</p>
-            </HeaderSection1>
-            <HeaderSection2>
+                </HeaderSection1>
+            <HeaderSection3>
                 <VscLayoutSidebarLeft />
                 <VscLayoutPanelOff />
                 <VscLayoutSidebarRightOff />
@@ -95,7 +95,7 @@ const Header = () => {
                     <VscChromeRestore />
                     <VscChromeClose />
                 </div>
-            </HeaderSection2>
+            </HeaderSection3>
             </HeaderContainer>
         </div>
     );

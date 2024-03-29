@@ -8,7 +8,6 @@ const StyledFileTab = styled.div`
     gap: 5px;
     padding: .4rem 1rem .4rem .6rem;
     border-top: 1px solid white;
-
     img {
         width: 17px;
     }

@@ -22,6 +22,10 @@ const StyledIconSide = styled.div`
     svg {
         cursor: pointer;
         color: #7e7b74;
+        color: ${({ active }) => (active ? '#ffffff;' : '#7e7b74')};
+        &:hover {
+            color: #ffffff;
+        }
     }
 
 `;

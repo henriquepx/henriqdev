@@ -20,14 +20,13 @@ const SkillsContainer = styled.div`
     height: calc(100vh - 6.3);
     width: 100%;
     overflow: hidden; 
-    padding: 3rem 0;
 `
 const SkillsSize = styled.div`
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
-    
+    padding: 3rem 0 5rem 0;
     overflow-y: auto; 
     &::-webkit-scrollbar {
         width: 12px; 
