@@ -17,18 +17,19 @@ const HomeSize = styled.div`
     justify-content: center;
     align-items: center;
     gap: 30px;
-    margin-left: 75px;
+    margin-left: 70px;
     padding: 1.5rem 0;
     @media (max-width: 1024px) {
         flex-direction: column;
         gap: 20px;
+        align-items: normal;
     }
 `
 const InfoHome = styled.div`
     margin: 2rem 0;
     h1 {
         color: #fff;
-        font-size: 4rem;
+        font-size: 3rem;
         font-weight: 700;
         @media (max-width: 499px) {
             font-size: 1.6rem;
@@ -52,9 +53,11 @@ const InfoHome = styled.div`
 const DescriptionHome = styled.h3`
     max-width: 90ch;
     padding: 0rem 7rem 0 .5rem;
-    border-left: 2px solid #e0e0e0;
+    border-left: 2px solid #a7a6a6;
     color: #fff;
     margin: 1rem 0;
+
+    display: block;
 `;
 const Faixa = styled.div`
     z-index: 200;
@@ -138,8 +141,12 @@ const DivNavegate = styled.div`
         }
     }
     p {
+        display: block;
         margin-bottom: 1.2rem;
-        padding-right: 3rem;
+
+        max-width: 70ch;
+        color: #fff;
+        padding-right: 4rem;
     }
 `
 
@@ -157,7 +164,7 @@ const Home = () => {
             <HomeSize>
                 <InfoHome>
                     <h1>Henrique Pinheiro</h1>
-                        <DescriptionHome>Jovem Desenvolvedor Front-end especializado na construção de experiências digitais excepcionais, trago minha paixão por criar interfaces web robustas e escaláveis. Com proficiência nos principais frameworks para a Web, meu foco reside em transformar ideias em realidade, garantindo que cada interação seja intuitiva e envolvente para o usuário.</DescriptionHome>
+                    <DescriptionHome>Jovem Desenvolvedor Front-end especializado na construção de experiências digitais excepcionais, trago minha paixão por criar interfaces web robustas e escaláveis. Com proficiência nos principais frameworks para a Web, meu foco reside em transformar ideias em realidade, garantindo que cada interação seja intuitiva e envolvente para o usuário.</DescriptionHome>
                      <CV onClick={handleDownloadCV} name="CV" download>
                         <FaFilePdf />
                         CV
