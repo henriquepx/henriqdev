@@ -1,76 +1,89 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
+import Photo from '../assets/eu.jpg';
+import { FaArrowLeftLong } from "react-icons/fa6";
 
 const HomeContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
     width: 100%;
     overflow: hidden;
-
-    overflow-y: auto;
-    margin: 0 auto;
-    &::-webkit-scrollbar {
-        width: 12px; 
-    }
-    &::-webkit-scrollbar-thumb {
-        background-color: #505050; 
-        border-radius: 6px; 
-    }
-    &::-webkit-scrollbar-track {
-        background-color: #1d1d1d;
-    }
-    scrollbar-width: thin;
-    scrollbar-color: #9c9c9c #1d1d1d;
 `;
 const HomeSize = styled.div`
-    height: 100vh;
-    width: 100%;
-    margin-left: 30px;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
+    margin: 5rem 1.2rem 5rem 5rem;
 
 `
 const InfoHome = styled.div`
-    margin: 2rem 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+`;
+const DivInstruction = styled.div`
+    display: flex;
+    justify-content: space-between;
     align-items: center;
+    margin-bottom: 1rem;
+    max-width: 300px;
+    color: #fff;
+`
+const InstructionsSobre = styled.div`
+    span {
+        margin: 5px;
+        font-style: italic;
+        color: #fff;
+    }
+    color: #fff;
+    max-width: 40ch;
+`
+const moveLeft = keyframes`
+    0%, 100% {
+        transform: translateX(7px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+`;
+
+const ArrowLeft = styled(FaArrowLeftLong)`
+    animation: ${moveLeft} .6s linear infinite;
+`;
+const InfoTitle = styled.div`
+    display: flex;
     flex-direction: column;
     width: 100%;
-    h1 {
-        color: #fff;
-        font-size: 3rem;
-        font-weight: 700;
-        @media (max-width: 499px) {
-            font-size: 1.6rem;
-        }
-        @media (min-width: 500px) and (max-width: 710px) {
-            font-size: 2.5rem;
-        }
+    font-family: 'Montserrat', sans-serif;
+    text-transform: uppercase; 
+`;
+const TitleDev = styled.h1`
+    font-size: 11vw;
+    text-transform: uppercase;
+    color: #dadada;
+    word-break: break-all;
+    font-family: "Fjalla One", sans-serif;
+`
+const DivPhotoText = styled.div`
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @media (max-width: 800px) {
+        flex-direction: column-reverse;
+        align-items: normal;
     }
-    h2 {
-        font-size: 2rem;
-        font-weight: 700;
-        color: #b9b9b9;
-        @media (max-width: 460px) {
-            font-size: 1rem;
-        }
-        @media (max-width: 710px) {
-            font-size: 1.2rem;
-        }
-    }    
-`;
-const DescriptionHome = styled.h3`
-    max-width: 40ch;
-    text-align: center;
-    color: #fff;
+`
+const TitleFrontend = styled.h2`
+    font-size: 13vw;
+    text-transform: uppercase;
+    color: #dadada;
+    font-family: "Fjalla One", sans-serif;
+`
+const ImgMe = styled.img`
+    width: 260px;
+    @media (max-width: 800px) {
+        width: 130px;
+    }
+`
 
-    display: block;
-`;
 const Faixa = styled.div`
     z-index: 200;
     position:fixed;
@@ -116,17 +129,27 @@ const Home = () => {
             <TabFiles activeTab='Home' />
             <HomeSize>
                 <InfoHome>
-                    <h1>Henrique Pinheiro</h1>
-                    <h2>Desenvolvedor Front-end</h2>
-                    <DescriptionHome>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae, modi.</DescriptionHome>
-                     <CV onClick={handleDownloadCV} name="CV" download>
+                        <DivInstruction>
+                            <ArrowLeft />
+                            <h2>Navegue pelo portfólio</h2>
+                        </DivInstruction>
+                        <InstructionsSobre><span>SOBRE</span>Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.</InstructionsSobre>
+                        <CV onClick={handleDownloadCV} name="CV" download>
                         <FaFilePdf />
                         CV
                     </CV>
-                    <Faixa>
-                        <p>Disponível para trabalho.</p>
-                    </Faixa>
                 </InfoHome>
+                <InfoTitle>
+                    <TitleDev>Desenvolvedor</TitleDev>
+                    <DivPhotoText>
+                        <ImgMe src={Photo} alt="" />
+                        <TitleFrontend>Front-end</TitleFrontend>
+                    </DivPhotoText>
+                    
+                </InfoTitle>
+                <Faixa>
+                    <p>Disponível para trabalho.</p>
+                </Faixa>
             </HomeSize>
         </HomeContainer>
     );
