@@ -2,8 +2,34 @@ import styled, {keyframes} from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
-import Photo from '../assets/eu.jpg';
 import { FaArrowLeftLong } from "react-icons/fa6";
+
+const moveLeft = keyframes`
+    0%, 100% {
+        transform: translateX(7px);
+    }
+    50% {
+        transform: translateX(0);
+    }
+`;
+
+const moveTextTitle = keyframes`
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+`;
+
+const moveTextSubitle = keyframes`
+    0% {
+        transform: translateX(-200px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+`;
 
 const HomeContainer = styled.div`
     position: relative;
@@ -17,90 +43,106 @@ const HomeSize = styled.div`
 `
 const InfoHome = styled.div`
     display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
+    @media (max-width: 800px) {
+        margin-bottom: 3rem;
+    }
+`;
+const InfoLinks = styled.div`
+    display: flex;
     flex-direction: column;
+    text-align: left;
+    a {
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+    }
+`;
+const InfoAvailable = styled.div`
+    p {
+        font-family: "Urbanist", sans-serif;
+        color: #fff;
+    }
 `;
 const DivInstruction = styled.div`
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 1rem;
+    margin-bottom: .5rem;
     max-width: 300px;
     color: #fff;
+     h2 {
+        font-family: "Urbanist", sans-serif;
+     }
 `
 const InstructionsSobre = styled.div`
     span {
         margin: 5px;
-        font-style: italic;
-        color: #fff;
+        color: #888888;
+        font-size: .8rem;
     }
     color: #fff;
     max-width: 40ch;
+    font-family: "Urbanist", sans-serif;
 `
-const moveLeft = keyframes`
-    0%, 100% {
-        transform: translateX(7px);
-    }
-    50% {
-        transform: translateX(0);
-    }
-`;
-
 const ArrowLeft = styled(FaArrowLeftLong)`
     animation: ${moveLeft} .6s linear infinite;
 `;
 const InfoTitle = styled.div`
     display: flex;
     flex-direction: column;
+    text-align: left;
     width: 100%;
-    font-family: 'Montserrat', sans-serif;
-    text-transform: uppercase; 
+    text-transform: uppercase;
 `;
 const TitleDev = styled.h1`
-    font-size: 11vw;
+    font-size: 14vw;
     text-transform: uppercase;
     color: #dadada;
-    word-break: break-all;
     font-family: "Fjalla One", sans-serif;
-`
-const DivPhotoText = styled.div`
-    display: flex;
-    align-items: center;
-    gap: 20px;
+    display: block;
+    animation: ${moveTextSubitle} 1s forwards;
     @media (max-width: 800px) {
-        flex-direction: column-reverse;
-        align-items: normal;
+        display: none;
     }
 `
+const TitleDev2 = styled(TitleDev)`
+    display: none;
+    @media (max-width: 800px) {
+        display: block;
+    }
+
+`
 const TitleFrontend = styled.h2`
-    font-size: 13vw;
+    font-size: 18vw;
     text-transform: uppercase;
     color: #dadada;
     font-family: "Fjalla One", sans-serif;
-`
-const ImgMe = styled.img`
-    width: 260px;
-    @media (max-width: 800px) {
-        width: 130px;
+    animation: ${moveTextTitle} 1s forwards;
+    @media (max-width: 1280px) {
+        font-size: 21vw;
+        margin-top: 1rem;
     }
 `
 
-const Faixa = styled.div`
-    z-index: 200;
-    position:fixed;
-    overflow: hidden;
-    right: -120px;
-    bottom: 80px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 400px;
-    height: 50px;
-    transform: rotate(-45deg);
-    background-color: #1a1818;
-    p {
-        color: #dad9d9;
-    }
-`
+// const Faixa = styled.div`
+//     z-index: 200;
+//     position:fixed;
+//     overflow: hidden;
+//     right: -120px;
+//     top: 80px;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     width: 400px;
+//     height: 50px;
+//     transform: rotate(45deg);
+//     background-color: #1a1818;
+//     p {
+//         color: #dad9d9;
+//     }
+// `
 const CV = styled.a`
     display: flex;
     align-items: center;
@@ -111,7 +153,7 @@ const CV = styled.a`
     border-radius: 15px;
     width: 120px;
     padding: .3rem 2rem;
-    margin-top: 1rem;
+    margin-top: .5rem;
     cursor: pointer;
 `
 
@@ -129,27 +171,33 @@ const Home = () => {
             <TabFiles activeTab='Home' />
             <HomeSize>
                 <InfoHome>
+                    <div>
                         <DivInstruction>
                             <ArrowLeft />
                             <h2>Navegue pelo portfólio</h2>
                         </DivInstruction>
                         <InstructionsSobre><span>SOBRE</span>Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.</InstructionsSobre>
+                    </div>
+                    <InfoLinks>
+                        <a href="#" target='_blank' rel='noreferrer'>blog: devinsights</a>
+                        <a href="#" target='_blank' rel='noreferrer'>henriquepinheiroxavier@gmail.com</a>
+                    </InfoLinks>
+                    <InfoAvailable>
+                        <p>Disponível para trabalho & Freelances</p>
                         <CV onClick={handleDownloadCV} name="CV" download>
-                        <FaFilePdf />
-                        CV
-                    </CV>
+                            <FaFilePdf />
+                            CV
+                        </CV>
+                    </InfoAvailable>
                 </InfoHome>
                 <InfoTitle>
                     <TitleDev>Desenvolvedor</TitleDev>
-                    <DivPhotoText>
-                        <ImgMe src={Photo} alt="" />
-                        <TitleFrontend>Front-end</TitleFrontend>
-                    </DivPhotoText>
-                    
+                    <TitleDev2>Dev</TitleDev2>
+                    <TitleFrontend>Front-end</TitleFrontend>
                 </InfoTitle>
-                <Faixa>
+                {/* <Faixa>
                     <p>Disponível para trabalho.</p>
-                </Faixa>
+                </Faixa> */}
             </HomeSize>
         </HomeContainer>
     );
