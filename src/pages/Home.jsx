@@ -49,11 +49,11 @@ const HomeSize = styled.div`
 const InfoHome = styled.div`
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
     gap: 20px;
     animation: ${moveTexts} 1s forwards;
-    @media (max-width: 800px) {
+    @media (max-width: 1000px) {
         margin-bottom: 0.6rem;
+        flex-direction: column;
     }
 `;
 const InfoLinks = styled.div`
@@ -77,7 +77,7 @@ const InfoAvailable = styled.div`
 `;
 const DivInstruction = styled.div`
     display: flex;
-    justify-content: space-between;
+    gap: 20px;
     align-items: center;
     margin-bottom: .5rem;
     max-width: 300px;
@@ -107,17 +107,22 @@ const InfoTitle = styled.div`
     text-transform: uppercase;
 `;
 const TitleDev = styled.h1`
-    font-size: 14vw;
+    font-size: 6vw;
     text-transform: uppercase;
     color: #979797;
     font-family: "Fjalla One", sans-serif;
     display: block;
     animation: ${moveTextSubitle} 1s forwards;
+    margin-top: 7rem;
+    @media (max-width: 400px) {
+        margin-top: 3.5rem;
+    }
     &:hover {
         color: #ffffff;
     }
     @media (max-width: 800px) {
         display: none;
+        font-size: 12vw;
     }
 `
 const TitleDev2 = styled(TitleDev)`
@@ -134,31 +139,15 @@ const TitleFrontend = styled.h2`
     font-family: "Fjalla One", sans-serif;
     animation: ${moveTextTitle} 1s forwards;
     margin-top: -1.5rem;
+    margin-bottom: 2rem;
     &:hover {
         color: #ffffff;
     }
     @media (max-width: 1280px) {
-        font-size: 21vw;
+        font-size: 18vw;
         margin-top: 1rem;
     }
 `
-// const Faixa = styled.div`
-//     z-index: 200;
-//     position:fixed;
-//     overflow: hidden;
-//     right: -120px;
-//     top: 80px;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     width: 400px;
-//     height: 50px;
-//     transform: rotate(45deg);
-//     background-color: #1a1818;
-//     p {
-//         color: #dad9d9;
-//     }
-// `
 const CV = styled.a`
     display: flex;
     align-items: center;
@@ -176,7 +165,6 @@ const CV = styled.a`
         margin-right: auto;
     }
 `
-
 
 const Home = () => {
 
@@ -214,9 +202,6 @@ const Home = () => {
                     <TitleDev2>Dev</TitleDev2>
                     <TitleFrontend>Front-end</TitleFrontend>
                 </InfoTitle>
-                {/* <Faixa>
-                    <p>Disponível para trabalho.</p>
-                </Faixa> */}
             </HomeSize>
         </HomeContainer>
     );

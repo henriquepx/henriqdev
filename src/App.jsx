@@ -8,7 +8,6 @@ import Home from './pages/Home';
 import Projects from './pages/Projects';
 import Skills from './pages/Skills';
 import Contact from './pages/Contact';
-import Github from './pages/Github';
 import Preloader from './components/Preloader';
 
 const fadeIn = keyframes`
@@ -67,7 +66,6 @@ function App() {
                 <Route path="/projects" element={<Projects />} />
                 <Route path="/skills" element={<Skills />} />
                 <Route path="/contact" element={<Contact />} />
-                <Route path="/github" element={<Github />} />
               </Routes>
             </LocalContainer>
             <Footer />

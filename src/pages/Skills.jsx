@@ -23,7 +23,6 @@ const SkillsContainer = styled.div`
 `
 const SkillsSize = styled.div`
     width: 100%;
-    max-width: 1200px;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
     padding: 3rem 0 5rem 0;
@@ -81,6 +80,11 @@ const LearningSkills = styled.h2`
          margin-top: 10px;
      }
  `
+const SkillAdjustSize = styled.div`
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+ `
 
 const Skills = () => {
     return (
@@ -88,82 +92,84 @@ const Skills = () => {
             <TabFiles activeTab='Skills' />
             <h1>Skills</h1>
             <SkillsSize>
-               <SkillsWrap>
-                   <LanguageSkill
-                       icon={React} 
-                       title="React" 
-                       description="Biblioteca de interfaces interativas."
-                   />
-                   <LanguageSkill
-                       icon={Javascript}
-                       title="JavaScript" 
-                       description="Linguagem para desenvolvimento web."
+                <SkillAdjustSize>
+                    <SkillsWrap>
+                    <LanguageSkill
+                        icon={React} 
+                        title="React" 
+                        description="Biblioteca de interfaces interativas."
                     />
                     <LanguageSkill
-                       icon={Typescript}
-                       title="TypeScript" 
-                       description="Superset do JavaScript."
+                        icon={Javascript}
+                        title="JavaScript" 
+                        description="Linguagem para desenvolvimento web."
+                        />
+                        <LanguageSkill
+                        icon={Typescript}
+                        title="TypeScript" 
+                        description="Superset do JavaScript."
+                        />
+                        <LanguageSkill
+                        icon={SQL} 
+                        title="SQL" 
+                        description="Gerenciamento de Dados Relacionais."
                     />
                     <LanguageSkill
-                       icon={SQL} 
-                       title="SQL" 
-                       description="Gerenciamento de Dados Relacionais."
-                   />
-                   <LanguageSkill
-                       icon={StyledComponents}
-                       title="Styled Components" 
-                       description="Estilização de componentes."
-                   />
-                   <LanguageSkill
-                       icon={Sass}
-                       title="Sass" 
-                       description="Pré-processador de estilos."
-                   />
-                   <LanguageSkill
-                       icon={Tailwind}
-                       title="Tailwind" 
-                       description="Framework CSS utilitário."
-                   />
-                   <LanguageSkill
-                       icon={Bootstrap}
-                       title="Bootstrap" 
-                       description="Framework CSS responsivo."
-                   />
-                   <LanguageSkill
-                       icon={Css}
-                       title="CSS" 
-                       description="Estilização de páginas."
-                   />
-                   <LanguageSkill
-                       icon={HTML}
-                       title="HTML" 
-                       description="Marcação de páginas web."
-                     />
-               </SkillsWrap>
-               <LearningSkills>Estudando & aprendendo</LearningSkills>
-               <SkillsWrap>
-                   <LanguageSkill
-                       icon={Angular}
-                       title="Angular" 
-                       description="Framework escalável."
-                   />
-                   <LanguageSkill
-                       icon={Nodejs}
-                       title="NodeJS" 
-                       description="Ambiente de Servidor JavaScript."
+                        icon={StyledComponents}
+                        title="Styled Components" 
+                        description="Estilização de componentes."
                     />
                     <LanguageSkill
-                        icon={NextJS}
-                        title="NextJS"
-                        description='Framework JavaScript para desenvolvimento web.'
+                        icon={Sass}
+                        title="Sass" 
+                        description="Pré-processador de estilos."
                     />
-               </SkillsWrap>
-                <TextAboutSkills>
-                   <h3>Planos pro futuro.</h3>
-                   <p>Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
-                   <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
-                   <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
-               </TextAboutSkills>
+                    <LanguageSkill
+                        icon={Tailwind}
+                        title="Tailwind" 
+                        description="Framework CSS utilitário."
+                    />
+                    <LanguageSkill
+                        icon={Bootstrap}
+                        title="Bootstrap" 
+                        description="Framework CSS responsivo."
+                    />
+                    <LanguageSkill
+                        icon={Css}
+                        title="CSS" 
+                        description="Estilização de páginas."
+                    />
+                    <LanguageSkill
+                        icon={HTML}
+                        title="HTML" 
+                        description="Marcação de páginas web."
+                        />
+                    </SkillsWrap>
+                    <LearningSkills>Estudando & aprendendo</LearningSkills>
+                    <SkillsWrap>
+                        <LanguageSkill
+                            icon={Angular}
+                            title="Angular" 
+                            description="Framework escalável."
+                        />
+                        <LanguageSkill
+                            icon={Nodejs}
+                            title="NodeJS" 
+                            description="Ambiente de Servidor JavaScript."
+                            />
+                            <LanguageSkill
+                                icon={NextJS}
+                                title="NextJS"
+                                description='Framework JavaScript para desenvolvimento web.'
+                            />
+                    </SkillsWrap>
+                    <TextAboutSkills>
+                        <h3>Planos pro futuro.</h3>
+                        <p>Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
+                        <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
+                        <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
+                    </TextAboutSkills>
+                </SkillAdjustSize>
            </SkillsSize>
         </SkillsContainer>
     )
