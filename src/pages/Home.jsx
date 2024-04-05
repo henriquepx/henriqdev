@@ -52,7 +52,6 @@ const InfoHome = styled.div`
     gap: 20px;
     animation: ${moveTexts} 1s forwards;
     @media (max-width: 1000px) {
-        margin-bottom: 0.6rem;
         flex-direction: column;
     }
 `;
@@ -105,6 +104,7 @@ const InfoTitle = styled.div`
     text-align: left;
     width: 100%;
     text-transform: uppercase;
+    margin-top: -2rem;
 `;
 const TitleDev = styled.h1`
     font-size: 6vw;
