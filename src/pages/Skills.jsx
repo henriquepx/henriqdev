@@ -1,6 +1,6 @@
 import LanguageSkill from '../components/LanguageSkill'
 import TabFiles from './Layout/TabFiles'
-import styled from 'styled-components'
+import styled, {keyframes} from 'styled-components'
 import Angular from '../assets/skills/angular.png'
 import Bootstrap from '../assets/skills/bootstrap.png'
 import Css from '../assets/skills/css.png'
@@ -15,6 +15,17 @@ import Tailwind from '../assets/skills/tailwind.png'
 import Typescript from '../assets/skills/typescript.png'
 import NextJS from '../assets/skills/next.png'
 
+const showingContent = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateX(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
+
 const SkillsContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
@@ -27,6 +38,7 @@ const SkillsSize = styled.div`
     max-height: calc(100vh - 6.3rem); 
     padding: 3rem 0 5rem 0;
     overflow-y: auto; 
+    animation: ${showingContent} 1s forwards;
     &::-webkit-scrollbar {
         width: 12px; 
     }

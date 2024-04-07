@@ -1,7 +1,17 @@
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
 import TabFiles from './Layout/TabFiles';
 import Form from '../components/Form';
 
+const showingContent = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+`;
 const ContainerContact = styled.div`
     height: calc(100vh - 6.3vh);
     width: 100%;
@@ -18,7 +28,7 @@ const ContactSize = styled.div`
     max-width: 800px;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
-
+    animation: ${showingContent} 1s forwards;
     display: flex;
     flex-direction: column;
     @media (max-width: 800px) {
@@ -28,7 +38,6 @@ const ContactSize = styled.div`
 const ContactMolde = styled.div`
     margin-left: 45px;
 `
-
 
 const Contact = () => {
     return (

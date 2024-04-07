@@ -6,7 +6,6 @@ import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import IconSide from '../../components/IconSide';
-import DropdownSettings from '../../components/DropdownSettings';
 import DropdownProfile from '../../components/DropdownProfile';
 import styled from 'styled-components';
 
@@ -31,7 +30,6 @@ const StyledAsideSection = styled.div`
 
 const Side = () => {
     const [activeIndex, setActiveIndex] = useState(0);
-    const [isDropdownOpen, setIsDropdownOpen] = useState(false);
     const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
 
     const handleClick = (index) => {
@@ -43,11 +41,9 @@ const Side = () => {
     };
 
     const toggleProfileDropdown = () => { setIsProfileDropdownOpen(!isProfileDropdownOpen); };
-    const toggleSettingsDropdown = () => { setIsDropdownOpen(!isDropdownOpen); };
 
     const closeDropdowns = () => {
         setIsProfileDropdownOpen(false);
-        setIsDropdownOpen(false);
     };
 
     return (
@@ -103,11 +99,7 @@ const Side = () => {
                 <IconSide
                     icon={<VscSettingsGear size={24} />}
                     active={activeIndex === 6}
-                    onClick={toggleSettingsDropdown}
                 />
-                {isDropdownOpen && (
-                    <DropdownSettings />
-                )}
             </StyledAsideSection>
         </StyledAside>
     );

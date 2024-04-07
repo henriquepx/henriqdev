@@ -1,5 +1,5 @@
 import TabFiles from './Layout/TabFiles'
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
 import Photographer from '../assets/projects/PortfolioPhotographer.png'
 import DSM from '../assets/projects/DSM.png'
 import Portfoliov1 from '../assets/projects/Portfoliov1.png'
@@ -7,6 +7,18 @@ import Japapou from '../assets/projects/Japapou.png'
 import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 import GithubProject from '../assets/projects/Gitrepositories.png'
+import QuizProject from '../assets/projects/quiz.png'
+
+const showingContent = keyframes`
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+`;
 
 const ProjectContainer = styled.div`
     position: relative;
@@ -21,6 +33,7 @@ const ProjectAdjust = styled.div`
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
     margin-top: 3rem;
+    animation: ${showingContent} 1s forwards;
     &::-webkit-scrollbar {
         width: 12px; 
     }
@@ -63,6 +76,15 @@ const Projects = () => {
                     />
                     <CardProject
                         codeContent={`project2 {
+    name: 'QuizGames',
+    stacks: 'ReactJS, Typescript, Styled Components & React Router Dom'
+}`}
+                        backgroundImage={QuizProject}
+                        linkDeploy='https://quizprogramation.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/quiz_game'
+                    />
+                    <CardProject
+                        codeContent={`project3 {
     name: 'Portfólio v1',
     stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'
 }`}
@@ -71,22 +93,13 @@ const Projects = () => {
                         linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject
-                        codeContent={`project3 {
+                        codeContent={`project4 {
     name: 'Github Repositórios',
     stacks: 'React, TypeScriot, API com Axios, Sass'
 }`}
                         backgroundImage={GithubProject}
                         linkDeploy='https://githubapi-repositories.vercel.app/'
                         linkRepository='https://github.com/henriquepx/github_repositories'
-                    />
-                    <CardProject
-                        codeContent={`project4 {
-    name: 'PhotographerPortfólio',
-    stacks: 'HTML, CSS & JavaScript'
-}`}
-                        backgroundImage={Photographer}
-                        linkDeploy='photographerportfolio.vercel.app/'
-                        linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
                         codeContent={`project5 {
@@ -99,6 +112,15 @@ const Projects = () => {
                     />
                     <CardProject
                         codeContent={`project6 {
+    name: 'PhotographerPortfólio',
+    stacks: 'HTML, CSS & JavaScript'
+}`}
+                        backgroundImage={Photographer}
+                        linkDeploy='photographerportfolio.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/photographer_portfolio'
+                    />
+                    <CardProject
+                        codeContent={`project7 {
     name: 'DSM Consultoria',
     stacks: 'HTML, CSS & JavaScript'
 }`}
