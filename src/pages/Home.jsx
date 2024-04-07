@@ -165,6 +165,22 @@ const CV = styled.a`
         margin-right: auto;
     }
 `
+const Faixa = styled.div`
+  position: absolute;
+  right: -160px;
+  overflow: hidden;
+  bottom: 70px;
+  padding: .8rem 10rem;
+  transform: rotate(-45deg);
+  background-color: #181818;
+  p {
+    color: #dad9d9;
+  }
+  @media (max-width: 361px) {
+    bottom: 100px;
+    padding: .8rem 11rem .8rem 5rem;
+  }
+`
 
 const Home = () => {
 
@@ -190,7 +206,6 @@ const Home = () => {
                         <a href="#" target='_blank' rel='noreferrer'>henriquepinheiroxavier@gmail.com</a>
                     </InfoLinks>
                     <InfoAvailable>
-                            <p>Disponível para trabalho <br />& Freelance</p>
                             <CV onClick={handleDownloadCV} name="CV" download>
                             CV
                             <FaFilePdf />
@@ -202,6 +217,9 @@ const Home = () => {
                     <TitleDev2>Dev</TitleDev2>
                     <TitleFrontend>Front-end</TitleFrontend>
                 </InfoTitle>
+                <Faixa>
+                    <p>Disponível para trabalho</p>
+                </Faixa>
             </HomeSize>
         </HomeContainer>
     );
