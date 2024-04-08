@@ -69,16 +69,6 @@ const InfoLinks = styled.div`
         gap: 5px;
     }
 `;
-const InfoAvailable = styled.div`
-    text-align: right;
-    @media (max-width: 937px) {
-        text-align: left;
-    }
-    p {
-        font-family: "Urbanist", sans-serif;
-        color: #fff;
-    }
-`;
 const DivInstruction = styled.div`
     display: flex;
     gap: 20px;
