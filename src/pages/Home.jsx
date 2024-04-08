@@ -3,6 +3,7 @@ import TabFiles from './Layout/TabFiles';
 import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { SiMinutemailer } from "react-icons/si";
 
 const moveLeft = keyframes`
     0%, 100% {
@@ -43,6 +44,7 @@ const HomeContainer = styled.div`
     overflow: hidden;
 `;
 const HomeSize = styled.div`
+    position: relative;
     margin: 5.7rem 1.2rem 5rem 5rem;
 
 `
@@ -62,6 +64,9 @@ const InfoLinks = styled.div`
     a {
         font-family: "Urbanist", sans-serif;
         color: #fff;
+        display: flex;
+        align-items: center;
+        gap: 5px;
     }
 `;
 const InfoAvailable = styled.div`
@@ -157,29 +162,24 @@ const CV = styled.a`
     border-radius: 15px;
     width: 120px;
     padding: .3rem 2rem;
-    margin-top: .5rem;
+    margin-top: .8rem;
     cursor: pointer;
-    margin-left: auto;
-    @media (max-width: 937px) {
-        margin-left: 0;
-        margin-right: auto;
-    }
 `
 const Faixa = styled.div`
-  position: absolute;
-  right: -160px;
-  overflow: hidden;
-  bottom: 70px;
-  padding: .8rem 10rem;
-  transform: rotate(-45deg);
-  background-color: #181818;
-  p {
-    color: #dad9d9;
-  }
-  @media (max-width: 361px) {
-    bottom: 100px;
-    padding: .8rem 11rem .8rem 5rem;
-  }
+    position:fixed;
+    overflow: hidden;
+    right: -110px;
+    bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 50px;
+    transform: rotate(-45deg);
+    background-color: #181818;
+    p {
+        color: #dad9d9;
+    }
 `
 
 const Home = () => {
@@ -201,16 +201,14 @@ const Home = () => {
                             <h2>Navegue pelo portfólio</h2>
                         </DivInstruction>
                         <InstructionsSobre><span>SOBRE</span>Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.</InstructionsSobre>
-                    </div>
-                    <InfoLinks>
-                        <a href="#" target='_blank' rel='noreferrer'>henriquepinheiroxavier@gmail.com</a>
-                    </InfoLinks>
-                    <InfoAvailable>
-                            <CV onClick={handleDownloadCV} name="CV" download>
+                        <CV onClick={handleDownloadCV} name="CV" download>
                             CV
                             <FaFilePdf />
-                        </CV>
-                    </InfoAvailable>
+                            </CV>
+                    </div>
+                    <InfoLinks>
+                        <a href="#" target='_blank' rel='noreferrer'><SiMinutemailer size={22} />henriquepinheiroxavier@gmail.com</a>
+                    </InfoLinks>
                 </InfoHome>
                 <InfoTitle>
                     <TitleDev>Desenvolvedor</TitleDev>
