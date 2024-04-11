@@ -99,7 +99,7 @@ const InfoTitle = styled.div`
     text-align: left;
     width: 100%;
     text-transform: uppercase;
-    margin-top: -2rem;
+    margin-top: -5rem;
 `;
 const TitleDev = styled.h1`
     font-size: 6vw;
