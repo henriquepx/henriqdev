@@ -13,7 +13,7 @@ const showingContent = keyframes`
     }
 `;
 const ContainerContact = styled.div`
-    height: calc(100vh - 6.3vh);
+    min-height: calc(100vh - 6.3vh);
     width: 100%;
     display: flex;
     justify-content: center;

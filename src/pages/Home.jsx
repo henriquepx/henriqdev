@@ -45,7 +45,7 @@ const HomeContainer = styled.div`
 `;
 const HomeSize = styled.div`
     position: relative;
-    margin: 5.7rem 1.2rem 5rem 5rem;
+    margin: 5.7rem 1.2rem 8rem 5rem;
 
 `
 const InfoHome = styled.div`
@@ -99,7 +99,6 @@ const InfoTitle = styled.div`
     text-align: left;
     width: 100%;
     text-transform: uppercase;
-    margin-top: -5rem;
 `;
 const TitleDev = styled.h1`
     font-size: 6vw;
@@ -133,14 +132,12 @@ const TitleFrontend = styled.h2`
     color: #979797;
     font-family: "Fjalla One", sans-serif;
     animation: ${moveTextTitle} 1s forwards;
-    margin-top: -1.5rem;
-    margin-bottom: 2rem;
+    margin-bottom: 7rem;
     &:hover {
         color: #ffffff;
     }
     @media (max-width: 1280px) {
         font-size: 18vw;
-        margin-top: 1rem;
     }
 `
 const CV = styled.a`

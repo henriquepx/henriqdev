@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { VscFiles, VscAccount, VscSettingsGear } from "react-icons/vsc";
 import { IoCodeSlashOutline } from "react-icons/io5";
@@ -31,6 +31,22 @@ const StyledAsideSection = styled.div`
 const Side = () => {
     const [activeIndex, setActiveIndex] = useState(0);
     const [isProfileDropdownOpen, setIsProfileDropdownOpen] = useState(false);
+
+    const profileDropdownRef = useRef(null);
+
+    useEffect(() => {
+        const handleOutsideClick = (event) => {
+            if (profileDropdownRef.current && !profileDropdownRef.current.contains(event.target)) {
+                setIsProfileDropdownOpen(false);
+            }
+        };
+
+        document.addEventListener('mousedown', handleOutsideClick);
+
+        return () => {
+            document.removeEventListener('mousedown', handleOutsideClick);
+        };
+    }, []);
 
     const handleClick = (index) => {
         if (index === activeIndex) {
@@ -98,7 +114,9 @@ const Side = () => {
                     onClick={toggleProfileDropdown}
                 />
                 {isProfileDropdownOpen && (
-                    <DropdownProfile />
+                    <div ref={profileDropdownRef}>
+                        <DropdownProfile />
+                    </div>
                 )}
             </StyledAsideSection>
         </StyledAside>
