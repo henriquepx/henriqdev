@@ -91,15 +91,15 @@ const Side = () => {
                 <IconSide
                     icon={<VscAccount size={24} />}
                     active={activeIndex === 5}
+                />
+                <IconSide
+                    icon={<VscSettingsGear size={24} />}
+                    active={activeIndex === 6}
                     onClick={toggleProfileDropdown}
                 />
                 {isProfileDropdownOpen && (
                     <DropdownProfile />
                 )}
-                <IconSide
-                    icon={<VscSettingsGear size={24} />}
-                    active={activeIndex === 6}
-                />
             </StyledAsideSection>
         </StyledAside>
     );
