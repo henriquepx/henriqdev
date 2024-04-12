@@ -1,6 +1,10 @@
 {
     "translation": {},
-    "header": {
-        "start": "Home"
+    "home": {
+        "introHome": "Browse the portfolio",
+        "aboutHome": "ABOUT",
+        "descriptionHome": "My name is Henrique Pinheiro. I'm a Developer focused on robust and interactive web constructions using the most modern technologies on the market.",
+        "devHome": "Developer",
+        "faixaHome": "Available for work"
     }
 }

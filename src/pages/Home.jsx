@@ -4,6 +4,7 @@ import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
 import { FaArrowLeftLong } from "react-icons/fa6";
 import { SiMinutemailer } from "react-icons/si";
+import { useTranslation } from "react-i18next";
 
 const moveLeft = keyframes`
     0%, 100% {
@@ -171,6 +172,8 @@ const Faixa = styled.div`
 
 const Home = () => {
 
+    const { t } = useTranslation();
+
     const handleDownloadCV = () => {
         const cvFileName = 'CV - Henrique.pdf';
         const cvPath = `/${cvFileName}`;
@@ -185,9 +188,9 @@ const Home = () => {
                     <div>
                         <DivInstruction>
                             <ArrowLeft />
-                            <h2>Navegue pelo portfólio</h2>
+                            <h2>{t('home.introHome')}</h2>
                         </DivInstruction>
-                        <InstructionsSobre><span>SOBRE</span>Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.</InstructionsSobre>
+                        <InstructionsSobre><span>{t('home.aboutHome')}</span>{t('home.descriptionHome')}</InstructionsSobre>
                         <CV onClick={handleDownloadCV} name="CV" download>
                             CV
                             <FaFilePdf />
@@ -198,12 +201,12 @@ const Home = () => {
                     </InfoLinks>
                 </InfoHome>
                 <InfoTitle>
-                    <TitleDev>Desenvolvedor</TitleDev>
+                    <TitleDev>{t('home.devHome')}</TitleDev>
                     <TitleDev2>Dev</TitleDev2>
                     <TitleFrontend>Front-end</TitleFrontend>
                 </InfoTitle>
                 <Faixa>
-                    <p>Disponível para trabalho</p>
+                    <p>{t('home.faixaHome')}</p>
                 </Faixa>
             </HomeSize>
         </HomeContainer>

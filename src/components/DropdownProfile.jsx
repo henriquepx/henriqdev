@@ -93,8 +93,8 @@ const DropdownProfile = () => {
         <DropdownProfileContainer>
             <ChangeLanguage ref={languageButtonRef}>
                 <LanguageToggle onClick={handleLanguageClick}>
-                    <AiOutlineGlobal size={18} />
-                    {isArrowUp ? <IoIosArrowUp size={18} /> : <IoIosArrowDown size={18} />}
+                <AiOutlineGlobal size={18} style={{ color: '#fff' }} />
+                    {isArrowUp ? <IoIosArrowUp size={18} style={{ color: '#fff' }} /> : <IoIosArrowDown size={18} style={{ color: '#fff' }} />}
                 </LanguageToggle>
                 {isLanguageOpen && (
                     <Dropdown>

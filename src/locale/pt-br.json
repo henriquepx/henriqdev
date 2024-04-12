@@ -1,6 +1,10 @@
 {
     "translation": {},
-    "header": {
-        "start": "Início"
+    "home": {
+        "introHome": "Navegue pelo portfólio",
+        "aboutHome": "SOBRE",
+        "descriptionHome": "Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.",
+        "devHome": "Desenvovledor",
+        "faixaHome": "Disponível para trabalho"
     }
 }
