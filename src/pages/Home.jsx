@@ -3,7 +3,6 @@ import TabFiles from './Layout/TabFiles';
 import { FaFilePdf } from 'react-icons/fa6';
 import { saveAs } from 'file-saver';
 import { FaArrowLeftLong } from "react-icons/fa6";
-import { SiMinutemailer } from "react-icons/si";
 import { useTranslation } from "react-i18next";
 
 const moveLeft = keyframes`
@@ -56,18 +55,6 @@ const InfoHome = styled.div`
     animation: ${moveTexts} 1s forwards;
     @media (max-width: 1000px) {
         flex-direction: column;
-    }
-`;
-const InfoLinks = styled.div`
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    a {
-        font-family: "Urbanist", sans-serif;
-        color: #fff;
-        display: flex;
-        align-items: center;
-        gap: 5px;
     }
 `;
 const DivInstruction = styled.div`
@@ -196,9 +183,6 @@ const Home = () => {
                             <FaFilePdf />
                             </CV>
                     </div>
-                    <InfoLinks>
-                        <a href="#" target='_blank' rel='noreferrer'><SiMinutemailer size={22} />henriquepinheiroxavier@gmail.com</a>
-                    </InfoLinks>
                 </InfoHome>
                 <InfoTitle>
                     <TitleDev>{t('home.devHome')}</TitleDev>

@@ -1,0 +1,106 @@
+input[type='checkbox'] {
+    display: none;
+}
+
+.containerSendEmail {
+    padding-right: 5rem;
+}
+
+.send {
+    cursor: pointer;
+}
+
+.send *,
+.send *::before,
+.send *::after {
+    transition: all 1s;
+}
+
+.send .rotate {
+    position: relative;
+    transform-style: preserve-3d;
+}
+
+.send .rotate .move {
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+.send .rotate .move .part {
+    position: absolute;
+    transform-style: preserve-3d;
+    width: 120px;
+    height: 120px;
+}
+
+.send .rotate .move .part::before,
+.send .rotate .move .part::after {
+    content: 'SEND EMAIL';
+    width: 120px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1d1d1d;
+    font-size: .5rem;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+
+.send .rotate .move .part.left::before {
+    transform-origin: 50% 25%;
+    clip-path: polygon(0 0, 100% 0, 100% 1px, 0 calc(100% + 1px));
+}
+.send .rotate .move .part.left::after {
+    clip-path: polygon(0 50%, 100% 0, 100% 1px, 1px 100%, 0 100%);
+}
+.send .rotate .move .part.right::before {
+    clip-path: polygon(0 100%, 100% 0, 100% 1px, calc(50% + 1px) 100%, 50% 100%);
+}
+.send .rotate .move .part.right::after {
+    transform-origin: 75% 50%;
+    clip-path: polygon(100% 0, 50% 100%, 100% 100%);
+}
+#send:checked ~ .send .rotate {
+    transform: rotate3d(1, -0.2, 0.2, 65deg);
+}
+#send:checked ~ .send .rotate .move {
+    animation: fly 3s cubic-bezier(0.72, -0.23, 0.35, 1.03) 1s both;
+}
+#send:checked ~ .send .rotate .move .part.left {
+    transform: rotate3d(-1, 1, 0, 60deg);
+}
+#send:checked ~ .send .rotate .move .part.left::before {
+    transform: rotate3d(-1, 0.5, 0, -60deg);
+}
+#send:checked ~ .send .rotate .move .part.left::after {
+    background-color: #1d1d1d;
+}
+#send:checked ~ .send .rotate .move .part.right {
+    transform: rotate3d(-1, 1, 0, -60deg);
+}
+#send:checked ~ .send .rotate .move .part.right::before {
+    background-color: #1d1d1d;
+}
+#send:checked ~ .send .rotate .move .part.right::after {
+    transform: rotate3d(-0.25, 0.5, 0, 100deg);
+}
+
+@keyframes fly {
+    0% {
+        transform: translate3D(0, 0, 0rem);
+    }
+    50% {
+        transform: translate3D(400rem, -400rem, 0rem);
+    }
+    50.00001% {
+        transform: translate3D(-100rem, 100rem, 0rem);
+    }
+    100% {
+        transform: translate3D(0rem, 0rem, 0rem);
+    }
+}

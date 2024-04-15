@@ -4,7 +4,32 @@
         "introHome": "Navegue pelo portfólio",
         "aboutHome": "SOBRE",
         "descriptionHome": "Me chamo Henrique Pinheiro. Sou um Desenvolvedor com foco em construções web robustas e interativas utilizando as tecnologias mais modernas do mercado.",
-        "devHome": "Desenvovledor",
+        "devHome": "Desenvolvedor",
         "faixaHome": "Disponível para trabalho"
+    },
+    "projects": {
+        "skillsTitle": "Habilidades",
+        "reactDescription": "Biblioteca de interfaces interativas.",
+        "javascriptDescription": "Linguagem para desenvolvimento web.",
+        "typescriptDescription": "Superset do JavaScript.",
+        "sqlDescription": "Gerenciamento de Dados Relacionais.",
+        "styledcomponentsDescription": "Estilização de componentes.",
+        "sassDescription": "Pré-processador de estilos.",
+        "tailwindDescription": "Framework CSS utilitário.",
+        "bootstrapDescription": "Framework CSS responsivo.",
+        "cssDescription": "Estilização de páginas.",
+        "htmlDescription": "Marcação de páginas web.",
+        "angularDescription": "Framework escalável.",
+        "nodeDescription": "Ambiente de Servidor JavaScript.",
+        "nextDescription": "Framework JavaScript para desenvolvimento web.",
+        "studyingandlearningTitle": "Estudando & aprendendo",
+        "skillstexts1": "Planos pro futuro.",
+        "skillstexts2": "Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais..",
+        "skillstexts3": "Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.",
+        "skillstexts4": "Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores."
+        
+    },
+    "contact": {
+        "sendEmail": "Enviar e-mail"
     }
 }
