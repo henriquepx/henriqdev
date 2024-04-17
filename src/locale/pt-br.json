@@ -7,7 +7,7 @@
         "devHome": "Desenvolvedor",
         "faixaHome": "Disponível para trabalho"
     },
-    "projects": {
+    "skills": {
         "skillsTitle": "Habilidades",
         "reactDescription": "Biblioteca de interfaces interativas.",
         "javascriptDescription": "Linguagem para desenvolvimento web.",
@@ -26,10 +26,15 @@
         "skillstexts1": "Planos pro futuro.",
         "skillstexts2": "Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais..",
         "skillstexts3": "Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.",
-        "skillstexts4": "Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores."
-        
+        "skillstexts4": "Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores." 
     },
-    "contact": {
-        "sendEmail": "Enviar e-mail"
+    "project": {
+        "codeContent1": "projeto1 {\n    nome: 'DevInsights',\n    tecnologias: 'ReactJS, Styled Components & React Router Dom'\n}",
+        "codeContent2": "projeto2 {\n    nome: 'QuizGames',\n    tecnologias: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
+        "codeContent3": "projeto3 {\n    nome: 'Portfólio v1',\n    tecnologias: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
+        "codeContent4": "projeto4 {\n    nome: 'Github Repositórios',\n    tecnologias: 'React, TypeScript, API com Axios, Sass'\n}",
+        "codeContent5": "projeto5 {\n    nome: 'Japapou?',\n    tecnologias: 'ReactJS & CSS Modules'\n}",
+        "codeContent6": "projeto6 {\n    nome: 'Portfólio do Fotógrafo',\n    tecnologias: 'HTML, CSS & JavaScript'\n}",
+        "codeContent7": "projeto7 {\n    nome: 'DSM Consultoria',\n    tecnologias: 'HTML, CSS & JavaScript'\n}"
     }
 }

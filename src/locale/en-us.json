@@ -6,5 +6,35 @@
         "descriptionHome": "My name is Henrique Pinheiro. I'm a Developer focused on robust and interactive web constructions using the most modern technologies on the market.",
         "devHome": "Developer",
         "faixaHome": "Available for work"
+    },
+    "skills": {
+        "skillsTitle": "Skills",
+        "reactDescription": "Interactive interface library.",
+        "javascriptDescription": "Language for web development.",
+        "typescriptDescription": "JavaScript superset.",
+        "sqlDescription": "Relational Data Management.",
+        "styledcomponentsDescription": "Component styling.",
+        "sassDescription": "Styles preprocessor.",
+        "tailwindDescription": "Utility CSS framework.",
+        "bootstrapDescription": "Responsive CSS framework.",
+        "cssDescription": "Page styling.",
+        "htmlDescription": "Web page markup.",
+        "angularDescription": "Scalable framework.",
+        "nodeDescription": "JavaScript Server Environment.",
+        "nextDescription": "JavaScript framework for web development.",
+        "studyingandlearningTitle": "Studying & learning",
+        "skillstexts1": "Plans for the future.",
+        "skillstexts2": "Currently, my main focus is on Front-end Development. I believe user experience is crucial, and I'm dedicated to creating attractive and intuitive user interfaces that provide a great experience to end users.",
+        "skillstexts3": "Furthermore, I'm always seeking continuous learning. I'm exploring new technologies like Angular and C# to further expand my skill set and embrace broader challenges in the future.",
+        "skillstexts4": "My ultimate goal is to become a Fullstack developer, but I understand the importance of building a solid foundation in Front-end before moving on to the Back-end. I'm committed to staying updated with the latest industry trends and best practices, so I can contribute meaningfully to exciting and challenging projects."
+    },
+    "project": {
+        "codeContent1": "project1 {\n    name: 'DevInsights',\n    stacks: 'ReactJS, Styled Components & React Router Dom'\n}",
+        "codeContent2": "project2 {\n    name: 'QuizGames',\n    stacks: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
+        "codeContent3": "project3 {\n    name: 'Portfolio v1',\n    stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
+        "codeContent4": "project4 {\n    name: 'Github Repositories',\n    stacks: 'React, TypeScript, API with Axios, Sass'\n}",
+        "codeContent5": "project5 {\n    name: 'Japapou?',\n    stacks: 'ReactJS & CSS Modules'\n}",
+        "codeContent6": "project6 {\n    name: 'Photographer Portfolio',\n    stacks: 'HTML, CSS & JavaScript'\n}",
+        "codeContent7": "project7 {\n    name: 'DSM Consultoria',\n    stacks: 'HTML, CSS & JavaScript'\n}"
     }
 }

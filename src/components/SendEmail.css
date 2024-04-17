@@ -26,15 +26,15 @@ input[type='checkbox'] {
 .send .rotate .move .part {
     position: absolute;
     transform-style: preserve-3d;
-    width: 120px;
-    height: 120px;
+    width: 80px;
+    height: 80px;
 }
 
 .send .rotate .move .part::before,
 .send .rotate .move .part::after {
-    content: 'SEND EMAIL';
-    width: 120px;
-    height: 120px;
+    content: 'EMAIL';
+    width: 80px;
+    height: 80px;
     position: absolute;
     top: 0;
     left: 0;

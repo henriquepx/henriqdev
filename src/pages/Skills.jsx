@@ -14,6 +14,7 @@ import StyledComponents from '../assets/skills/styledcomponents.png'
 import Tailwind from '../assets/skills/tailwind.png'
 import Typescript from '../assets/skills/typescript.png'
 import NextJS from '../assets/skills/next.png'
+import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
     0% {
@@ -99,6 +100,8 @@ const SkillAdjustSize = styled.div`
  `
 
 const Skills = () => {
+    const { t } = useTranslation();
+
     return (
         <SkillsContainer>
             <TabFiles activeTab='Skills' />
@@ -109,77 +112,77 @@ const Skills = () => {
                     <LanguageSkill
                         icon={React} 
                         title="React" 
-                        description="Biblioteca de interfaces interativas."
+                        description={t("skills.reactDescription")}
                     />
                     <LanguageSkill
                         icon={Javascript}
                         title="JavaScript" 
-                        description="Linguagem para desenvolvimento web."
+                        description={t("skills.javascriptDescription")}
                         />
                         <LanguageSkill
                         icon={Typescript}
                         title="TypeScript" 
-                        description="Superset do JavaScript."
+                        description={t("skills.typescriptDescription")}
                         />
                         <LanguageSkill
                         icon={SQL} 
                         title="SQL" 
-                        description="Gerenciamento de Dados Relacionais."
+                        description={t("skills.sqlDescription")}
                     />
                     <LanguageSkill
                         icon={StyledComponents}
                         title="Styled Components" 
-                        description="Estilização de componentes."
+                        description={t("skills.styledcomponentsDescription")}
                     />
                     <LanguageSkill
                         icon={Sass}
                         title="Sass" 
-                        description="Pré-processador de estilos."
+                        description={t("skills.sassDescription")}
                     />
                     <LanguageSkill
                         icon={Tailwind}
                         title="Tailwind" 
-                        description="Framework CSS utilitário."
+                        description={t("skills.tailwindDescription")}
                     />
                     <LanguageSkill
                         icon={Bootstrap}
                         title="Bootstrap" 
-                        description="Framework CSS responsivo."
+                        description={t("skills.bootstrapDescription")}
                     />
                     <LanguageSkill
                         icon={Css}
                         title="CSS" 
-                        description="Estilização de páginas."
+                        description={t("skills.cssDescription")}
                     />
                     <LanguageSkill
                         icon={HTML}
                         title="HTML" 
-                        description="Marcação de páginas web."
+                        description={t("skills.htmlDescription")}
                         />
                     </SkillsWrap>
-                    <LearningSkills>Estudando & aprendendo</LearningSkills>
+                    <LearningSkills>{t("skills.studyingandlearningTitle")}</LearningSkills>
                     <SkillsWrap>
                         <LanguageSkill
                             icon={Angular}
                             title="Angular" 
-                            description="Framework escalável."
+                            description={t("skills.angularDescription")}
                         />
                         <LanguageSkill
                             icon={Nodejs}
                             title="NodeJS" 
-                            description="Ambiente de Servidor JavaScript."
+                            description={t("skills.nodeDescription")}
                             />
                             <LanguageSkill
                                 icon={NextJS}
                                 title="NextJS"
-                                description='Framework JavaScript para desenvolvimento web.'
+                                description={t("skills.nextDescription")}
                             />
                     </SkillsWrap>
                     <TextAboutSkills>
-                        <h3>Planos pro futuro.</h3>
-                        <p>Atualmente, meu foco principal é no Desenvolvimento Front-end. Acredito que a experiência do usuário é fundamental, e estou empenhado em criar interfaces de usuário atraentes e intuitivas que proporcionem uma ótima experiência aos usuários finais.</p>
-                        <p>Além disso, estou sempre em busca de aprendizado contínuo. Estou explorando novas tecnologias, como Angular e C#, para expandir ainda mais meu conjunto de habilidades e abraçar desafios mais amplos no futuro.</p>
-                        <p>Meu objetivo final é me tornar um desenvolvedor Fullstack, mas estou ciente da importância de construir uma base sólida no Front-end antes de prosseguir para o Back-end. Estou comprometido em me manter atualizado com as últimas tendências e melhores práticas do setor, para que eu possa contribuir de maneira significativa para projetos empolgantes e desafiadores.</p>
+                        <h3>{t("skills.skillstexts1")}</h3>
+                        <p>{t("skills.skillstexts2")}</p>
+                        <p>{t("skills.skillstexts3")}</p>
+                        <p>{t("skills.skillstexts4")}</p>
                     </TextAboutSkills>
                 </SkillAdjustSize>
            </SkillsSize>

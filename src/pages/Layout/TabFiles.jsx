@@ -33,7 +33,7 @@ const TabFiles = ({ activeTab }) => {
                 active={activeTab === 'Projects'}
             />
             <FileTab
-                nameFile='Skills.css'
+                nameFile='skills.css'
                 imgIcon={CSSIcon}
                 altIcon='ícone do CSS'
                 active={activeTab === 'Skills'}

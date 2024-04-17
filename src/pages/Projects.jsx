@@ -8,6 +8,7 @@ import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 import GithubProject from '../assets/projects/Gitrepositories.png'
 import QuizProject from '../assets/projects/quiz.png'
+import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
     0% {
@@ -60,70 +61,50 @@ const ProjectSize = styled.div`
 `
 
 const Projects = () => {
+    const { t } = useTranslation();
     return (
         <ProjectContainer>
             <TabFiles activeTab='Projects' />
             <ProjectAdjust>
                 <ProjectSize>
                     <CardProject
-                        codeContent={`project1 {
-    name: 'DevInsights',
-    stacks: 'ReactJS, Styled Components & React Router Dom'
-}`}
+                        codeContent={t('project.codeContent1')}
                         backgroundImage={Dev}
                         linkDeploy='dev-insights-self.vercel.app'
                         linkRepository='https://github.com/henriquepx/dev-insights'
                     />
                     <CardProject
-                        codeContent={`project2 {
-    name: 'QuizGames',
-    stacks: 'ReactJS, Typescript, Styled Components & React Router Dom'
-}`}
+                        codeContent={t('project.codeContent2')}
                         backgroundImage={QuizProject}
                         linkDeploy='https://quizprogramation.vercel.app/'
                         linkRepository='https://github.com/henriquepx/quiz_game'
                     />
                     <CardProject
-                        codeContent={`project3 {
-    name: 'Portfólio v1',
-    stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'
-}`}
+                        codeContent={t('project.codeContent3')}
                         backgroundImage={Portfoliov1}
                         linkDeploy='portfolio-henriquepx.vercel.app/'
                         linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject
-                        codeContent={`project4 {
-    name: 'Github Repositórios',
-    stacks: 'React, TypeScriot, API com Axios, Sass'
-}`}
+                        codeContent={t('project.codeContent4')}
                         backgroundImage={GithubProject}
                         linkDeploy='https://githubapi-repositories.vercel.app/'
                         linkRepository='https://github.com/henriquepx/github_repositories'
                     />
                     <CardProject
-                        codeContent={`project5 {
-    name: 'Japapou?',
-    stacks: 'ReactJS & CSS Modules'
-}`}
+                        codeContent={t('project.codeContent5')}
                         backgroundImage={Japapou}
                         linkDeploy='app-order-food.vercel.app'
                         linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
-                        codeContent={`project6 {
-    name: 'PhotographerPortfólio',
-    stacks: 'HTML, CSS & JavaScript'
-}`}
+                        codeContent={t('project.codeContent6')}
                         backgroundImage={Photographer}
                         linkDeploy='photographerportfolio.vercel.app/'
                         linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
-                        codeContent={`project7 {
-    name: 'DSM Consultoria',
-    stacks: 'HTML, CSS & JavaScript'
-}`}
+                        codeContent={t('project.codeContent7')}
                         backgroundImage={DSM}
                         linkDeploy='dsmconsultoria.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dsm'
