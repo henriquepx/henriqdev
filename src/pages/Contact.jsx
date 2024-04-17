@@ -20,21 +20,18 @@ const ContainerContact = styled.div`
     overflow: hidden;
 `;
 const ContactSize = styled.div`
-    animation: ${showingContent} 1s forwards;  
-    max-height: 90%;
+    animation: ${showingContent} 1s forwards; 
     display: flex;
+    flex-direction: column;
     justify-content: center; 
     align-items: center;
-    padding-right: 4rem;
+    max-height: 80vh;
+    height: 100%;
+    margin-right: 10rem;
     @media (max-width: 800px) {
-        padding-bottom: 4rem;
-    }
-    @media (max-width: 500px) {
-        padding-bottom: 4rem;
-        padding-right: 2rem;
+        margin-right: 5rem;
     }
 `;
-
 const Contact = () => {
     return (
         <ContainerContact>

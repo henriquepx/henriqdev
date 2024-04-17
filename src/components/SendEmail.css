@@ -2,10 +2,6 @@ input[type='checkbox'] {
     display: none;
 }
 
-.containerSendEmail {
-    padding-right: 5rem;
-}
-
 .send {
     cursor: pointer;
 }
@@ -24,6 +20,7 @@ input[type='checkbox'] {
 .send .rotate .move {
     transform-style: preserve-3d;
     position: relative;
+    transition: transform 3s;
 }
 
 .send .rotate .move .part {
