@@ -21,7 +21,7 @@ const ContainerContact = styled.div`
 `;
 const ContactSize = styled.div`
     animation: ${showingContent} 1s forwards;  
-    height: 90%;
+    max-height: 90%;
     display: flex;
     justify-content: center; 
     align-items: center;
