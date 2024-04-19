@@ -8,7 +8,6 @@ import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 import GithubProject from '../assets/projects/Gitrepositories.png'
 import QuizProject from '../assets/projects/quiz.png'
-import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
     0% {
@@ -20,7 +19,6 @@ const showingContent = keyframes`
         transform: translateY(0px);
     }
 `;
-
 const ProjectContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
@@ -61,50 +59,50 @@ const ProjectSize = styled.div`
 `
 
 const Projects = () => {
-    const { t } = useTranslation();
+
     return (
         <ProjectContainer>
             <TabFiles activeTab='Projects' />
             <ProjectAdjust>
                 <ProjectSize>
                     <CardProject
-                        codeContent={t('project.codeContent1')}
+                        codeContentKey='project.codeContent1'
                         backgroundImage={Dev}
                         linkDeploy='dev-insights-self.vercel.app'
                         linkRepository='https://github.com/henriquepx/dev-insights'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent2')}
+                        codeContentKey='project.codeContent2'
                         backgroundImage={QuizProject}
                         linkDeploy='https://quizprogramation.vercel.app/'
                         linkRepository='https://github.com/henriquepx/quiz_game'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent3')}
+                        codeContentKey='project.codeContent3'
                         backgroundImage={Portfoliov1}
                         linkDeploy='portfolio-henriquepx.vercel.app/'
                         linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent4')}
+                        codeContentKey='project.codeContent4'
                         backgroundImage={GithubProject}
                         linkDeploy='https://githubapi-repositories.vercel.app/'
                         linkRepository='https://github.com/henriquepx/github_repositories'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent5')}
+                        codeContentKey='project.codeContent5'
                         backgroundImage={Japapou}
                         linkDeploy='app-order-food.vercel.app'
                         linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent6')}
+                        codeContentKey='project.codeContent6'
                         backgroundImage={Photographer}
                         linkDeploy='photographerportfolio.vercel.app/'
                         linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
-                        codeContent={t('project.codeContent7')}
+                        codeContentKey='project.codeContent7'
                         backgroundImage={DSM}
                         linkDeploy='dsmconsultoria.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dsm'

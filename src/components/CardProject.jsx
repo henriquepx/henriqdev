@@ -1,6 +1,8 @@
 import styled from 'styled-components';
+import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { FaGithub, FaExternalLinkAlt } from 'react-icons/fa';
+import { useTranslation } from 'react-i18next';
 
 const CardContainer = styled.div`
   width: 300px;
@@ -95,7 +97,15 @@ const Link = styled.a`
   background-color: #4e4e4e;
 `;
 
-const CardProject = ({ codeContent, linkDeploy, linkRepository, backgroundImage }) => {
+const CardProject = ({ codeContentKey, linkDeploy, linkRepository, backgroundImage }) => {
+
+  const { t, i18n } = useTranslation();
+  const [translatedCodeContent, setTranslatedCodeContent] = useState('');
+
+  useEffect(() => {
+    setTranslatedCodeContent(t(codeContentKey));
+  }, [codeContentKey, i18n.language]);
+
   return (
     <CardContainer>
       <Header>
@@ -115,7 +125,7 @@ const CardProject = ({ codeContent, linkDeploy, linkRepository, backgroundImage 
       </Header>
       <ImageContainer backgroundImage={backgroundImage} />
       <CodeContainer>
-        <CodeTextarea readOnly name="code" id="code" className="area" defaultValue={codeContent} />
+        <CodeTextarea readOnly name="code" id="code" className="area" value={translatedCodeContent} />
       </CodeContainer>
       <LinksToProject>
         <Link href={linkRepository} target='_blank' rel='noreferrer'>
@@ -132,7 +142,7 @@ const CardProject = ({ codeContent, linkDeploy, linkRepository, backgroundImage 
 };
 
 CardProject.propTypes = {
-    codeContent: PropTypes.string.isRequired,
+  codeContentKey: PropTypes.string.isRequired,
     backgroundImage: PropTypes.string.isRequired,
     linkRepository: PropTypes.string.isRequired,
     linkDeploy: PropTypes.string.isRequired
