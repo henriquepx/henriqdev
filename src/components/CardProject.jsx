@@ -104,7 +104,7 @@ const CardProject = ({ codeContentKey, linkDeploy, linkRepository, backgroundIma
 
   useEffect(() => {
     setTranslatedCodeContent(t(codeContentKey));
-  }, [codeContentKey, i18n.language]);
+  }, [codeContentKey, i18n.language, t]);
 
   return (
     <CardContainer>
