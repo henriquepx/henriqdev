@@ -10,9 +10,11 @@
     "skills": {
         "skillsTitle": "Skills",
         "reactDescription": "Interactive interface library.",
+        "reactNativeDescription": "Mobile Development Framework",
         "javascriptDescription": "Language for web development.",
         "typescriptDescription": "JavaScript superset.",
         "sqlDescription": "Relational Data Management.",
+        "mysqlDescription": "Relational Database Management",
         "styledcomponentsDescription": "Component styling.",
         "sassDescription": "Styles preprocessor.",
         "tailwindDescription": "Utility CSS framework.",

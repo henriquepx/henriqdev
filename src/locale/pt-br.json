@@ -10,9 +10,11 @@
     "skills": {
         "skillsTitle": "Habilidades",
         "reactDescription": "Biblioteca de interfaces interativas.",
+        "reactNativeDescription": "Framework de Desenvolvimento Móvel",
         "javascriptDescription": "Linguagem para desenvolvimento web.",
         "typescriptDescription": "Superset do JavaScript.",
         "sqlDescription": "Gerenciamento de Dados Relacionais.",
+        "mysqlDescription": "Gerenciamento de Banco de Dados Relacional",
         "styledcomponentsDescription": "Estilização de componentes.",
         "sassDescription": "Pré-processador de estilos.",
         "tailwindDescription": "Framework CSS utilitário.",

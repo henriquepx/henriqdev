@@ -10,10 +10,12 @@ import Nodejs from '../assets/skills/nodejs.png'
 import React from '../assets/skills/react.png'
 import Sass from '../assets/skills/sass.png'
 import SQL from '../assets/skills/sql.png'
+import MySQL from '../assets/skills/mysql.png'
 import StyledComponents from '../assets/skills/styledcomponents.png'
 import Tailwind from '../assets/skills/tailwind.png'
 import Typescript from '../assets/skills/typescript.png'
 import NextJS from '../assets/skills/next.png'
+import ReactNative from '../assets/skills/reactnative.png'
 import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
@@ -34,11 +36,11 @@ const SkillsContainer = styled.div`
     overflow: hidden; 
 `
 const SkillsSize = styled.div`
+    overflow-y: auto;
     width: 100%;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
-    padding: 3rem 0 5rem 0;
-    overflow-y: auto; 
+    margin-top: 3rem;
     animation: ${showingContent} 1s forwards;
     &::-webkit-scrollbar {
         width: 12px; 
@@ -52,14 +54,8 @@ const SkillsSize = styled.div`
     }
     scrollbar-width: thin;
     scrollbar-color: #9c9c9c #1d1d1d;
-
     display: flex;
     flex-direction: column;
-    margin-top: 4rem;
-    @media (max-width: 800px) {
-        margin-top: 2rem;
-        padding-bottom: 2rem;
-    }
 `
 const SkillsWrap = styled.div`
     display: flex;
@@ -95,8 +91,12 @@ const LearningSkills = styled.h2`
  `
 const SkillAdjustSize = styled.div`
     max-width: 1200px;
-    margin: 0 auto;
     width: 100%;
+    margin: 0 auto;
+    padding: 4rem 0rem 3rem 0rem;
+    @media (max-width: 500px) {
+        padding: 2rem 0rem 3rem 0rem;
+    }
  `
 
 const Skills = () => {
@@ -109,75 +109,85 @@ const Skills = () => {
             <SkillsSize>
                 <SkillAdjustSize>
                     <SkillsWrap>
-                    <LanguageSkill
-                        icon={React} 
-                        title="React" 
-                        description={t("skills.reactDescription")}
-                    />
-                    <LanguageSkill
-                        icon={Javascript}
-                        title="JavaScript" 
-                        description={t("skills.javascriptDescription")}
+                        <LanguageSkill
+                            icon={React} 
+                            title="React" 
+                            description={t("skills.reactDescription")}
                         />
                         <LanguageSkill
-                        icon={Typescript}
-                        title="TypeScript" 
-                        description={t("skills.typescriptDescription")}
+                            icon={ReactNative} 
+                            title="React Native" 
+                            description={t("skills.reactNativeDescription")}
                         />
                         <LanguageSkill
-                        icon={SQL} 
-                        title="SQL" 
-                        description={t("skills.sqlDescription")}
-                    />
-                    <LanguageSkill
-                        icon={StyledComponents}
-                        title="Styled Components" 
-                        description={t("skills.styledcomponentsDescription")}
-                    />
-                    <LanguageSkill
-                        icon={Sass}
-                        title="Sass" 
-                        description={t("skills.sassDescription")}
-                    />
-                    <LanguageSkill
-                        icon={Tailwind}
-                        title="Tailwind" 
-                        description={t("skills.tailwindDescription")}
-                    />
-                    <LanguageSkill
-                        icon={Bootstrap}
-                        title="Bootstrap" 
-                        description={t("skills.bootstrapDescription")}
-                    />
-                    <LanguageSkill
-                        icon={Css}
-                        title="CSS" 
-                        description={t("skills.cssDescription")}
-                    />
-                    <LanguageSkill
-                        icon={HTML}
-                        title="HTML" 
-                        description={t("skills.htmlDescription")}
-                        />
-                    </SkillsWrap>
-                    <LearningSkills>{t("skills.studyingandlearningTitle")}</LearningSkills>
-                    <SkillsWrap>
-                        <LanguageSkill
-                            icon={Angular}
-                            title="Angular" 
-                            description={t("skills.angularDescription")}
+                            icon={Javascript}
+                            title="JavaScript" 
+                            description={t("skills.javascriptDescription")}
                         />
                         <LanguageSkill
-                            icon={Nodejs}
-                            title="NodeJS" 
-                            description={t("skills.nodeDescription")}
+                            icon={Typescript}
+                            title="TypeScript" 
+                            description={t("skills.typescriptDescription")}
+                        />
+                        <LanguageSkill
+                            icon={SQL} 
+                            title="SQL" 
+                            description={t("skills.sqlDescription")}
+                        />
+                         <LanguageSkill
+                            icon={MySQL} 
+                            title="MySQL" 
+                            description={t("skills.mysqlDescription")}
+                        />
+                        <LanguageSkill
+                            icon={StyledComponents}
+                            title="Styled Components" 
+                            description={t("skills.styledcomponentsDescription")}
+                        />
+                        <LanguageSkill
+                            icon={Sass}
+                            title="Sass" 
+                            description={t("skills.sassDescription")}
+                        />
+                        <LanguageSkill
+                            icon={Tailwind}
+                            title="Tailwind" 
+                            description={t("skills.tailwindDescription")}
+                        />
+                        <LanguageSkill
+                            icon={Bootstrap}
+                            title="Bootstrap" 
+                            description={t("skills.bootstrapDescription")}
+                        />
+                        <LanguageSkill
+                            icon={Css}
+                            title="CSS" 
+                            description={t("skills.cssDescription")}
+                        />
+                        <LanguageSkill
+                            icon={HTML}
+                            title="HTML" 
+                            description={t("skills.htmlDescription")}
                             />
+                        </SkillsWrap>
+                        <LearningSkills>{t("skills.studyingandlearningTitle")}</LearningSkills>
+                        <SkillsWrap>
+                            <LanguageSkill
+                                icon={Angular}
+                                title="Angular" 
+                                description={t("skills.angularDescription")}
+                            />
+                            <LanguageSkill
+                                icon={Nodejs}
+                                title="NodeJS" 
+                                description={t("skills.nodeDescription")}
+                                />
                             <LanguageSkill
                                 icon={NextJS}
                                 title="NextJS"
                                 description={t("skills.nextDescription")}
                             />
-                    </SkillsWrap>
+                        </SkillsWrap>
                     <TextAboutSkills>
                         <h3>{t("skills.skillstexts1")}</h3>
                         <p>{t("skills.skillstexts2")}</p>
