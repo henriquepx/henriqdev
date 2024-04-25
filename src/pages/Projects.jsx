@@ -8,6 +8,7 @@ import Dev from '../assets/projects/dev.png'
 import CardProject from '../components/CardProject'
 import GithubProject from '../assets/projects/Gitrepositories.png'
 import QuizProject from '../assets/projects/quiz.png'
+import SmartHomeProject from '../assets/projects/smartHome.png'
 
 const showingContent = keyframes`
     0% {
@@ -68,7 +69,7 @@ const Projects = () => {
                     <CardProject
                         codeContentKey='project.codeContent1'
                         backgroundImage={Dev}
-                        linkDeploy='dev-insights-self.vercel.app'
+                        linkDeploy='https://dev-insights-self.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dev-insights'
                     />
                     <CardProject
@@ -79,32 +80,38 @@ const Projects = () => {
                     />
                     <CardProject
                         codeContentKey='project.codeContent3'
-                        backgroundImage={Portfoliov1}
-                        linkDeploy='portfolio-henriquepx.vercel.app/'
-                        linkRepository='https://github.com/henriquepx/my_portfolio'
+                        backgroundImage={SmartHomeProject}
+                        linkDeploy='https://smarthomechallenger.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/frontendpro-challenger'
                     />
                     <CardProject
                         codeContentKey='project.codeContent4'
+                        backgroundImage={Portfoliov1}
+                        linkDeploy='https://henriqdev.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/my_portfolio'
+                    />
+                    <CardProject
+                        codeContentKey='project.codeContent5'
                         backgroundImage={GithubProject}
                         linkDeploy='https://githubapi-repositories.vercel.app/'
                         linkRepository='https://github.com/henriquepx/github_repositories'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent5'
+                        codeContentKey='project.codeContent6'
                         backgroundImage={Japapou}
-                        linkDeploy='app-order-food.vercel.app'
+                        linkDeploy='https://app-order-food.vercel.app/'
                         linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent6'
+                        codeContentKey='project.codeContent7'
                         backgroundImage={Photographer}
-                        linkDeploy='photographerportfolio.vercel.app/'
+                        linkDeploy='https://photographerportfolio.vercel.app/'
                         linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent7'
+                        codeContentKey='project.codeContent8'
                         backgroundImage={DSM}
-                        linkDeploy='dsmconsultoria.vercel.app/'
+                        linkDeploy='https://dsmconsultoria.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dsm'
                     />
                 </ProjectSize>
