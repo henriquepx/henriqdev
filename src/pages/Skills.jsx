@@ -66,7 +66,7 @@ const SkillsWrap = styled.div`
     padding: 0 .8rem;
 `
 const SkillsWrap2 = styled(SkillsWrap)`
-    padding-bottom: 4rem;
+    padding-bottom: 6rem;
 `
 const LearningSkills = styled.h2`
     font-family: 'Montserrat', sans-serif;
