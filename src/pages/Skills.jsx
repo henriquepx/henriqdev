@@ -30,7 +30,6 @@ const showingContent = keyframes`
 `;
 const SkillsContainer = styled.div`
     position: relative;
-    height: calc(100vh - 6.3);
     width: 100%;
     overflow: hidden; 
 `
@@ -38,10 +37,10 @@ const SkillsSize = styled.div`
     overflow-y: auto;
     width: 100%;
     margin: 0 auto;
-    max-height: calc(100vh - 6.3rem); 
+    height: 86%;
     margin: 1rem 0;
     @media (max-width: 500px) {
-        margin: 2rem 0;
+        margin: 1rem 0;
     }
     animation: ${showingContent} 1s forwards;
     &::-webkit-scrollbar {
@@ -81,7 +80,7 @@ const SkillAdjustSize = styled.div`
     margin: 0 auto;
     padding: 9rem 0rem 3rem 0rem;
     @media (max-width: 500px) {
-        padding: 2rem 0rem 2rem 0rem;
+        padding: 2.5rem 0rem 0rem 0rem;
     }
  `
 
