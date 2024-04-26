@@ -159,10 +159,15 @@ const Faixa = styled.div`
 
 const Home = () => {
 
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
 
     const handleDownloadCV = () => {
-        const cvFileName = 'CV - Henrique.pdf';
+        let cvFileName = '';
+        if (i18n.language === 'en') {
+            cvFileName = 'CVEN - Henrique.pdf';
+        } else {
+            cvFileName = 'CV - Henrique.pdf';
+        }
         const cvPath = `/${cvFileName}`;
         saveAs(cvPath, cvFileName);
     };
