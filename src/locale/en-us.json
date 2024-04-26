@@ -24,11 +24,7 @@
         "angularDescription": "Scalable framework.",
         "nodeDescription": "JavaScript Server Environment.",
         "nextDescription": "JavaScript framework for web development.",
-        "studyingandlearningTitle": "Studying & learning",
-        "skillstexts1": "Plans for the future.",
-        "skillstexts2": "Currently, my main focus is on Front-end Development. I believe user experience is crucial, and I'm dedicated to creating attractive and intuitive user interfaces that provide a great experience to end users.",
-        "skillstexts3": "Furthermore, I'm always seeking continuous learning. I'm exploring new technologies like Angular and C# to further expand my skill set and embrace broader challenges in the future.",
-        "skillstexts4": "My ultimate goal is to become a Fullstack developer, but I understand the importance of building a solid foundation in Front-end before moving on to the Back-end. I'm committed to staying updated with the latest industry trends and best practices, so I can contribute meaningfully to exciting and challenging projects."
+        "studyingandlearningTitle": "Studying & learning"
     },
     "project": {
         "codeContent1": "project1 {\n    name: 'DevInsights',\n    stacks: 'ReactJS, Styled Components & React Router Dom'\n}",

@@ -28,7 +28,6 @@ const showingContent = keyframes`
         transform: translateX(0px);
     }
 `;
-
 const SkillsContainer = styled.div`
     position: relative;
     height: calc(100vh - 6.3);
@@ -40,7 +39,10 @@ const SkillsSize = styled.div`
     width: 100%;
     margin: 0 auto;
     max-height: calc(100vh - 6.3rem); 
-    margin-top: 3rem;
+    margin: 1rem 0;
+    @media (max-width: 500px) {
+        margin: 2rem 0;
+    }
     animation: ${showingContent} 1s forwards;
     &::-webkit-scrollbar {
         width: 12px; 
@@ -73,29 +75,13 @@ const LearningSkills = styled.h2`
     margin-left: 55px;
     padding-left: 1rem;
 `
- const TextAboutSkills = styled.div`
-     padding: 1rem;
-     margin: 3rem 2rem 0rem 4rem;
-     background-color: #1d1d1d;
-     h3 {
-         font-family: 'Montserrat', sans-serif;
-         font-size: .9rem;
-         color: white;
-     }
-     p {
-         font-family: 'Montserrat', sans-serif;
-         font-size: .8rem;
-         color: #8a8a8a;
-         margin-top: 10px;
-     }
- `
 const SkillAdjustSize = styled.div`
     max-width: 1200px;
     width: 100%;
     margin: 0 auto;
-    padding: 4rem 0rem 3rem 0rem;
+    padding: 9rem 0rem 3rem 0rem;
     @media (max-width: 500px) {
-        padding: 2rem 0rem 3rem 0rem;
+        padding: 2rem 0rem 2rem 0rem;
     }
  `
 
@@ -188,12 +174,6 @@ const Skills = () => {
                                 description={t("skills.nextDescription")}
                             />
                         </SkillsWrap>
-                    <TextAboutSkills>
-                        <h3>{t("skills.skillstexts1")}</h3>
-                        <p>{t("skills.skillstexts2")}</p>
-                        <p>{t("skills.skillstexts3")}</p>
-                        <p>{t("skills.skillstexts4")}</p>
-                    </TextAboutSkills>
                 </SkillAdjustSize>
            </SkillsSize>
         </SkillsContainer>
