@@ -37,7 +37,7 @@ const SkillsSize = styled.div`
     overflow-y: auto;
     width: 100%;
     margin: 0 auto;
-    height: 86%;
+    height: 87%;
     margin: 1rem 0;
     @media (max-width: 500px) {
         margin: 1rem 0;
@@ -64,6 +64,9 @@ const SkillsWrap = styled.div`
     gap: 10px;
     margin-left: 55px;
     padding: 0 .8rem;
+`
+const SkillsWrap2 = styled(SkillsWrap)`
+    padding-bottom: 4rem;
 `
 const LearningSkills = styled.h2`
     font-family: 'Montserrat', sans-serif;
@@ -156,7 +159,7 @@ const Skills = () => {
                             />
                         </SkillsWrap>
                         <LearningSkills>{t("skills.studyingandlearningTitle")}</LearningSkills>
-                        <SkillsWrap>
+                        <SkillsWrap2>
                             <LanguageSkill
                                 icon={Angular}
                                 title="Angular" 
@@ -172,7 +175,7 @@ const Skills = () => {
                                 title="NextJS"
                                 description={t("skills.nextDescription")}
                             />
-                        </SkillsWrap>
+                        </SkillsWrap2>
                 </SkillAdjustSize>
            </SkillsSize>
         </SkillsContainer>
