@@ -95,7 +95,7 @@ const TitleDev = styled.h1`
     font-family: "Fjalla One", sans-serif;
     display: block;
     animation: ${moveTextSubitle} 1s forwards;
-    margin-top: 7rem;
+    margin-top: 3rem;
     @media (max-width: 400px) {
         margin-top: 3.5rem;
     }
