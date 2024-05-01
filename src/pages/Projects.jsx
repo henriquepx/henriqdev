@@ -87,7 +87,7 @@ const Projects = () => {
                     <CardProject
                         codeContentKey='project.codeContent4'
                         backgroundImage={Portfoliov1}
-                        linkDeploy='https://henriqdev.vercel.app/'
+                        linkDeploy='https://portfolio-henriquepx.vercel.app/'
                         linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject

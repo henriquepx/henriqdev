@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-const LanguageContainer = styled.div`
+const LanguageContainer = styled.a`
     display: flex;
     align-items: center;
     gap: 15px;
@@ -35,9 +35,9 @@ const LanguageContainer = styled.div`
     }
 `
 
-const LanguageSkill = ({ icon, title, description }) => {
+const LanguageSkill = ({ icon, doc, title, description }) => {
   return (
-    <LanguageContainer>
+    <LanguageContainer href={doc} target='_blank' rel='noreferrer'>
         <img src={icon} alt="" />
         <div>
             <h1>{title}</h1>
@@ -50,6 +50,7 @@ const LanguageSkill = ({ icon, title, description }) => {
 LanguageSkill.propTypes = {
     icon: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
+    doc: PropTypes.string.isRequired,
     description: PropTypes.string.isRequired,
   };
 
