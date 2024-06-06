@@ -164,9 +164,9 @@ const Home = () => {
     const handleDownloadCV = () => {
         let cvFileName = '';
         if (i18n.language === 'en') {
-            cvFileName = 'CVEN - Henrique.pdf';
+            cvFileName = 'CurriculoEN.pdf';
         } else {
-            cvFileName = 'CV - Henrique.pdf';
+            cvFileName = 'Curriculo.pdf';
         }
         const cvPath = `/${cvFileName}`;
         saveAs(cvPath, cvFileName);
