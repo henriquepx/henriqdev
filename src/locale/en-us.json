@@ -28,12 +28,13 @@
     },
     "project": {
         "codeContent1": "project1 {\n    name: 'DevInsights',\n    stacks: 'ReactJS, Styled Components & React Router Dom'\n}",
-        "codeContent2": "project2 {\n    name: 'QuizGames',\n    stacks: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
-        "codeContent3": "project3 {\n    name: 'smartHome - Challenge',\n    stacks: 'HTML, CSS, Sass, JavaScript'\n}",
-        "codeContent4": "project4 {\n    name: 'Portfolio v1',\n    stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
-        "codeContent5": "project5 {\n    name: 'Github Repositories',\n    stacks: 'React, TypeScript, API with Axios, Sass'\n}",
-        "codeContent6": "project6 {\n    name: 'Japapou?',\n    stacks: 'ReactJS & CSS Modules'\n}",
-        "codeContent7": "project7 {\n    name: 'Photographer Portfolio',\n    stacks: 'HTML, CSS & JavaScript'\n}",
-        "codeContent8": "project8 {\n    name: 'DSM Consultoria',\n    stacks: 'HTML, CSS & JavaScript'\n}"
+        "codeContent2": "project2 {\n    name: 'Lofi',\n    stacks: 'ReactJS, Typescript & Styled Components'\n}",
+        "codeContent3": "project3 {\n    name: 'QuizGames',\n    stacks: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
+        "codeContent4": "project4 {\n    name: 'smartHome - Challenge',\n    stacks: 'HTML, CSS, Sass, JavaScript'\n}",
+        "codeContent5": "project5 {\n    name: 'Portfolio v1',\n    stacks: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
+        "codeContent6": "project6 {\n    name: 'Github Repositories',\n    stacks: 'React, TypeScript, API with Axios, Sass'\n}",
+        "codeContent7": "project7 {\n    name: 'Japapou?',\n    stacks: 'ReactJS & CSS Modules'\n}",
+        "codeContent8": "project8 {\n    name: 'Photographer Portfolio',\n    stacks: 'HTML, CSS & JavaScript'\n}",
+        "codeContent9": "project9 {\n    name: 'DSM Consultoria',\n    stacks: 'HTML, CSS & JavaScript'\n}"
     }
 }

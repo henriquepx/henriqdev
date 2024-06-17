@@ -9,6 +9,7 @@ import CardProject from '../components/CardProject'
 import GithubProject from '../assets/projects/Gitrepositories.png'
 import QuizProject from '../assets/projects/quiz.png'
 import SmartHomeProject from '../assets/projects/smartHome.png'
+import LofiProject from '../assets/projects/Lofi.png'
 
 const showingContent = keyframes`
     0% {
@@ -71,6 +72,12 @@ const Projects = () => {
                         backgroundImage={Dev}
                         linkDeploy='https://dev-insights-self.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dev-insights'
+                    />
+                    <CardProject
+                        codeContentKey='project.codeContent2'
+                        backgroundImage={LofiProject}
+                        linkDeploy='https://lo-fi-music.vercel.app/'
+                        linkRepository='https://github.com/henriquepx/lofi'
                     />
                     <CardProject
                         codeContentKey='project.codeContent2'

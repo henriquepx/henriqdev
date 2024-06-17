@@ -28,12 +28,13 @@
     },
     "project": {
         "codeContent1": "projeto1 {\n    nome: 'DevInsights',\n    tecnologias: 'ReactJS, Styled Components & React Router Dom'\n}",
-        "codeContent2": "projeto2 {\n    nome: 'QuizGames',\n    tecnologias: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
-        "codeContent3": "projeto3 {\n    nome: 'smartHome - Challenge',\n    tecnologias: 'HTML, CSS, Sass, JavaScript'\n}",
-        "codeContent4": "projeto4 {\n    nome: 'Portfólio v1',\n    tecnologias: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
-        "codeContent5": "projeto5 {\n    nome: 'Github Repositórios',\n    tecnologias: 'React, TypeScript, API com Axios, Sass'\n}",
-        "codeContent6": "projeto6 {\n    nome: 'Japapou?',\n    tecnologias: 'ReactJS & CSS Modules'\n}",
-        "codeContent7": "projeto7 {\n    nome: 'Portfólio do Fotógrafo',\n    tecnologias: 'HTML, CSS & JavaScript'\n}",
-        "codeContent8": "projeto8 {\n    nome: 'DSM Consultoria',\n    tecnologias: 'HTML, CSS & JavaScript'\n}"
+        "codeContent2": "projeto2 {\n    nome: 'Lofi',\n    tecnologias: 'ReactJS, Typescript & Styled Components'\n}",
+        "codeContent3": "projeto3 {\n    nome: 'QuizGames',\n    tecnologias: 'ReactJS, Typescript, Styled Components & React Router Dom'\n}",
+        "codeContent4": "projeto4 {\n    nome: 'smartHome - Challenge',\n    tecnologias: 'HTML, CSS, Sass, JavaScript'\n}",
+        "codeContent5": "projeto5 {\n    nome: 'Portfólio v1',\n    tecnologias: 'ReactJS, Styled Components, React Router Dom, i18next, FileSaver, React-icons'\n}",
+        "codeContent6": "projeto6 {\n    nome: 'Github Repositórios',\n    tecnologias: 'React, TypeScript, API com Axios, Sass'\n}",
+        "codeContent7": "projeto7 {\n    nome: 'Japapou?',\n    tecnologias: 'ReactJS & CSS Modules'\n}",
+        "codeContent8": "projeto8 {\n    nome: 'Portfólio do Fotógrafo',\n    tecnologias: 'HTML, CSS & JavaScript'\n}",
+        "codeContent9": "projeto9 {\n    nome: 'DSM Consultoria',\n    tecnologias: 'HTML, CSS & JavaScript'\n}"
     }
 }
