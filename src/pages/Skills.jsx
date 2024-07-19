@@ -16,6 +16,7 @@ import Tailwind from '../assets/skills/tailwind.png'
 import Typescript from '../assets/skills/typescript.png'
 import NextJS from '../assets/skills/next.png'
 import ReactNative from '../assets/skills/reactnative.png'
+import MongoDB from '../assets/skills/mongodb.png'
 import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
@@ -122,6 +123,24 @@ const Skills = () => {
                             doc="https://www.typescriptlang.org/docs/"
                         />
                         <LanguageSkill
+                            icon={Nodejs}
+                            title="NodeJS"
+                            description={t("skills.nodeDescription")}
+                            doc="https://nodejs.org/en/docs/"
+                        />
+                        <LanguageSkill
+                            icon={NextJS}
+                            title="NextJS"
+                            description={t("skills.nextDescription")}
+                            doc="https://nextjs.org/docs"
+                        />
+                        <LanguageSkill
+                            icon={MongoDB}
+                            title="MongoDB"
+                            description={t("skills.mongoDBDescription")}
+                            doc="https://www.mongodb.com/pt-br/docs/"
+                        />
+                        <LanguageSkill
                             icon={SQL}
                             title="SQL"
                             description={t("skills.sqlDescription")}
@@ -178,18 +197,6 @@ const Skills = () => {
                             title="Angular"
                             description={t("skills.angularDescription")}
                             doc="https://angular.io/docs"
-                        />
-                        <LanguageSkill
-                            icon={Nodejs}
-                            title="NodeJS"
-                            description={t("skills.nodeDescription")}
-                            doc="https://nodejs.org/en/docs/"
-                        />
-                        <LanguageSkill
-                            icon={NextJS}
-                            title="NextJS"
-                            description={t("skills.nextDescription")}
-                            doc="https://nextjs.org/docs"
                         />
                     </SkillsWrap2>
                 </SkillAdjustSize>

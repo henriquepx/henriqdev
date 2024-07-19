@@ -80,43 +80,43 @@ const Projects = () => {
                         linkRepository='https://github.com/henriquepx/lofi'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent2'
+                        codeContentKey='project.codeContent3'
                         backgroundImage={QuizProject}
                         linkDeploy='https://quizprogramation.vercel.app/'
                         linkRepository='https://github.com/henriquepx/quiz_game'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent3'
+                        codeContentKey='project.codeContent4'
                         backgroundImage={SmartHomeProject}
                         linkDeploy='https://smarthomechallenger.vercel.app/'
                         linkRepository='https://github.com/henriquepx/frontendpro-challenger'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent4'
+                        codeContentKey='project.codeContent5'
                         backgroundImage={Portfoliov1}
                         linkDeploy='https://portfolio-henriquepx.vercel.app/'
                         linkRepository='https://github.com/henriquepx/my_portfolio'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent5'
+                        codeContentKey='project.codeContent6'
                         backgroundImage={GithubProject}
                         linkDeploy='https://githubapi-repositories.vercel.app/'
                         linkRepository='https://github.com/henriquepx/github_repositories'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent6'
+                        codeContentKey='project.codeContent7'
                         backgroundImage={Japapou}
                         linkDeploy='https://app-order-food.vercel.app/'
                         linkRepository='https://github.com/henriquepx/app-order-food'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent7'
+                        codeContentKey='project.codeContent8'
                         backgroundImage={Photographer}
                         linkDeploy='https://photographerportfolio.vercel.app/'
                         linkRepository='https://github.com/henriquepx/photographer_portfolio'
                     />
                     <CardProject
-                        codeContentKey='project.codeContent8'
+                        codeContentKey='project.codeContent9'
                         backgroundImage={DSM}
                         linkDeploy='https://dsmconsultoria.vercel.app/'
                         linkRepository='https://github.com/henriquepx/dsm'

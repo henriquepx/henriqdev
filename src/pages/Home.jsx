@@ -192,7 +192,7 @@ const Home = () => {
                 <InfoTitle>
                     <TitleDev>{t('home.devHome')}</TitleDev>
                     <TitleDev2>Dev</TitleDev2>
-                    <TitleFrontend>Front-end</TitleFrontend>
+                    <TitleFrontend>Fullstack</TitleFrontend>
                 </InfoTitle>
                 <Faixa>
                     <p>{t('home.faixaHome')}</p>

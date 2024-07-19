@@ -15,6 +15,7 @@
         "typescriptDescription": "JavaScript superset.",
         "sqlDescription": "Relational Data Management.",
         "mysqlDescription": "Relational Database Management",
+        "mongoDBDescription": "NoSQL Database Management",
         "styledcomponentsDescription": "Component styling.",
         "sassDescription": "Styles preprocessor.",
         "tailwindDescription": "Utility CSS framework.",
