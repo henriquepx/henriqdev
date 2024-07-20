@@ -2,7 +2,7 @@ import { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { VscFiles, VscAccount, VscSettingsGear } from "react-icons/vsc";
 import { IoCodeSlashOutline } from "react-icons/io5";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa6";
+import { FaGithub, FaLinkedin, FaTiktok, FaWhatsapp } from "react-icons/fa6";
 import { RiComputerFill } from "react-icons/ri";
 import { FaEnvelope } from "react-icons/fa6";
 import IconSide from '../../components/IconSide';
@@ -99,6 +99,10 @@ const Side = () => {
                 <a href="https://www.linkedin.com/in/henriquepinheiroxavier/" target='_blank' rel='noreferrer'>
                     <IconSide
                     icon={<FaLinkedin size={24} />} />
+                </a>
+                <a href="#" target='_blank' rel='noreferrer'>
+                    <IconSide
+                    icon={<FaTiktok size={24}/>} />
                 </a>
                 <a href="https://api.whatsapp.com/send?phone=5521964823939&text=Ol%C3%A1,%20Henrique.%20Tenho%20uma%20ideia%20de%20trabalho%20e%20voc%C3%AA%20%C3%A9%20o%20Desenvolvedor%20que%20eu%20preciso." target='_blank' rel='noreferrer'>
                     <IconSide

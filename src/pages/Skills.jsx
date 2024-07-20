@@ -17,6 +17,9 @@ import Typescript from '../assets/skills/typescript.png'
 import NextJS from '../assets/skills/next.png'
 import ReactNative from '../assets/skills/reactnative.png'
 import MongoDB from '../assets/skills/mongodb.png'
+import Jest from '../assets/skills/jest.png'
+import Redux from '../assets/skills/redux.png'
+import Zustand from '../assets/skills/zustand.png'
 import { useTranslation } from "react-i18next";
 
 const showingContent = keyframes`
@@ -139,6 +142,24 @@ const Skills = () => {
                             title="MongoDB"
                             description={t("skills.mongoDBDescription")}
                             doc="https://www.mongodb.com/pt-br/docs/"
+                        />
+                        <LanguageSkill
+                            icon={Jest}
+                            title="Jest"
+                            description={t("skills.jestDescription")}
+                            doc="https://jestjs.io/docs/getting-started"
+                        />
+                        <LanguageSkill
+                            icon={Redux}
+                            title="Redux"
+                            description={t("skills.reduxDescription")}
+                            doc="https://redux.js.org/"
+                        />
+                        <LanguageSkill
+                            icon={Zustand}
+                            title="Zustand"
+                            description={t("skills.zustandDescription")}
+                            doc="https://docs.pmnd.rs/zustand/getting-started/introduction"
                         />
                         <LanguageSkill
                             icon={SQL}
