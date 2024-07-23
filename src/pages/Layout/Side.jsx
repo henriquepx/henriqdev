@@ -100,7 +100,7 @@ const Side = () => {
                     <IconSide
                     icon={<FaLinkedin size={24} />} />
                 </a>
-                <a href="#" target='_blank' rel='noreferrer'>
+                <a href="https://www.tiktok.com/@henriqdev?_t=8oGZNCdurJe&_r=1" target='_blank' rel='noreferrer'>
                     <IconSide
                     icon={<FaTiktok size={24}/>} />
                 </a>
